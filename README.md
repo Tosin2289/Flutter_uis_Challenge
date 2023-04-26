@@ -2,6 +2,8 @@
 
 Flutter Ui Challenges
 
+Day 1
+![day1](https://user-images.githubusercontent.com/66890167/234689115-0aebeb9c-059e-444d-8274-17a211624801.png)
 
 
 Day 115
