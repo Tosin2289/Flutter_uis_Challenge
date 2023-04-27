@@ -12,12 +12,12 @@ class day115 extends StatefulWidget {
 class _day115State extends State<day115> {
   final bool _isOpen = false;
   var imageList = [
-    'images/assets115/img1.jpg',
-    'images/assets115/img2.jpg',
-    'images/assets115/img3.webp',
-    'images/assets115/img4.jpg',
-    'images/assets115/img5.jpg',
-    'images/assets115/img6.jpg',
+    'images/assets112/img1.jpg',
+    'images/assets112/img2.jpg',
+    'images/assets112/img3.webp',
+    'images/assets112/img4.jpg',
+    'images/assets112/img5.jpg',
+    'images/assets112/img6.jpg',
   ];
   @override
   Widget build(BuildContext context) {
