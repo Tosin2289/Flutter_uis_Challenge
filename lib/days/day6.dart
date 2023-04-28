@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+class day6 extends StatefulWidget {
+  const day6({Key? key}) : super(key: key);
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<day6> createState() => _day6State();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _day6State extends State<day6> {
   double currentvalue = 0;
   @override
   Widget build(BuildContext context) {
