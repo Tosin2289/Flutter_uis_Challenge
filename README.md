@@ -36,6 +36,12 @@
 ![day10](https://user-images.githubusercontent.com/66890167/235253649-db1940c3-0cd7-4b52-b129-e36e2241739e.png)
 ![day10(2)](https://user-images.githubusercontent.com/66890167/235253659-89cd8240-e20f-4068-9b38-bb2db181510d.png)
 
+#Day 11
+![day11](https://user-images.githubusercontent.com/66890167/235321545-c6e82ce3-3d9c-477e-9070-e1f3d1c4eb90.png)
+
+#Day 12
+![day12](https://user-images.githubusercontent.com/66890167/235321549-265449a5-6fad-4119-b33b-886bf503dfcb.png)
+
 #Day 112
 ![Screenshot_1682538663](https://user-images.githubusercontent.com/66890167/234687675-75c9455b-2ebb-4c3d-b669-49f50e03ab55.png)
 ![Screenshot_1682538668](https://user-images.githubusercontent.com/66890167/234687702-2a371bb2-faf4-476d-ae86-710edc54b370.png)
