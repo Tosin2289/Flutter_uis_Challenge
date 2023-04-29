@@ -42,6 +42,11 @@
 #Day 12
 ![day12](https://user-images.githubusercontent.com/66890167/235321549-265449a5-6fad-4119-b33b-886bf503dfcb.png)
 
+#Day 13
+![day13(3)](https://user-images.githubusercontent.com/66890167/235327393-54dc1bf2-8a6c-4303-aa04-d63ee3eda92f.png)
+![day13](https://user-images.githubusercontent.com/66890167/235327396-2f70bb90-6b2e-42b2-bec2-15a3cdece19a.png)
+![day13(2)](https://user-images.githubusercontent.com/66890167/235327398-871e4aab-5202-43f8-aa5f-c5176caaa1b8.png)
+
 #Day 112
 ![Screenshot_1682538663](https://user-images.githubusercontent.com/66890167/234687675-75c9455b-2ebb-4c3d-b669-49f50e03ab55.png)
 ![Screenshot_1682538668](https://user-images.githubusercontent.com/66890167/234687702-2a371bb2-faf4-476d-ae86-710edc54b370.png)
