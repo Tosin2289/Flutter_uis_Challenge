@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class day115 extends StatefulWidget {
+class day112 extends StatefulWidget {
   static const String path = "lib/src/pages/profile/profile12.dart";
 
-  const day115({super.key});
+  const day112({super.key});
 
   @override
-  _day115State createState() => _day115State();
+  _day112State createState() => _day112State();
 }
 
-class _day115State extends State<day115> {
+class _day112State extends State<day112> {
   final bool _isOpen = false;
   var imageList = [
     'images/assets112/img1.jpg',
@@ -31,7 +31,7 @@ class _day115State extends State<day115> {
             child: Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('images/assets115/img7.jpg'),
+                  image: AssetImage('images/assets112/img7.jpg'),
                   fit: BoxFit.cover,
                 ),
               ),

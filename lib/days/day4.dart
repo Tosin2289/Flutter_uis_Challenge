@@ -1,29 +1,13 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class day4 extends StatefulWidget {
+  const day4({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: MyHomePage(),
-    );
-  }
+  State<day4> createState() => _MyHomePageState();
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends State<day4> {
   List name = ['Photos & Video', '3d Photos'];
   List namee = ['268 item', '128 item'];
   List image = ['images/assets4/cam1.jpg', 'images/assets4/girlcam2.jpg'];
