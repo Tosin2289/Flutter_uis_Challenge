@@ -239,7 +239,7 @@ class day116 extends StatelessWidget {
         const SizedBox(width: 20.0),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
+          children:[
             const Text(
               "Damodar Lohani",
               style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
