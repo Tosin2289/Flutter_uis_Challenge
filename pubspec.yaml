@@ -38,7 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   percent_indicator: ^4.2.2
   font_awesome_flutter: ^10.4.0
-  url_launcher: ^6.1.10
+  url_launcher: ^6.1.7
 
 dev_dependencies:
   flutter_test:
