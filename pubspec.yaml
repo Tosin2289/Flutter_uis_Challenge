@@ -39,6 +39,7 @@ dependencies:
   percent_indicator: ^4.2.2
   font_awesome_flutter: ^10.4.0
   url_launcher: ^6.1.7
+  google_fonts: ^4.0.4
 
 dev_dependencies:
   flutter_test:
@@ -99,11 +100,11 @@ flutter:
     - images/assets30/
     - images/assets118/
     - images/assets119/
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
-  #   - images/a_dot_ham.jpeg
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+    - images/assets31/
+    - images/assets32/
+    - images/assets33/
+    - images/assets34/
+    - images/assets35/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   #   - images/a_dot_burr.jpeg
