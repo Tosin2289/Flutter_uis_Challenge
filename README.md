@@ -55,8 +55,10 @@
 
 #Day 16
 ![day16](https://user-images.githubusercontent.com/66890167/235393163-a7aab06f-a29c-4c45-966f-1ace1a67879b.png)
+
 #Day 17
 ![day17](https://user-images.githubusercontent.com/66890167/235393189-421d5cd1-6169-45d5-868f-c7a47894c5fa.png)
+
 #Day 18
 ![day18](https://user-images.githubusercontent.com/66890167/235393204-6b0335cf-2ba7-4731-8709-fde73c6c8dc0.png)
 ![day18(2)](https://user-images.githubusercontent.com/66890167/235393209-3502383d-f035-4dfe-bcba-7ea839694110.png)
@@ -73,6 +75,7 @@
 #Day 22
 ![day22](https://user-images.githubusercontent.com/66890167/235557139-727c7724-ebde-4dc2-9c05-453e44d88ed0.png)
 ![day22(2)](https://user-images.githubusercontent.com/66890167/235557148-e5b1ee96-e307-4ce9-a0ef-dee69d0cb7a5.png)
+
 #Day 23
  ![day23](https://user-images.githubusercontent.com/66890167/235557192-6e000d22-6a44-4638-9dbd-2ae0b14b1350.png)
 
@@ -114,6 +117,9 @@
 
 #Day 35
 ![day35](https://user-images.githubusercontent.com/66890167/236005555-dff48a92-87c6-46df-97b5-6d13e14f4f11.png)
+
+#Day 36 
+![day36](https://user-images.githubusercontent.com/66890167/236007300-fbfe8cac-1834-41cd-ac3d-fc6e90a7c353.png)
 
 #Day 112
 ![Screenshot_1682538663](https://user-images.githubusercontent.com/66890167/234687675-75c9455b-2ebb-4c3d-b669-49f50e03ab55.png)
