@@ -133,6 +133,21 @@
 #Day 40
 ![day40](https://user-images.githubusercontent.com/66890167/236059550-c37966cf-617b-41aa-8b95-b263722d77a5.png)
 
+#Day 41
+![day41](https://user-images.githubusercontent.com/66890167/236361809-9c0ee4e0-a9f5-43d6-a7fc-310f44a311a1.png)
+
+#Day 42
+![day42](https://user-images.githubusercontent.com/66890167/236361819-a933ec82-a831-435e-8867-f5590d3f1983.png)
+
+#Day 43
+![day43](https://user-images.githubusercontent.com/66890167/236361824-8cd62fd8-20b2-4c03-a169-703857fcef76.png)
+
+#Day 44
+![day44((](https://user-images.githubusercontent.com/66890167/236361839-4a57505a-2344-4473-b194-69d81d5dc2a1.png)
+
+#Day 45
+![day44](https://user-images.githubusercontent.com/66890167/236361854-c08b85da-6156-4fc0-9f68-86aafcc40dc7.png)
+
 #Day 112
 ![Screenshot_1682538663](https://user-images.githubusercontent.com/66890167/234687675-75c9455b-2ebb-4c3d-b669-49f50e03ab55.png)
 ![Screenshot_1682538668](https://user-images.githubusercontent.com/66890167/234687702-2a371bb2-faf4-476d-ae86-710edc54b370.png)
