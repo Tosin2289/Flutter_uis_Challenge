@@ -8,6 +8,7 @@ import 'package:flutter_challenges/days/day118.dart';
 import 'package:flutter_challenges/days/day119.dart';
 import 'package:flutter_challenges/days/day120.dart';
 import 'package:flutter_challenges/days/day121.dart';
+import 'package:flutter_challenges/days/day122.dart';
 
 import 'days/day113.dart';
 
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home: day121(),
+      home: day122(),
     );
   }
 }
