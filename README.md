@@ -220,3 +220,7 @@
 #Day 123
 ![Screenshot_1683493289](https://user-images.githubusercontent.com/66890167/236702430-f90c6a34-b7c1-45b7-9cbe-87534c8cd18e.png)
 
+#Day 124
+![Screenshot_1683550249](https://user-images.githubusercontent.com/66890167/236829215-93bdb9ef-5ed0-4bd3-9860-20e566f4408c.png)
+
+
