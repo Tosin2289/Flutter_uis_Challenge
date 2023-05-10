@@ -256,4 +256,7 @@
 #Day 125
 ![Screenshot_1683632912](https://github.com/Tosin2289/Flutter_uis_Challenge/assets/66890167/15b0c0fb-9e22-4502-8729-d976da9582d8)
 
-#Day
+#Day 126
+![Screenshot_1683722553](https://github.com/Tosin2289/Flutter_uis_Challenge/assets/66890167/7ecdaaf5-ad38-4cd3-bcb6-ba89417b8567)
+
+
