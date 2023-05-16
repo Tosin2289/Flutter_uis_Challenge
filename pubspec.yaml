@@ -43,6 +43,7 @@ dependencies:
   carousel_slider: ^4.2.1
   flutter_carousel_slider: ^1.1.0
   flutter_custom_clippers: ^2.1.0
+  animator: ^3.3.0
 
 dev_dependencies:
   flutter_test:
@@ -175,6 +176,7 @@ flutter:
     - images/assets127/
     - images/assets128/
     - images/assets131/
+    - images/assets132/
   #   - images/a_dot_ham.jpeg
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
