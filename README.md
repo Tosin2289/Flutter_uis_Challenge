@@ -314,6 +314,12 @@
 # Day 100
 ![day100](https://github.com/Tosin2289/Flutter_uis_Challenge/assets/66890167/424a51ae-4931-46b1-bd2b-13ffe55b1f1e)
 
+# Day 101
+![day101](https://github.com/Tosin2289/Flutter_uis_Challenge/assets/66890167/f48c1f9e-9303-402a-b4bf-4881394480a4)
+
+# Day 102
+![day102](https://github.com/Tosin2289/Flutter_uis_Challenge/assets/66890167/342c4739-6661-4e8d-b485-853c7a2b7ed9)
+
 # Day 112
 ![Screenshot_1682538663](https://user-images.githubusercontent.com/66890167/234687675-75c9455b-2ebb-4c3d-b669-49f50e03ab55.png)
 ![Screenshot_1682538668](https://user-images.githubusercontent.com/66890167/234687702-2a371bb2-faf4-476d-ae86-710edc54b370.png)
