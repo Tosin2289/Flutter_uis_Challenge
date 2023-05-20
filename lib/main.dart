@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'days/day134.dart';
-import 'days/day135.dart';
+import 'days/day136.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home: const day135(),
+      home: const day136(),
     );
   }
 }
