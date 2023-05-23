@@ -15,7 +15,7 @@ class day138 extends StatelessWidget {
                 children: <Widget>[
                   Container(
                     width: double.infinity,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.pink,
                       image: DecorationImage(
                           image: AssetImage("images/assets138/img.jpg"),
