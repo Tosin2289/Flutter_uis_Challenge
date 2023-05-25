@@ -11,10 +11,10 @@ class day141 extends StatelessWidget {
           const SizedBox(
             height: 30.0,
           ),
-          const CircleAvatar(
+          CircleAvatar(
             maxRadius: 50,
             backgroundColor: Colors.transparent,
-            backgroundImage: AssetImage("images/assets/plant.png"),
+            child: Image.asset("images/assets141/plant.png"),
           ),
           const SizedBox(
             height: 20.0,
