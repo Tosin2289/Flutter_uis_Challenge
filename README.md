@@ -447,3 +447,7 @@
 
 # Day 142
 ![Screenshot_1685129016](https://github.com/Tosin2289/Flutter_uis_Challenge/assets/66890167/91b0e809-f851-4fe9-99a7-9bd4b3f68ba4)
+
+# Day 143
+![Screenshot_1685193120](https://github.com/Tosin2289/Flutter_uis_Challenge/assets/66890167/e82293bc-93b7-412b-9181-b9b489460496)
+
