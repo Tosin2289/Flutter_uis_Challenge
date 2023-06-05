@@ -119,12 +119,12 @@ class _day152State extends State<day152> {
                                   newArrivalWidget(
                                       "24A", "400W", "30Km", "250,000"),
                                   const SizedBox(
-                                    width: 15,
+                                    width: 10,
                                   ),
                                   newArrivalWidget(
                                       "22A", "300W", "25Km", "200,000"),
                                   const SizedBox(
-                                    width: 15,
+                                    width: 10,
                                   ),
                                   newArrivalWidget(
                                       "20A", "320W", "27Km", "300,000"),
@@ -290,7 +290,7 @@ class _day152State extends State<day152> {
             )
           ]),
       child: Container(
-        padding: const EdgeInsets.all(15),
+        padding: const EdgeInsets.all(43),
         child: Column(
           children: <Widget>[
             const Text(
@@ -307,15 +307,14 @@ class _day152State extends State<day152> {
               ),
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
                 Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Text(
                       battery,
                       style: const TextStyle(
-                        fontSize: 20,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -330,7 +329,6 @@ class _day152State extends State<day152> {
                   ],
                 ),
                 Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Text(
                       enginePower,
@@ -348,7 +346,6 @@ class _day152State extends State<day152> {
                   ],
                 ),
                 Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Text(
                       distance,
@@ -370,7 +367,7 @@ class _day152State extends State<day152> {
               ],
             ),
             const SizedBox(
-              height: 15,
+              height: 5,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -382,7 +379,7 @@ class _day152State extends State<day152> {
                         fontWeight: FontWeight.bold)),
                 IconButton(
                   onPressed: () {},
-                  iconSize: 30,
+                  iconSize: 25,
                   icon: const Icon(Icons.add_shopping_cart),
                 )
               ],
