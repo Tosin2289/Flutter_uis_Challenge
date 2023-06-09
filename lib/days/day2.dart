@@ -30,7 +30,7 @@ class day2 extends StatelessWidget {
                           color: Colors.black.withOpacity(0.3),
                           borderRadius: BorderRadius.circular(10),
                         ),
-                        child: Icon(
+                        child: const Icon(
                           Icons.crib_rounded,
                           color: Colors.white70,
                         ),
@@ -42,7 +42,7 @@ class day2 extends StatelessWidget {
                           color: Colors.black.withOpacity(0.3),
                           borderRadius: BorderRadius.circular(10),
                         ),
-                        child: Icon(
+                        child: const Icon(
                           Icons.content_copy_outlined,
                           color: Colors.white70,
                         ),
@@ -54,7 +54,7 @@ class day2 extends StatelessWidget {
                           color: Colors.black.withOpacity(0.3),
                           borderRadius: BorderRadius.circular(10),
                         ),
-                        child: Icon(
+                        child: const Icon(
                           Icons.developer_mode_rounded,
                           color: Colors.white70,
                         ),

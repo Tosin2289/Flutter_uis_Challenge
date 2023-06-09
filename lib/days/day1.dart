@@ -131,7 +131,7 @@ class Cards extends StatelessWidget {
                     children: [
                       Text(
                         team1.toUpperCase(),
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontSize: 20,
                             color: Colors.white,
                             fontWeight: FontWeight.bold),
@@ -151,7 +151,7 @@ class Cards extends StatelessWidget {
                     children: [
                       Text(
                         team2.toUpperCase(),
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontSize: 18,
                             color: Colors.white,
                             fontWeight: FontWeight.bold),
@@ -178,7 +178,7 @@ class Cards extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 //This is a flutter package called percentindicator check pubspec.yaml for more info
@@ -194,9 +194,9 @@ class Cards extends StatelessWidget {
                           percent: 0.3,
                           progressColor: Colors.yellow,
                         )
-                      : SizedBox(),
+                      : const SizedBox(),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
               ],
