@@ -35,7 +35,7 @@ class _day157State extends State<day157> {
                   alignment: Alignment.topCenter,
                   height: (MediaQuery.of(context).size.height / 2) - 150,
                   child: Image.asset(
-                    "assets/images.png",
+                    "images/assets157/images.png",
                     fit: BoxFit.contain,
                   ),
                 ),
