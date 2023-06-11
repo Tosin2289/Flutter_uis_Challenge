@@ -54,7 +54,7 @@ class day158 extends StatelessWidget {
           children: <Widget>[
             ListTile(
               leading: CircleAvatar(
-                backgroundImage: AssetImage('images/assets158/Avater6.jpg'),
+                backgroundImage: AssetImage('images/assets158/Avatar6.jpg'),
               ),
               title: Text(
                 "Shakwat Shamim JD",
