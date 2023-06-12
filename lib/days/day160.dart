@@ -164,7 +164,7 @@ Widget _buildAvatar(BuildContext context) {
       backgroundColor: Colors.grey.shade300,
       child: const CircleAvatar(
           radius: 16,
-          backgroundImage: AssetImage("images/assets160/Avatar 6.jpg")),
+          backgroundImage: AssetImage("images/assets160/Avatar6.jpg")),
     ),
     onPressed: () {},
   );
