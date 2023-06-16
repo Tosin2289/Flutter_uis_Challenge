@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class day4 extends StatefulWidget {
-  const day4({Key? key}) : super(key: key);
+class Day4 extends StatefulWidget {
+  const Day4({Key? key}) : super(key: key);
 
   @override
-  State<day4> createState() => _MyHomePageState();
+  State<Day4> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<day4> {
+class _MyHomePageState extends State<Day4> {
   List name = ['Photos & Video', '3d Photos'];
   List namee = ['268 item', '128 item'];
   List image = ['images/assets4/cam1.jpg', 'images/assets4/girlcam2.jpg'];

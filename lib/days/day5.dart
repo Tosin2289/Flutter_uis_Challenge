@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day5 extends StatelessWidget {
-  day5({Key? key}) : super(key: key);
+class Day5 extends StatelessWidget {
+  const Day5({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -36,8 +36,8 @@ class day5 extends StatelessWidget {
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
                                   gradient: LinearGradient(colors: [
-                                    Color(0xFFAC6FDE).withOpacity(0.5),
-                                    Color(0xFF6DC1C5).withOpacity(0.9)
+                                    const Color(0xFFAC6FDE).withOpacity(0.5),
+                                    const Color(0xFF6DC1C5).withOpacity(0.9)
                                   ])),
                             ),
                             Padding(
@@ -54,22 +54,15 @@ class day5 extends StatelessWidget {
                                         children: [
                                           Text(
                                             screens[index].text,
-                                            style: TextStyle(
+                                            style: const TextStyle(
                                                 color: Colors.white,
                                                 fontSize: 21,
                                                 fontWeight: FontWeight.bold),
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             height: 10,
                                           ),
                                           Container(
-                                            child: Center(
-                                              child: Text(
-                                                "24 items",
-                                                style: TextStyle(
-                                                    color: Colors.white),
-                                              ),
-                                            ),
                                             height: 30,
                                             width: 80,
                                             decoration: BoxDecoration(
@@ -78,6 +71,13 @@ class day5 extends StatelessWidget {
                                               border: Border.all(
                                                   color: Colors.white),
                                             ),
+                                            child:const Center(
+                                              child: Text(
+                                                "24 items",
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ),
+                                            ),
                                           ),
                                         ],
                                       ),
@@ -85,7 +85,7 @@ class day5 extends StatelessWidget {
                                   ),
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.end,
-                                    children: [
+                                    children: const [
                                       CircleAvatar(
                                         backgroundColor: Colors.white,
                                         child: Center(

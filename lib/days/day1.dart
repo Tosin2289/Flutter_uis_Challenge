@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 
 //Day 1
-class day1 extends StatelessWidget {
-  const day1({Key? key}) : super(key: key);
+class Day1 extends StatelessWidget {
+  const Day1({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
