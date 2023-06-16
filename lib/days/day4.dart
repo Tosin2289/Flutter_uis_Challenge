@@ -21,15 +21,15 @@ class _MyHomePageState extends State<day4> {
           Container(
             width: double.infinity,
             height: 220,
-            color: Color.fromARGB(255, 243, 192, 210),
+            color: const Color.fromARGB(255, 243, 192, 210),
           ),
           Container(
             height: 220,
             width: 280,
-            color: Color.fromARGB(255, 247, 245, 245),
+            color: const Color.fromARGB(255, 247, 245, 245),
             child: Padding(
               padding: const EdgeInsets.all(2.0),
-              child: Container(
+              child: SizedBox(
                 height: 160,
                 width: 230,
                 child: ListView.builder(
@@ -37,7 +37,7 @@ class _MyHomePageState extends State<day4> {
                     scrollDirection: Axis.horizontal,
                     itemBuilder: ((context, index) {
                       return Padding(
-                        padding: EdgeInsets.all(16),
+                        padding: const EdgeInsets.all(16),
                         child: Container(
                           width: 200,
                           decoration: BoxDecoration(
@@ -74,7 +74,7 @@ class _MyHomePageState extends State<day4> {
                                   ),
                                 ),
                                 Container(
-                                  margin: EdgeInsets.only(top: 25),
+                                  margin: const EdgeInsets.only(top: 25),
                                   height: 50,
                                   width: 50,
                                   decoration: BoxDecoration(
@@ -86,7 +86,7 @@ class _MyHomePageState extends State<day4> {
                                   ),
                                 ),
                                 Container(
-                                  margin: EdgeInsets.only(top: 25),
+                                  margin: const EdgeInsets.only(top: 25),
                                   height: 50,
                                   width: 50,
                                   decoration: BoxDecoration(
@@ -96,7 +96,7 @@ class _MyHomePageState extends State<day4> {
                                   child: Center(
                                     child: IconButton(
                                       onPressed: (() {}),
-                                      icon: Icon(Icons.add),
+                                      icon: const Icon(Icons.add),
                                     ),
                                   ),
                                 ),

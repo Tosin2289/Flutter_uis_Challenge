@@ -22,7 +22,7 @@ class day3 extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Row(
-                      children: [
+                      children: const [
                         Icon(
                           Icons.message_rounded,
                           color: Colors.white,
@@ -46,7 +46,7 @@ class day3 extends StatelessWidget {
                       decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(20)),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           "+23",
                           style: TextStyle(
@@ -57,9 +57,9 @@ class day3 extends StatelessWidget {
                   ],
                 ),
               ),
-              Spacer(),
-              Padding(
-                padding: const EdgeInsets.all(16.0),
+              const Spacer(),
+             const  Padding(
+                padding: EdgeInsets.all(16.0),
                 child: ListTile(
                   textColor: Colors.white,
                   //Am going to be using some asset image
