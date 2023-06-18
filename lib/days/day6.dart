@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class day6 extends StatefulWidget {
-  const day6({Key? key}) : super(key: key);
+class Day6 extends StatefulWidget {
+  const Day6({Key? key}) : super(key: key);
 
   @override
-  State<day6> createState() => _day6State();
+  State<Day6> createState() => _Day6State();
 }
 
-class _day6State extends State<day6> {
+class _Day6State extends State<Day6> {
   double currentvalue = 0;
   @override
   Widget build(BuildContext context) {
@@ -16,8 +16,8 @@ class _day6State extends State<day6> {
       body: SafeArea(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
+            const Padding(
+              padding: EdgeInsets.all(8.0),
               child: ListTile(
                 title: Text(
                   "Good Morining",
@@ -38,14 +38,14 @@ class _day6State extends State<day6> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
                 decoration: BoxDecoration(
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                         color: Color.fromARGB(255, 136, 198, 248),
                         offset: Offset(0, 7),
@@ -68,7 +68,7 @@ class _day6State extends State<day6> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
+                            const Text(
                               "Your target savings",
                               style: TextStyle(
                                 color: Colors.white70,
@@ -80,7 +80,7 @@ class _day6State extends State<day6> {
                               decoration: BoxDecoration(
                                   color: Colors.black26,
                                   borderRadius: BorderRadius.circular(10)),
-                              child: Center(
+                              child: const Center(
                                 child: Text(
                                   "New Car",
                                   style: TextStyle(
@@ -95,7 +95,7 @@ class _day6State extends State<day6> {
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16.0),
                         child: Row(
-                          children: [
+                          children: const [
                             Text(
                               "\$4,352/",
                               style: TextStyle(

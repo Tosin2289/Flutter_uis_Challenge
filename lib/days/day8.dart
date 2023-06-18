@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day8 extends StatelessWidget {
-  const day8({Key? key}) : super(key: key);
+class Day8 extends StatelessWidget {
+  const Day8({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class day8 extends StatelessWidget {
           child: Card(
             color: Colors.white,
             elevation: 30,
-            child: Container(
+            child: SizedBox(
               child: Center(
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
@@ -32,10 +32,10 @@ class day8 extends StatelessWidget {
                                   height: 30,
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5,
                               ),
-                              Text(
+                              const Text(
                                 "Send",
                                 style: TextStyle(color: Colors.grey),
                               ),
@@ -51,10 +51,10 @@ class day8 extends StatelessWidget {
                                   height: 30,
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5,
                               ),
-                              Text(
+                              const Text(
                                 "Pay",
                                 style: TextStyle(color: Colors.grey),
                               ),
@@ -70,10 +70,10 @@ class day8 extends StatelessWidget {
                                   height: 30,
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5,
                               ),
-                              Text(
+                              const Text(
                                 "Request",
                                 style: TextStyle(color: Colors.grey),
                               ),
@@ -81,7 +81,7 @@ class day8 extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 30,
                       ),
                       Row(
@@ -97,10 +97,10 @@ class day8 extends StatelessWidget {
                                   height: 30,
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5,
                               ),
-                              Text(
+                              const Text(
                                 "invoice",
                                 style: TextStyle(color: Colors.grey),
                               ),
@@ -116,10 +116,10 @@ class day8 extends StatelessWidget {
                                   height: 30,
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5,
                               ),
-                              Text(
+                              const Text(
                                 "Charity",
                                 style: TextStyle(color: Colors.grey),
                               ),
@@ -136,10 +136,10 @@ class day8 extends StatelessWidget {
                                   height: 30,
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5,
                               ),
-                              Text(
+                              const Text(
                                 "Loan",
                                 style: TextStyle(color: Colors.grey),
                               ),
@@ -147,33 +147,33 @@ class day8 extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 30,
                       ),
-                      Divider(
+                      const Divider(
                         height: 1,
                         color: Colors.grey,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Row(
                           children: [
-                            Text(
+                            const Text(
                               "We keep our money in \nan international back.",
                               style:
                                   TextStyle(fontSize: 20, color: Colors.grey),
                             ),
-                            Spacer(),
+                            const Spacer(),
                             Container(
                               height: 50,
                               width: 60,
                               decoration: BoxDecoration(
                                   color: Colors.cyan.withOpacity(0.2),
                                   borderRadius: BorderRadius.circular(10)),
-                              child: Center(
+                              child: const Center(
                                 child: Icon(
                                   Icons.arrow_forward_ios,
                                   color: Colors.white,

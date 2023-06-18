@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day10 extends StatelessWidget {
-  const day10({Key? key}) : super(key: key);
+class Day10 extends StatelessWidget {
+  const Day10({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class day10 extends StatelessWidget {
           children: [
             Container(
               height: 320,
-              color: Color.fromARGB(255, 247, 155, 148),
+              color: const Color.fromARGB(255, 247, 155, 148),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 35.0),
@@ -25,7 +25,7 @@ class day10 extends StatelessWidget {
                       padding: const EdgeInsets.all(8.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Text(
                             "Recommended Class",
                             style: TextStyle(
@@ -38,7 +38,7 @@ class day10 extends StatelessWidget {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                   ],
@@ -58,7 +58,7 @@ class day10 extends StatelessWidget {
                         width: 190,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
-                            image: DecorationImage(
+                            image: const DecorationImage(
                               fit: BoxFit.cover,
                               image: AssetImage('images/assets10/girlb.jpg'),
                             )),
@@ -67,7 +67,7 @@ class day10 extends StatelessWidget {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              SizedBox(
+                              const SizedBox(
                                 height: 30,
                               ),
                               Container(
@@ -82,7 +82,7 @@ class day10 extends StatelessWidget {
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
                                     children: [
-                                      Text(
+                                      const Text(
                                         "Mastering UI Design to Flutter.jobs App",
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold),
@@ -114,10 +114,10 @@ class day10 extends StatelessWidget {
                                             size: 13,
                                             color: Colors.yellow[600],
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 5,
                                           ),
-                                          Text(
+                                          const Text(
                                             "187 Member",
                                           )
                                         ],
@@ -138,7 +138,7 @@ class day10 extends StatelessWidget {
                         width: 190,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
-                            image: DecorationImage(
+                            image: const DecorationImage(
                               fit: BoxFit.cover,
                               image: AssetImage('images/assets10/girla.jpg'),
                             )),
@@ -147,7 +147,7 @@ class day10 extends StatelessWidget {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              SizedBox(
+                              const SizedBox(
                                 height: 30,
                               ),
                               Container(
@@ -162,7 +162,7 @@ class day10 extends StatelessWidget {
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
                                     children: [
-                                      Text(
+                                      const Text(
                                         "Mastering Blender 3D Character Set Design",
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold),
@@ -194,10 +194,10 @@ class day10 extends StatelessWidget {
                                             size: 13,
                                             color: Colors.yellow[600],
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 5,
                                           ),
-                                          Text(
+                                          const Text(
                                             "211 Member",
                                           )
                                         ],

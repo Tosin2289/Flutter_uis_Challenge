@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day9 extends StatelessWidget {
-  const day9({Key? key}) : super(key: key);
+class Day9 extends StatelessWidget {
+  const Day9({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class day9 extends StatelessWidget {
                       child: Column(
                         children: [
                           Row(
-                            children: [
+                            children: const [
                               Text(
                                 "Mobile",
                                 style: TextStyle(
@@ -37,7 +37,7 @@ class day9 extends StatelessWidget {
                             ],
                           ),
                           Row(
-                            children: [
+                            children: const [
                               Text(
                                 "Design Updates",
                                 style: TextStyle(
@@ -47,11 +47,11 @@ class day9 extends StatelessWidget {
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 10,
                           ),
                           Row(
-                            children: [
+                            children: const [
                               Text(
                                 "3 of 5 completed",
                                 style: TextStyle(
@@ -59,11 +59,11 @@ class day9 extends StatelessWidget {
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 30,
                           ),
                           Row(
-                            children: [
+                            children: const [
                               Text(
                                 "Design systems",
                                 style: TextStyle(
@@ -73,11 +73,11 @@ class day9 extends StatelessWidget {
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
                           Row(
-                            children: [
+                            children: const [
                               Text(
                                 "New Task | 5",
                                 style: TextStyle(
@@ -85,10 +85,10 @@ class day9 extends StatelessWidget {
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 60,
                           ),
-                          ListTile(
+                          const ListTile(
                             leading: CircleAvatar(
                               radius: 35,
                               backgroundImage: AssetImage('assets/avatarm.jpg'),
@@ -122,7 +122,7 @@ class day9 extends StatelessWidget {
                     child: Column(
                       children: [
                         Row(
-                          children: [
+                          children: const [
                             Text(
                               "Graphics",
                               style: TextStyle(
@@ -133,7 +133,7 @@ class day9 extends StatelessWidget {
                           ],
                         ),
                         Row(
-                          children: [
+                          children: const [
                             Text(
                               "Design Updates",
                               style: TextStyle(
@@ -143,11 +143,11 @@ class day9 extends StatelessWidget {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Row(
-                          children: [
+                          children: const [
                             Text(
                               "3 of 5 completed",
                               style: TextStyle(
@@ -155,11 +155,11 @@ class day9 extends StatelessWidget {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 30,
                         ),
                         Row(
-                          children: [
+                          children: const [
                             Text(
                               "Graphics Designs",
                               style: TextStyle(
@@ -169,11 +169,11 @@ class day9 extends StatelessWidget {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 5,
                         ),
                         Row(
-                          children: [
+                          children: const [
                             Text(
                               "New Task | 5",
                               style: TextStyle(
@@ -181,10 +181,10 @@ class day9 extends StatelessWidget {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 60,
                         ),
-                        ListTile(
+                        const ListTile(
                           leading: CircleAvatar(
                             radius: 35,
                             backgroundImage:
