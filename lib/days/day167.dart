@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 
-class Day166 extends StatelessWidget {
+class Day167 extends StatelessWidget {
   final GlobalKey<ScaffoldState> _key = GlobalKey<ScaffoldState>();
-  final Color primary = const Color(0xff291747);
-  final Color active = const Color(0xff6C48AB);
-  Day166({Key? key}) : super(key: key);
+  final Color primary = Colors.white;
+  final Color active = Colors.grey.shade800;
+  final Color divider = Colors.grey.shade600;
+
+  Day167({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       key: _key,
       appBar: AppBar(
-        title: const Text('Dark Drawer Navigation'),
+        title: const Text('Ligh Drawer Navigation'),
         automaticallyImplyLeading: false,
         leading: IconButton(
           icon: const Icon(Icons.menu),
@@ -56,7 +58,7 @@ class Day166 extends StatelessWidget {
   }
 
   _buildDrawer() {
-    const String image = "images/assets166/img.jpg";
+    const String image = 'images/assets167/img.jpg';
     return ClipPath(
       clipper: OvalRightBorderClipper(),
       child: Drawer(
@@ -86,8 +88,8 @@ class Day166 extends StatelessWidget {
                     decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                         gradient: LinearGradient(
-                            colors: [Colors.pink, Colors.deepPurple])),
-                    child: CircleAvatar(
+                            colors: [Colors.orange, Colors.deepOrange])),
+                    child: const CircleAvatar(
                       radius: 40,
                       backgroundImage: AssetImage(image),
                     ),
@@ -95,7 +97,10 @@ class Day166 extends StatelessWidget {
                   const SizedBox(height: 5.0),
                   const Text(
                     "erika costell",
-                    style: TextStyle(color: Colors.white, fontSize: 18.0),
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 18.0,
+                        fontWeight: FontWeight.w600),
                   ),
                   Text(
                     "@erika07",
@@ -104,7 +109,12 @@ class Day166 extends StatelessWidget {
                   const SizedBox(height: 30.0),
                   _buildRow(Icons.home, "Home"),
                   _buildDivider(),
-                  _buildRow(Icons.person_pin, "Your profile"),
+                  _buildRow(Icons.person_pin, "My profile"),
+                  _buildDivider(),
+                  _buildRow(Icons.message, "Messages", showBadge: true),
+                  _buildDivider(),
+                  _buildRow(Icons.notifications, "Notifications",
+                      showBadge: true),
                   _buildDivider(),
                   _buildRow(Icons.settings, "Settings"),
                   _buildDivider(),
@@ -123,14 +133,14 @@ class Day166 extends StatelessWidget {
 
   Divider _buildDivider() {
     return Divider(
-      color: active,
+      color: divider,
     );
   }
 
-  Widget _buildRow(IconData icon, String title) {
+  Widget _buildRow(IconData icon, String title, {bool showBadge = false}) {
     final TextStyle tStyle = TextStyle(color: active, fontSize: 16.0);
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      padding: const EdgeInsets.symmetric(vertical: 5.0),
       child: Row(children: [
         Icon(
           icon,
@@ -141,6 +151,30 @@ class Day166 extends StatelessWidget {
           title,
           style: tStyle,
         ),
+        const Spacer(),
+        if (showBadge)
+          Material(
+            color: Colors.deepOrange,
+            elevation: 5.0,
+            shadowColor: Colors.red,
+            borderRadius: BorderRadius.circular(5.0),
+            child: Container(
+              width: 25,
+              height: 25,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: Colors.deepOrange,
+                borderRadius: BorderRadius.circular(5.0),
+              ),
+              child: const Text(
+                "10+",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 12.0,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+          )
       ]),
     );
   }
