@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class day14 extends StatelessWidget {
-  const day14({Key? key}) : super(key: key);
+class Day14 extends StatelessWidget {
+  const Day14({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: Center(
-      child: Container(
+      child: SizedBox(
         height: 150,
         child: Padding(
           padding: const EdgeInsets.all(12.0),

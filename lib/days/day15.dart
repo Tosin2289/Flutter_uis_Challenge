@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day15 extends StatelessWidget {
-  const day15({Key? key}) : super(key: key);
+class Day15 extends StatelessWidget {
+  const Day15({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class day15 extends StatelessWidget {
               child: Column(
                 children: [
                   Row(
-                    children: [
+                    children: const [
                       Text(
                         "Upcoming",
                         style: TextStyle(fontSize: 32, color: Colors.white),
@@ -32,7 +32,7 @@ class day15 extends StatelessWidget {
                     ],
                   ),
                   Row(
-                    children: [
+                    children: const [
                       Text(
                         "Book Fair",
                         style: TextStyle(fontSize: 28, color: Colors.white),
@@ -53,7 +53,7 @@ class day15 extends StatelessWidget {
                         child: Center(
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
+                            children: const [
                               Text(
                                 "Book",
                                 style: TextStyle(fontSize: 20),

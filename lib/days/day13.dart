@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day13 extends StatelessWidget {
-  const day13({Key? key}) : super(key: key);
+class Day13 extends StatelessWidget {
+  const Day13({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class day13 extends StatelessWidget {
                     return Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
-                        padding: EdgeInsets.all(15),
+                        padding: const EdgeInsets.all(15),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.white,
@@ -42,7 +42,7 @@ class day13 extends StatelessWidget {
                                 fit: BoxFit.fill,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
                             Column(
@@ -52,13 +52,13 @@ class day13 extends StatelessWidget {
                                   width: 160,
                                   child: Text(
                                     screens[index].text,
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                         fontSize: 19,
                                         fontWeight: FontWeight.bold,
                                         letterSpacing: 0.9),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 20,
                                 ),
                                 Row(
@@ -66,7 +66,7 @@ class day13 extends StatelessWidget {
                                     Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceEvenly,
-                                      children: [
+                                      children: const [
                                         Icon(
                                           Icons.star,
                                           size: 18,
@@ -74,7 +74,7 @@ class day13 extends StatelessWidget {
                                         Text("4.5"),
                                       ],
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 60,
                                     ),
                                     Container(
@@ -87,7 +87,7 @@ class day13 extends StatelessWidget {
                                       child: Padding(
                                         padding: const EdgeInsets.all(8.0),
                                         child: Row(
-                                          children: [
+                                          children: const [
                                             Icon(
                                               Icons.remove_red_eye,
                                               size: 14,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day11 extends StatelessWidget {
-  const day11({Key? key}) : super(key: key);
+class Day11 extends StatelessWidget {
+  const Day11({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class day11 extends StatelessWidget {
           height: MediaQuery.of(context).size.height / 1.5,
           width: MediaQuery.of(context).size.width / 1.2,
           decoration: BoxDecoration(
-            image: DecorationImage(
+            image: const DecorationImage(
               fit: BoxFit.cover,
               image: NetworkImage(
                   'https://images.unsplash.com/photo-1577702066866-6c8897d06443?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwag90BY1wYWdlfhx8fGVufDB8FHx8&auto=format&fit=crop&w=646&q=80'),
@@ -33,7 +33,7 @@ class day11 extends StatelessWidget {
                   child: Center(
                     child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
+                        children: const [
                           Icon(Icons.location_on_rounded,
                               color: Colors.cyan, size: 23),
                           SizedBox(
@@ -56,7 +56,7 @@ class day11 extends StatelessWidget {
                     borderRadius: BorderRadius.circular(14),
                     color: Colors.white38,
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Icon(
                       Icons.arrow_forward_ios,
                       color: Colors.white,
