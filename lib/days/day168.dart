@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 class Day168 extends StatefulWidget {
-  Day168({Key? key}) : super(key: key);
+  const Day168({Key? key}) : super(key: key);
 
   @override
   State<Day168> createState() => _Day168State();
