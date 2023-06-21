@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 
-class day16 extends StatelessWidget {
-  const day16({Key? key}) : super(key: key);
+class Day16 extends StatelessWidget {
+  const Day16({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: SafeArea(
       child: Center(
-        child: Container(
+        child: SizedBox(
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Row(
-                  children: [
+                  children: const [
                     Text(
                       "Categories",
                       style:
@@ -23,7 +23,7 @@ class day16 extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Row(
@@ -76,7 +76,7 @@ class day16 extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Row(
@@ -122,7 +122,7 @@ class day16 extends StatelessWidget {
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
                             color: Colors.black),
-                        child: Center(
+                        child: const Center(
                           child: Text(
                             "More",
                             style: TextStyle(color: Colors.white, fontSize: 18),

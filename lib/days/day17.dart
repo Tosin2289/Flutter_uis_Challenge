@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day17 extends StatelessWidget {
-  const day17({Key? key}) : super(key: key);
+class Day17 extends StatelessWidget {
+  const Day17({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class day17 extends StatelessWidget {
               children: [
                 Container(
                   height: 190,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(15),
                           topRight: Radius.circular(15)),
@@ -28,13 +28,13 @@ class day17 extends StatelessWidget {
                           image: AssetImage('images/assets17/hor.png'),
                           fit: BoxFit.cover)),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 12.0),
                   child: Row(
-                    children: [
+                    children: const [
                       Text(
                         "Brave game: Giant Odong(below)",
                         style: TextStyle(
@@ -43,7 +43,7 @@ class day17 extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 3,
                 ),
                 Padding(
@@ -52,12 +52,12 @@ class day17 extends StatelessWidget {
                     children: [
                       Text(
                         "9.00-11.30PM,July 24,2021".toUpperCase(),
-                        style: TextStyle(fontSize: 14, color: Colors.grey),
+                        style: const TextStyle(fontSize: 14, color: Colors.grey),
                       ),
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Padding(
@@ -70,7 +70,7 @@ class day17 extends StatelessWidget {
                           Container(
                             height: 40,
                             width: 40,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                                 image: DecorationImage(
                                   fit: BoxFit.fill,
                                   image: AssetImage(
@@ -80,12 +80,12 @@ class day17 extends StatelessWidget {
                                 shape: BoxShape.circle,
                                 color: Colors.black),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 2,
                           ),
                           CircleAvatar(
                             backgroundColor: Colors.cyan.shade100,
-                            child: Text("+1"),
+                            child: const Text("+1"),
                           ),
                         ],
                       ),
@@ -95,7 +95,7 @@ class day17 extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: Colors.deepPurple,
                             borderRadius: BorderRadius.circular(10)),
-                        child: Center(
+                        child: const Center(
                           child: Icon(
                             Icons.play_arrow,
                             color: Colors.white,
