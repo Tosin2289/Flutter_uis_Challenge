@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day20 extends StatelessWidget {
-  const day20({Key? key}) : super(key: key);
+class Day20 extends StatelessWidget {
+  const Day20({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,9 +28,8 @@ class day20 extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Padding(
-                            padding:
-                                const EdgeInsets.symmetric(horizontal: 16.0),
+                          const Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 16.0),
                             child: Text(
                               "Hart Rate",
                               style: TextStyle(
@@ -42,7 +41,7 @@ class day20 extends StatelessWidget {
                           Container(
                             height: 50,
                             width: 50,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Colors.white70,
                               shape: BoxShape.circle,
                             ),
@@ -56,24 +55,24 @@ class day20 extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(
+                          const Text(
                             "124",
                             style: TextStyle(
                                 fontSize: 33,
                                 color: Colors.white,
                                 fontWeight: FontWeight.w600),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 5,
                           ),
                           Column(
-                            children: [
+                            children: const [
                               SizedBox(
                                 height: 5,
                               ),
@@ -87,7 +86,7 @@ class day20 extends StatelessWidget {
                           )
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Padding(
@@ -96,7 +95,7 @@ class day20 extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Column(
-                              children: [
+                              children: const [
                                 Text(
                                   "80-120\nHealthy",
                                   style: TextStyle(
@@ -122,9 +121,8 @@ class day20 extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Padding(
-                            padding:
-                                const EdgeInsets.symmetric(horizontal: 16.0),
+                          const Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 16.0),
                             child: Text(
                               "Sleep",
                               style: TextStyle(
@@ -136,11 +134,11 @@ class day20 extends StatelessWidget {
                           Container(
                             height: 50,
                             width: 50,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Colors.white70,
                               shape: BoxShape.circle,
                             ),
-                            child: Center(
+                            child: const Center(
                                 child: Icon(
                               Icons.bedtime_sharp,
                               color: Colors.white,
@@ -148,24 +146,24 @@ class day20 extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(
+                          const Text(
                             "8 h",
                             style: TextStyle(
                                 fontSize: 33,
                                 color: Colors.white,
                                 fontWeight: FontWeight.w600),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 5,
                           ),
                           Column(
-                            children: [
+                            children: const [
                               SizedBox(
                                 height: 5,
                               ),
@@ -179,7 +177,7 @@ class day20 extends StatelessWidget {
                           )
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Padding(
@@ -188,7 +186,7 @@ class day20 extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Column(
-                              children: [
+                              children: const [
                                 Text(
                                   "Deep Sleep\n5 h 13 m",
                                   style: TextStyle(
@@ -222,10 +220,10 @@ class day20 extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          SizedBox(
+                          const SizedBox(
                             width: 5,
                           ),
-                          Text(
+                          const Text(
                             "Energy Burn",
                             style: TextStyle(
                                 fontSize: 16,
@@ -235,7 +233,7 @@ class day20 extends StatelessWidget {
                           Container(
                             height: 50,
                             width: 50,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Colors.white70,
                               shape: BoxShape.circle,
                             ),
@@ -249,24 +247,24 @@ class day20 extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(
+                          const Text(
                             "583",
                             style: TextStyle(
                                 fontSize: 33,
                                 color: Colors.white,
                                 fontWeight: FontWeight.w600),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 5,
                           ),
                           Column(
-                            children: [
+                            children: const [
                               SizedBox(
                                 height: 5,
                               ),
@@ -280,7 +278,7 @@ class day20 extends StatelessWidget {
                           )
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Padding(
@@ -289,7 +287,7 @@ class day20 extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Column(
-                              children: [
+                              children: const [
                                 Text(
                                   "Daily Goal\n900 Kcal",
                                   style: TextStyle(
@@ -315,9 +313,8 @@ class day20 extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Padding(
-                            padding:
-                                const EdgeInsets.symmetric(horizontal: 16.0),
+                          const Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 16.0),
                             child: Text(
                               "Steps",
                               style: TextStyle(
@@ -329,7 +326,7 @@ class day20 extends StatelessWidget {
                           Container(
                             height: 50,
                             width: 50,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Colors.white70,
                               shape: BoxShape.circle,
                             ),
@@ -343,24 +340,24 @@ class day20 extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(
+                          const Text(
                             "16,741",
                             style: TextStyle(
                                 fontSize: 33,
                                 color: Colors.white,
                                 fontWeight: FontWeight.w600),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 5,
                           ),
                           Column(
-                            children: [
+                            children: const [
                               SizedBox(
                                 height: 5,
                               ),
@@ -374,7 +371,7 @@ class day20 extends StatelessWidget {
                           )
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Padding(
@@ -383,7 +380,7 @@ class day20 extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Column(
-                              children: [
+                              children: const [
                                 Text(
                                   "     Daily Goal\n20,000 steps",
                                   style: TextStyle(

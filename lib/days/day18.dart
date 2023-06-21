@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day18 extends StatelessWidget {
-  const day18({Key? key}) : super(key: key);
+class Day18 extends StatelessWidget {
+  const Day18({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +9,7 @@ class day18 extends StatelessWidget {
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: [
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Center(
@@ -53,7 +53,7 @@ class day18 extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: 10,
           ),
           Center(
@@ -88,7 +88,7 @@ class day18 extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.black,
                           border: Border.all(color: Colors.white, width: 3),
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               image: AssetImage("images/assets18/man.jpg")),
                         ),
                       ),
@@ -96,7 +96,7 @@ class day18 extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: 10,
           ),
           Center(
@@ -131,7 +131,7 @@ class day18 extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.black,
                           border: Border.all(color: Colors.white, width: 3),
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               image: AssetImage("images/assets18/man2.jpeg")),
                         ),
                       ),
@@ -139,7 +139,7 @@ class day18 extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: 10,
           ),
           Center(
@@ -174,7 +174,7 @@ class day18 extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.black,
                           border: Border.all(color: Colors.white, width: 3),
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               image: AssetImage("images/assets18/man3.jpg")),
                         ),
                       ),

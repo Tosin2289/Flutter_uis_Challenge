@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day19 extends StatelessWidget {
-  const day19({Key? key}) : super(key: key);
+class Day19 extends StatelessWidget {
+  const Day19({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,19 +12,19 @@ class day19 extends StatelessWidget {
           child: ListView(
             scrollDirection: Axis.horizontal,
             children: [
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
               Center(
                 child: Container(
-                  padding: EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                   height: 160,
                   width: 140,
                   decoration: BoxDecoration(
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(color: Colors.black12, blurRadius: 10),
                     ],
-                    gradient: LinearGradient(
+                    gradient: const LinearGradient(
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                       colors: [Colors.blue, Colors.lightBlue],
@@ -35,7 +35,7 @@ class day19 extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
+                      const Text(
                         "Save Part of your recent deposit",
                         style: TextStyle(
                             height: 1.5,
@@ -56,19 +56,19 @@ class day19 extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
               Center(
                 child: Container(
-                  padding: EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                   height: 160,
                   width: 140,
                   decoration: BoxDecoration(
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(color: Colors.black12, blurRadius: 10),
                     ],
-                    gradient: LinearGradient(
+                    gradient: const LinearGradient(
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                       colors: [Colors.orangeAccent, Colors.red],
@@ -81,7 +81,7 @@ class day19 extends StatelessWidget {
                     children: [
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                        children: const [
                           Text(
                             "Car Insurance",
                             style: TextStyle(
@@ -112,19 +112,19 @@ class day19 extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
               Center(
                 child: Container(
-                  padding: EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                   height: 160,
                   width: 140,
                   decoration: BoxDecoration(
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(color: Colors.black12, blurRadius: 10),
                     ],
-                    gradient: LinearGradient(
+                    gradient: const LinearGradient(
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                       colors: [Colors.lightGreen, Colors.green],
@@ -137,7 +137,7 @@ class day19 extends StatelessWidget {
                     children: [
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                        children: const [
                           Text(
                             "Proper car insurance",
                             style: TextStyle(
