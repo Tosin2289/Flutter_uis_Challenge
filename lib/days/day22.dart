@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class day22 extends StatelessWidget {
-  const day22({Key? key}) : super(key: key);
+class Day22 extends StatelessWidget {
+  const Day22({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Container(
+        child: SizedBox(
           child: SizedBox(
             height: 280,
             child: ListView.builder(
@@ -34,27 +34,27 @@ class day22 extends StatelessWidget {
                               children: [
                                 Text(
                                   screens[index].text,
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       color: Colors.white, fontSize: 20),
                                 ),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
                             Row(
                               children: [
-                                Icon(
+                                const Icon(
                                   Icons.location_on_sharp,
                                   color: Colors.white,
                                   size: 18,
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 5,
                                 ),
                                 Text(
                                   screens[index].location,
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       color: Colors.white, fontSize: 18),
                                 ),
                               ],

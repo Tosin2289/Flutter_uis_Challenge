@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day23 extends StatelessWidget {
-  const day23({Key? key}) : super(key: key);
+class Day23 extends StatelessWidget {
+  const Day23({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,16 +23,16 @@ class day23 extends StatelessWidget {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.green),
-                      child: Center(
+                      child: const Center(
                         child: Icon(
                           Icons.personal_injury,
                           color: Colors.white,
                         ),
                       ),
                     ),
-                    title: Text("Personal Loan"),
+                    title: const Text("Personal Loan"),
                     subtitle: Row(
-                      children: [
+                      children: const [
                         Text("2.8k"),
                         SizedBox(
                           width: 4,
@@ -44,12 +44,12 @@ class day23 extends StatelessWidget {
                         ),
                       ],
                     ),
-                    trailing: Icon(Icons.arrow_forward_ios),
+                    trailing: const Icon(Icons.arrow_forward_ios),
                   ),
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Padding(
@@ -65,16 +65,16 @@ class day23 extends StatelessWidget {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.green),
-                      child: Center(
+                      child: const Center(
                         child: Icon(
                           Icons.home_work_rounded,
                           color: Colors.white,
                         ),
                       ),
                     ),
-                    title: Text("Home Loan"),
+                    title: const Text("Home Loan"),
                     subtitle: Row(
-                      children: [
+                      children: const [
                         Text("9.5"),
                         SizedBox(
                           width: 4,
@@ -86,12 +86,12 @@ class day23 extends StatelessWidget {
                         ),
                       ],
                     ),
-                    trailing: Icon(Icons.arrow_forward_ios),
+                    trailing: const Icon(Icons.arrow_forward_ios),
                   ),
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Padding(
@@ -107,16 +107,16 @@ class day23 extends StatelessWidget {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.green),
-                      child: Center(
+                      child: const Center(
                         child: Icon(
                           Icons.business,
                           color: Colors.white,
                         ),
                       ),
                     ),
-                    title: Text("Business Loan"),
+                    title: const Text("Business Loan"),
                     subtitle: Row(
-                      children: [
+                      children: const [
                         Text("234"),
                         SizedBox(
                           width: 4,
@@ -128,7 +128,7 @@ class day23 extends StatelessWidget {
                         ),
                       ],
                     ),
-                    trailing: Icon(Icons.arrow_forward_ios),
+                    trailing: const Icon(Icons.arrow_forward_ios),
                   ),
                 ),
               ),

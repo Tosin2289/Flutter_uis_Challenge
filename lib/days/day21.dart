@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day21 extends StatelessWidget {
-  const day21({Key? key}) : super(key: key);
+class Day21 extends StatelessWidget {
+  const Day21({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class day21 extends StatelessWidget {
                           children: [
                             Row(
                               children: [
-                                Text(
+                                const Text(
                                   "4/5",
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
@@ -46,7 +46,7 @@ class day21 extends StatelessWidget {
                                   height: 1,
                                   color: Colors.white,
                                 ),
-                                Text(
+                                const Text(
                                   "4/24",
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
@@ -54,12 +54,12 @@ class day21 extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            Spacer(),
+                            const Spacer(),
                             Container(
                               height: 25,
                               width: 50,
                               color: Colors.deepPurple[600],
-                              child: Center(
+                              child: const Center(
                                 child: Text(
                                   "\$350",
                                   style: TextStyle(
@@ -71,43 +71,43 @@ class day21 extends StatelessWidget {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Row(
                           children: [
                             Text(
                               screens[index].text,
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white),
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Row(
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.location_on,
                               size: 15,
                               color: Colors.white,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Text(
                               screens[index].country,
-                              style: TextStyle(
+                              style: const TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
-                            Text(
+                            const Text(
                               "CA",
                               style: TextStyle(
                                 color: Colors.white,
