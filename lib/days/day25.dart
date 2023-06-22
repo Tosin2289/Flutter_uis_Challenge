@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class day25 extends StatelessWidget {
-  const day25({Key? key}) : super(key: key);
+class Day25 extends StatelessWidget {
+  const Day25({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Container(
+        child: SizedBox(
           height: MediaQuery.of(context).size.height,
           child: Stack(
             children: [
               Container(
                 height: 300,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage("images/assets25/background.jpg"),
                       fit: BoxFit.cover),
@@ -25,11 +25,11 @@ class day25 extends StatelessWidget {
                   padding: const EdgeInsets.all(16.0),
                   child: Column(
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Row(
-                        children: [
+                        children: const [
                           Text(
                             "ENE",
                             style: TextStyle(
@@ -51,7 +51,7 @@ class day25 extends StatelessWidget {
                           )
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 30,
                       ),
                       Row(
@@ -63,7 +63,7 @@ class day25 extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20),
                           ),
-                          Spacer(),
+                          const Spacer(),
                           Icon(
                             Icons.arrow_forward_ios,
                             color: Colors.grey[300],
@@ -77,7 +77,7 @@ class day25 extends StatelessWidget {
               ),
               Positioned(
                 top: MediaQuery.of(context).size.height / 6.0,
-                child: Container(
+                child: SizedBox(
                   height: MediaQuery.of(context).size.height / 2.73,
                   width: MediaQuery.of(context).size.width,
                   child: ListView(
@@ -90,7 +90,7 @@ class day25 extends StatelessWidget {
                           width: 260,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                   image:
                                       AssetImage("images/assets25/water.jpg"),
                                   fit: BoxFit.cover)),
@@ -101,7 +101,7 @@ class day25 extends StatelessWidget {
                               children: [
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.end,
-                                  children: [
+                                  children: const [
                                     CircleAvatar(
                                       backgroundColor: Colors.white,
                                       child: Icon(
@@ -125,7 +125,7 @@ class day25 extends StatelessWidget {
                                         Row(
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceBetween,
-                                          children: [
+                                          children: const [
                                             Text(
                                               "Susanoo'o",
                                               style: TextStyle(
@@ -142,13 +142,13 @@ class day25 extends StatelessWidget {
                                             ),
                                           ],
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 10,
                                         ),
                                         Row(
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceBetween,
-                                          children: [
+                                          children: const [
                                             Text(
                                               "Saskehh",
                                               style: TextStyle(
@@ -181,7 +181,7 @@ class day25 extends StatelessWidget {
                           width: 260,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                   image: AssetImage("images/assets25/coin.jpg"),
                                   fit: BoxFit.cover)),
                           child: Padding(
@@ -191,7 +191,7 @@ class day25 extends StatelessWidget {
                               children: [
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.end,
-                                  children: [
+                                  children: const [
                                     CircleAvatar(
                                       backgroundColor: Colors.white,
                                       child: Icon(
@@ -215,7 +215,7 @@ class day25 extends StatelessWidget {
                                         Row(
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceBetween,
-                                          children: [
+                                          children: const [
                                             Text(
                                               "Ungunoo'o",
                                               style: TextStyle(
@@ -232,13 +232,13 @@ class day25 extends StatelessWidget {
                                             ),
                                           ],
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 10,
                                         ),
                                         Row(
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceBetween,
-                                          children: [
+                                          children: const [
                                             Text(
                                               "Saskehh",
                                               style: TextStyle(
@@ -272,11 +272,11 @@ class day25 extends StatelessWidget {
                 top: 425,
                 child: Padding(
                   padding: const EdgeInsets.all(12.0),
-                  child: Container(
+                  child: SizedBox(
                     width: MediaQuery.of(context).size.width * .95,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
+                      children: const [
                         Text(
                           "New Release",
                           style: TextStyle(
@@ -298,7 +298,7 @@ class day25 extends StatelessWidget {
                 top: 470,
                 child: Padding(
                   padding: const EdgeInsets.all(12.0),
-                  child: Container(
+                  child: SizedBox(
                     height: MediaQuery.of(context).size.height / 2.62,
                     width: MediaQuery.of(context).size.width,
                     child: ListView(
@@ -315,22 +315,22 @@ class day25 extends StatelessWidget {
                               width: 50,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
-                                  image: DecorationImage(
+                                  image: const DecorationImage(
                                       image:
                                           AssetImage("images/assets25/ben.png"),
                                       fit: BoxFit.cover)),
                             ),
-                            title: Text(
+                            title: const Text(
                               "Rudy Tabooty",
                               style: TextStyle(
                                   fontSize: 20, fontWeight: FontWeight.bold),
                             ),
-                            subtitle: Text(
+                            subtitle: const Text(
                               "Chaikzone",
                               style: TextStyle(
                                   fontSize: 16, fontWeight: FontWeight.bold),
                             ),
-                            trailing: Icon(
+                            trailing: const Icon(
                               Icons.arrow_forward_ios,
                               color: Colors.grey,
                             ),
@@ -347,22 +347,22 @@ class day25 extends StatelessWidget {
                               width: 50,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
-                                  image: DecorationImage(
+                                  image: const DecorationImage(
                                       image: AssetImage(
                                           "images/assets25/fight.jpg"),
                                       fit: BoxFit.cover)),
                             ),
-                            title: Text(
+                            title: const Text(
                               "Origin of Fire",
                               style: TextStyle(
                                   fontSize: 20, fontWeight: FontWeight.bold),
                             ),
-                            subtitle: Text(
+                            subtitle: const Text(
                               "Hyles Orase",
                               style: TextStyle(
                                   fontSize: 16, fontWeight: FontWeight.bold),
                             ),
-                            trailing: Icon(
+                            trailing: const Icon(
                               Icons.arrow_forward_ios,
                               color: Colors.grey,
                             ),
@@ -380,22 +380,22 @@ class day25 extends StatelessWidget {
                               width: 50,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
-                                  image: DecorationImage(
+                                  image: const DecorationImage(
                                       image: AssetImage(
                                           "images/assets25/originoffire.jpg"),
                                       fit: BoxFit.cover)),
                             ),
-                            title: Text(
+                            title: const Text(
                               "Rudy Tabooty",
                               style: TextStyle(
                                   fontSize: 20, fontWeight: FontWeight.bold),
                             ),
-                            subtitle: Text(
+                            subtitle: const Text(
                               "Chaikzone",
                               style: TextStyle(
                                   fontSize: 16, fontWeight: FontWeight.bold),
                             ),
-                            trailing: Icon(
+                            trailing: const Icon(
                               Icons.arrow_forward_ios,
                               color: Colors.grey,
                             ),
@@ -422,7 +422,7 @@ class day25 extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Row(
-                          children: [
+                          children: const [
                             Icon(
                               Icons.home_outlined,
                               size: 30,
@@ -437,17 +437,17 @@ class day25 extends StatelessWidget {
                             ),
                           ],
                         ),
-                        Icon(
+                        const Icon(
                           Icons.monetization_on_outlined,
                           size: 30,
                           color: Colors.grey,
                         ),
-                        Icon(
+                        const Icon(
                           Icons.favorite_outlined,
                           size: 30,
                           color: Colors.grey,
                         ),
-                        Icon(
+                        const Icon(
                           Icons.account_circle_outlined,
                           size: 30,
                           color: Colors.grey,

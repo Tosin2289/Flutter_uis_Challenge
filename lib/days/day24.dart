@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day24 extends StatelessWidget {
-  const day24({Key? key}) : super(key: key);
+class Day24 extends StatelessWidget {
+  const Day24({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class day24 extends StatelessWidget {
             itemCount: screens.length,
             itemBuilder: ((context, index) {
               return Card(
-                child: Container(
+                child: SizedBox(
                   height: 220,
                   width: 160,
                   child: Column(
@@ -24,7 +24,7 @@ class day24 extends StatelessWidget {
                         screens[index].image,
                         height: 100,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Padding(
@@ -34,7 +34,7 @@ class day24 extends StatelessWidget {
                           children: [
                             Text(
                               screens[index].name,
-                              style: TextStyle(fontSize: 21),
+                              style: const TextStyle(fontSize: 21),
                             ),
                             Text(
                               'Pure Water',
@@ -44,7 +44,7 @@ class day24 extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Padding(
@@ -54,8 +54,8 @@ class day24 extends StatelessWidget {
                           children: [
                             Text(
                               screens[index].prize,
-                              style:
-                                  TextStyle(color: Colors.green, fontSize: 18),
+                              style: const TextStyle(
+                                  color: Colors.green, fontSize: 18),
                             ),
                             Text(
                               screens[index].weight,
