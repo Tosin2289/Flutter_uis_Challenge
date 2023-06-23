@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class day26 extends StatelessWidget {
-  const day26({Key? key}) : super(key: key);
+class Day26 extends StatelessWidget {
+  const Day26({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        leading: Icon(
+        leading: const Icon(
           Icons.arrow_back,
           color: Colors.black,
         ),
         centerTitle: true,
-        title: Text("Daftar",
+        title: const Text("Daftar",
             style: TextStyle(
                 color: Colors.black,
                 fontSize: 25,
@@ -32,7 +32,7 @@ class day26 extends StatelessWidget {
                       fontSize: MediaQuery.of(context).size.width / 10,
                       fontWeight: FontWeight.bold),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 Text(
@@ -44,7 +44,7 @@ class day26 extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Padding(
@@ -56,10 +56,6 @@ class day26 extends StatelessWidget {
                   width: MediaQuery.of(context).size.width / 2.6,
                   child: ElevatedButton(
                     onPressed: () {},
-                    child: Text(
-                      "Daftar",
-                      style: TextStyle(fontWeight: FontWeight.bold),
-                    ),
                     style: ButtonStyle(
                         shape: MaterialStateProperty
                             .all<RoundedRectangleBorder>(RoundedRectangleBorder(
@@ -67,19 +63,18 @@ class day26 extends StatelessWidget {
                                     MediaQuery.of(context).size.width / 10))),
                         backgroundColor:
                             MaterialStateProperty.all(Colors.black54)),
+                    child: const Text(
+                      "Daftar",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 SizedBox(
                   height: MediaQuery.of(context).size.height / 13,
                   width: MediaQuery.of(context).size.width / 2.6,
                   child: ElevatedButton(
                     onPressed: () {},
-                    child: Text(
-                      "Log in",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold, color: Colors.blue),
-                    ),
                     style: ButtonStyle(
                         shape: MaterialStateProperty
                             .all<RoundedRectangleBorder>(RoundedRectangleBorder(
@@ -87,6 +82,11 @@ class day26 extends StatelessWidget {
                                     MediaQuery.of(context).size.width / 10))),
                         backgroundColor:
                             MaterialStateProperty.all(Colors.white)),
+                    child: const Text(
+                      "Log in",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, color: Colors.blue),
+                    ),
                   ),
                 ),
               ],

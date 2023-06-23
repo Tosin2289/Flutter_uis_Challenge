@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-class day29 extends StatelessWidget {
-  const day29({Key? key}) : super(key: key);
+class Day29 extends StatelessWidget {
+  const Day29({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF726FF2),
+      backgroundColor: const Color(0xFF726FF2),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
               radius: 100,
-              backgroundColor: Color(0xFF9289FC),
+              backgroundColor: const Color(0xFF9289FC),
               child: Stack(
                 children: [
                   Transform.rotate(
@@ -24,10 +24,10 @@ class day29 extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
-            Text(
+            const Text(
               "Your personal\ntask manager",
               textAlign: TextAlign.start,
               style: TextStyle(
@@ -35,7 +35,7 @@ class day29 extends StatelessWidget {
                   color: Colors.white,
                   fontWeight: FontWeight.w500),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Column(
@@ -48,10 +48,10 @@ class day29 extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            CircleAvatar(
+            const CircleAvatar(
               radius: 50,
               backgroundColor: Color(0xFF9289FC),
               child: CircleAvatar(

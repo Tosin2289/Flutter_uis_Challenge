@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class day27 extends StatelessWidget {
-  const day27({Key? key}) : super(key: key);
+class Day27 extends StatelessWidget {
+  const Day27({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Center(
-          child: Container(
+          child: SizedBox(
             child: Expanded(
               child: Container(
                 height: MediaQuery.of(context).size.height,
                 width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     image: DecorationImage(
                         image: AssetImage('images/assets27/bg.jpg'),
                         fit: BoxFit.cover)),
@@ -24,7 +24,7 @@ class day27 extends StatelessWidget {
                           horizontal: 20.0, vertical: 20),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
+                        children: const [
                           Icon(
                             Icons.arrow_back_ios,
                             size: 25,
@@ -38,19 +38,19 @@ class day27 extends StatelessWidget {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Image.asset(
                       "imaes/assets27/donut.png",
                       height: 150,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 40,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Text(
                           "Upload your files here",
                           style: TextStyle(
@@ -69,21 +69,21 @@ class day27 extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 35,
                     ),
                     Expanded(
                       child: Container(
                         height: MediaQuery.of(context).size.height * .5,
                         width: MediaQuery.of(context).size.width,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(25),
                                 topRight: Radius.circular(25))),
                         child: Column(
                           children: [
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
                             Container(
@@ -93,7 +93,7 @@ class day27 extends StatelessWidget {
                                   color: Colors.grey,
                                   borderRadius: BorderRadius.circular(10)),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
                             Padding(
@@ -104,7 +104,7 @@ class day27 extends StatelessWidget {
                                   Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
-                                    children: [
+                                    children: const [
                                       Text(
                                         "Name of Event",
                                         style: TextStyle(
@@ -119,18 +119,18 @@ class day27 extends StatelessWidget {
                                       ),
                                     ],
                                   ),
-                                  Spacer(),
-                                  Icon(
+                                  const Spacer(),
+                                  const Icon(
                                     Icons.expand_more,
                                     color: Colors.grey,
                                   ),
                                 ],
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 5,
                             ),
-                            Divider(),
+                            const Divider(),
                             Padding(
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 20.0, vertical: 10),
@@ -139,7 +139,7 @@ class day27 extends StatelessWidget {
                                   Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
-                                    children: [
+                                    children: const [
                                       Text(
                                         "Address",
                                         style: TextStyle(
@@ -154,18 +154,18 @@ class day27 extends StatelessWidget {
                                       ),
                                     ],
                                   ),
-                                  Spacer(),
-                                  Icon(
+                                  const Spacer(),
+                                  const Icon(
                                     Icons.expand_more,
                                     color: Colors.grey,
                                   ),
                                 ],
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 5,
                             ),
-                            Divider(),
+                            const Divider(),
                             Padding(
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 20.0, vertical: 10),
@@ -174,7 +174,7 @@ class day27 extends StatelessWidget {
                                   Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
-                                    children: [
+                                    children: const [
                                       Text(
                                         "Notes for visitor",
                                         style: TextStyle(
@@ -192,11 +192,11 @@ class day27 extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 5,
                             ),
-                            Divider(),
-                            SizedBox(
+                            const Divider(),
+                            const SizedBox(
                               height: 10,
                             ),
                             Container(
@@ -223,7 +223,7 @@ class day27 extends StatelessWidget {
                                         child: Row(
                                           children: [
                                             Column(
-                                              children: [
+                                              children: const [
                                                 Text(
                                                   "Dec",
                                                   style: TextStyle(
@@ -237,7 +237,7 @@ class day27 extends StatelessWidget {
                                                 ),
                                               ],
                                             ),
-                                            SizedBox(
+                                            const SizedBox(
                                               width: 30,
                                             ),
                                             Container(
@@ -245,11 +245,11 @@ class day27 extends StatelessWidget {
                                               width: 1,
                                               color: Colors.grey,
                                             ),
-                                            SizedBox(width: 10),
+                                            const SizedBox(width: 10),
                                             Column(
                                               crossAxisAlignment:
                                                   CrossAxisAlignment.start,
-                                              children: [
+                                              children: const [
                                                 Text(
                                                   "Wenesday",
                                                   style: TextStyle(
@@ -274,7 +274,7 @@ class day27 extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  Icon(
+                                  const Icon(
                                     Icons.border_color_outlined,
                                     size: 30,
                                     color: Colors.grey,
@@ -282,7 +282,7 @@ class day27 extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
                             Padding(
@@ -294,16 +294,16 @@ class day27 extends StatelessWidget {
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
-                                      Text(
+                                      const Text(
                                         "Set Price",
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 5,
                                       ),
                                       Row(
-                                        children: [
+                                        children: const [
                                           Text(
                                             "\$00",
                                             style: TextStyle(
@@ -320,7 +320,7 @@ class day27 extends StatelessWidget {
                                       ),
                                     ],
                                   ),
-                                  Spacer(),
+                                  const Spacer(),
                                   Container(
                                     height: 40,
                                     width: 140,
@@ -329,7 +329,7 @@ class day27 extends StatelessWidget {
                                         color: Colors.orange,
                                         borderRadius:
                                             BorderRadius.circular(20)),
-                                    child: Center(
+                                    child: const Center(
                                       child: Text(
                                         "Get a Ticket",
                                         style: TextStyle(

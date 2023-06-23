@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day30 extends StatelessWidget {
-  const day30({Key? key}) : super(key: key);
+class Day30 extends StatelessWidget {
+  const Day30({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,22 +17,22 @@ class day30 extends StatelessWidget {
               height: 400,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Text(
+          const Text(
             "Enjoy Cooking",
             style: TextStyle(color: Colors.grey),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          Text(
+          const Text(
             "Start cooking with our \ngreat recipes!",
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
           ),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
           Container(
@@ -42,7 +42,7 @@ class day30 extends StatelessWidget {
               color: Colors.black,
               borderRadius: BorderRadius.circular(10),
             ),
-            child: Center(
+            child: const Center(
                 child: Text(
               "Get Strated",
               style: TextStyle(color: Colors.white, fontSize: 20),

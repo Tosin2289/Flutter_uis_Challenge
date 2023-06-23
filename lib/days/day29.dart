@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day29 extends StatelessWidget {
-  const day29({Key? key}) : super(key: key);
+class Day29 extends StatelessWidget {
+  const Day29({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,14 +11,14 @@ class day29 extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Container(
                   height: 350,
                   width: MediaQuery.of(context).size.width * .98,
                   decoration: BoxDecoration(
-                      image: DecorationImage(
+                      image: const DecorationImage(
                           image: AssetImage("images/assets29/house.jpg"),
                           fit: BoxFit.cover),
                       borderRadius: BorderRadius.circular(10),
@@ -28,7 +28,7 @@ class day29 extends StatelessWidget {
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
+                      children: const [
                         CircleAvatar(
                           backgroundColor: Colors.white38,
                           radius: 20,
@@ -41,7 +41,7 @@ class day29 extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Padding(
@@ -51,13 +51,13 @@ class day29 extends StatelessWidget {
                     child: Container(
                       height: 170,
                       width: 330,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Column(
                           children: [
                             Row(
-                              children: [
+                              children: const [
                                 Text(
                                   "Sunny Home",
                                   style: TextStyle(
@@ -67,14 +67,14 @@ class day29 extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 5,
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
                                 Row(
-                                  children: [
+                                  children: const [
                                     Icon(
                                       Icons.location_on_outlined,
                                       color: Colors.blue,
@@ -84,7 +84,7 @@ class day29 extends StatelessWidget {
                                   ],
                                 ),
                                 Row(
-                                  children: [
+                                  children: const [
                                     Text(
                                       "\$290",
                                       style: TextStyle(
@@ -97,7 +97,7 @@ class day29 extends StatelessWidget {
                                   ],
                                 ),
                                 Row(
-                                  children: [
+                                  children: const [
                                     Icon(
                                       Icons.star,
                                       color: Colors.yellow,
@@ -111,12 +111,12 @@ class day29 extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 20,
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
+                              children: const [
                                 features(
                                   text: '4 Bedroom',
                                   icon: Icons.bed,
@@ -141,13 +141,13 @@ class day29 extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 28.0),
                   child: Row(
-                    children: [
+                    children: const [
                       Text(
                         "Description",
                         style: TextStyle(
@@ -156,7 +156,7 @@ class day29 extends StatelessWidget {
                     ],
                   ),
                 ),
-                Padding(
+                const Padding(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 28.0, vertical: 5),
                   child: Text(
@@ -164,16 +164,16 @@ class day29 extends StatelessWidget {
                     textAlign: TextAlign.start,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                Container(
+                SizedBox(
                   height: MediaQuery.of(context).size.height / 15,
                   width: MediaQuery.of(context).size.width / 2 + 140,
                   child: ElevatedButton(
                     style: flatButtonStyle,
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       "Take a Tour",
                       style: TextStyle(fontSize: 20),
                     ),
