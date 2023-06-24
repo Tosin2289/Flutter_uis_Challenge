@@ -44,7 +44,7 @@ class Day30 extends StatelessWidget {
             ),
             child: const Center(
                 child: Text(
-              "Get Strated",
+              "Get Strated ",
               style: TextStyle(color: Colors.white, fontSize: 20),
             )),
           ),
