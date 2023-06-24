@@ -48,6 +48,8 @@ dependencies:
   charts_flutter: ^0.12.0
   google_nav_bar: ^5.0.6
   flutter_swiper_null_safety: ^1.0.2
+  flare_flutter: ^3.0.2
+  
 
 dev_dependencies:
   flutter_test:
@@ -224,6 +226,8 @@ flutter:
     - images/assets171/
     - images/assets172/
     - images/assets173/
+    - images/assets174/
+    - images/assets175/
   #   - images/a_dot_ham.jpeg
 
 
