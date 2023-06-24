@@ -135,7 +135,7 @@ class IntroItem extends StatelessWidget {
                     child: Material(
                       elevation: 4.0,
                       child: Image.asset(
-                        'images/assets175/img4.jpg',
+                        imageUrl!,
                         fit: BoxFit.cover,
                       ),
                     ),
