@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
-class day32 extends StatelessWidget {
-  const day32({Key? key}) : super(key: key);
+class Day32 extends StatelessWidget {
+  const Day32({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[900],
       body: SafeArea(
-        child: Container(
+        child: SizedBox(
           child: Column(
             children: [
               Expanded(
                 child: Container(
                   decoration: BoxDecoration(
-                    image: DecorationImage(
+                    image: const DecorationImage(
                       image: AssetImage('images/assets32/bg.jpg'),
                       fit: BoxFit.cover,
                     ),
@@ -36,7 +36,7 @@ class day32 extends StatelessWidget {
                                   ),
                                   borderRadius: BorderRadius.circular(15),
                                 ),
-                                child: Center(
+                                child: const Center(
                                   child: Icon(
                                     Icons.arrow_back,
                                     color: Colors.white54,
@@ -44,7 +44,7 @@ class day32 extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               Container(
                                 height: 50,
                                 width: 50,
@@ -54,7 +54,7 @@ class day32 extends StatelessWidget {
                                   ),
                                   borderRadius: BorderRadius.circular(15),
                                 ),
-                                child: Center(
+                                child: const Center(
                                   child: Icon(
                                     Icons.bookmark_outline_outlined,
                                     color: Colors.white54,
@@ -64,12 +64,12 @@ class day32 extends StatelessWidget {
                               ),
                             ],
                           ),
-                          Spacer(),
-                          Container(
+                          const Spacer(),
+                          SizedBox(
                             child: Column(
                               children: [
                                 Row(
-                                  children: [
+                                  children: const [
                                     Text(
                                       "Hong Kong",
                                       style: TextStyle(
@@ -79,7 +79,7 @@ class day32 extends StatelessWidget {
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 25,
                                 ),
                                 Container(
@@ -92,7 +92,7 @@ class day32 extends StatelessWidget {
                                     child: Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
-                                      children: [
+                                      children: const [
                                         Icon(
                                           Icons.people_alt_outlined,
                                           color: Colors.white,
@@ -177,14 +177,14 @@ class day32 extends StatelessWidget {
               Expanded(
                 child: Padding(
                   padding: const EdgeInsets.all(20.0),
-                  child: Container(
+                  child: SizedBox(
                     child: Column(
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Row(
-                          children: [
+                          children: const [
                             Text(
                               "Description",
                               style: TextStyle(
@@ -194,7 +194,7 @@ class day32 extends StatelessWidget {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Text(
@@ -203,7 +203,7 @@ class day32 extends StatelessWidget {
                           style:
                               TextStyle(fontSize: 18, color: Colors.grey[500]),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Container(
@@ -218,22 +218,22 @@ class day32 extends StatelessWidget {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                CircleAvatar(
+                                const CircleAvatar(
                                   radius: 25,
                                   backgroundImage:
                                       AssetImage('images/assets32/p1.jpg'),
                                 ),
-                                CircleAvatar(
+                                const CircleAvatar(
                                   radius: 25,
                                   backgroundImage:
                                       AssetImage('images/assets32/p3.jpg'),
                                 ),
-                                CircleAvatar(
+                                const CircleAvatar(
                                   radius: 25,
                                   backgroundImage:
                                       AssetImage('images/assets32/bg.jpg'),
                                 ),
-                                CircleAvatar(
+                                const CircleAvatar(
                                   radius: 25,
                                   backgroundImage:
                                       AssetImage('images/assets32/p.jpg'),
@@ -245,7 +245,7 @@ class day32 extends StatelessWidget {
                                     border: Border.all(color: Colors.grey),
                                     shape: BoxShape.circle,
                                   ),
-                                  child: Center(
+                                  child: const Center(
                                       child: Text(
                                     "+10",
                                     style: TextStyle(
@@ -257,7 +257,7 @@ class day32 extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 30,
                         ),
                         Container(
@@ -267,7 +267,7 @@ class day32 extends StatelessWidget {
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(15),
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "Booking now -------- \$162.54",
                               style: TextStyle(

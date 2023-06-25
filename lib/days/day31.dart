@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import "package:google_fonts/google_fonts.dart";
 
-class day31 extends StatefulWidget {
-  const day31({Key? key}) : super(key: key);
+class Day31 extends StatefulWidget {
+  const Day31({Key? key}) : super(key: key);
 
   @override
-  State<day31> createState() => _MyAppState();
+  State<Day31> createState() => _MyAppState();
 }
 
-class _MyAppState extends State<day31> {
+class _MyAppState extends State<Day31> {
   final fntfamily = GoogleFonts.nunito().fontFamily;
 
   Widget apntdate({required String date}) {
@@ -16,7 +16,7 @@ class _MyAppState extends State<day31> {
         onPressed: () {},
         child: Center(
           child: Text(
-            "$date",
+            date,
             style: TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
@@ -34,15 +34,15 @@ class _MyAppState extends State<day31> {
         child: Container(
           height: 40,
           width: 90,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+          ),
           child: Center(
-              child: Text("$time",
+              child: Text(time,
                   style: TextStyle(
                     color: Colors.grey,
                     fontFamily: fntfamily,
                   ))),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-          ),
         ),
       ),
     );
@@ -60,9 +60,9 @@ class _MyAppState extends State<day31> {
           child: Container(
             height: screenHeight,
             width: screenWidth,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
-                colors: [Color(0xfffffdb7aa), Color(0xffd4423a)],
+                colors: [Color(0xfffffdb7a), Color(0xffd4423a)],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 stops: [0.0, 1.0],
@@ -79,13 +79,13 @@ class _MyAppState extends State<day31> {
               backgroundColor: Colors.transparent,
               leading: IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.arrow_back_ios,
                   )),
               actions: [
                 IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.align_horizontal_right,
                     )),
               ],
@@ -97,7 +97,7 @@ class _MyAppState extends State<day31> {
             child: Container(
               height: 350,
               width: 350,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage("images/assets31/doc.png"),
                     fit: BoxFit.contain),
@@ -109,7 +109,7 @@ class _MyAppState extends State<day31> {
           bottom: 1,
           height: screenHeight * 0.56,
           child: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(28),
@@ -120,7 +120,7 @@ class _MyAppState extends State<day31> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: 84),
+                  const SizedBox(height: 84),
                   Row(
                     children: [
                       Padding(
@@ -151,7 +151,7 @@ class _MyAppState extends State<day31> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Padding(
                     padding: const EdgeInsets.only(right: 24, left: 24),
                     child: Text(
@@ -160,7 +160,7 @@ class _MyAppState extends State<day31> {
                           TextStyle(color: Colors.black, fontFamily: fntfamily),
                     ),
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   Row(
                     children: [
                       Padding(
@@ -173,7 +173,7 @@ class _MyAppState extends State<day31> {
                               fontFamily: fntfamily),
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding: const EdgeInsets.only(left: 128),
                         child: Icon(Icons.navigate_before_outlined,
                             color: Colors.grey),
@@ -183,14 +183,14 @@ class _MyAppState extends State<day31> {
                         style: TextStyle(
                             color: Colors.black, fontFamily: fntfamily),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 24),
+                      const Padding(
+                        padding: EdgeInsets.only(right: 24),
                         child: Icon(Icons.navigate_next_outlined,
                             color: Colors.grey),
                       ),
                     ],
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Row(
@@ -230,7 +230,7 @@ class _MyAppState extends State<day31> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   Padding(
                     padding: const EdgeInsets.only(left: 24),
                     child: Text(
@@ -241,7 +241,7 @@ class _MyAppState extends State<day31> {
                           fontFamily: fntfamily),
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Row(
@@ -258,12 +258,6 @@ class _MyAppState extends State<day31> {
                               child: Container(
                                 height: 40,
                                 width: 90,
-                                child: Center(
-                                    child: Text("09:00 AM",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontFamily: fntfamily,
-                                        ))),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
                                   gradient: LinearGradient(
@@ -276,6 +270,12 @@ class _MyAppState extends State<day31> {
                                     stops: [0.0, 1.0],
                                   ),
                                 ),
+                                child: Center(
+                                    child: Text("09:00 AM",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontFamily: fntfamily,
+                                        ))),
                               ),
                             ),
                           ),
@@ -286,17 +286,13 @@ class _MyAppState extends State<day31> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
                   Center(
                     child: Padding(
                       padding: const EdgeInsets.only(right: 24, left: 24),
                       child: ElevatedButton(
-                        child: Text(
-                          "Appointment",
-                          style: TextStyle(fontFamily: fntfamily),
-                        ),
                         onPressed: () {},
                         style: ButtonStyle(
                           shadowColor: MaterialStateProperty.all(Colors.black),
@@ -310,10 +306,14 @@ class _MyAppState extends State<day31> {
                               RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(16))),
                         ),
+                        child: Text(
+                          "Appointment",
+                          style: TextStyle(fontFamily: fntfamily),
+                        ),
                       ),
                     ),
                   ),
-                  SizedBox(height: 24),
+                  const SizedBox(height: 24),
                 ],
               ),
             ),
@@ -344,7 +344,7 @@ class _MyAppState extends State<day31> {
                 ),
                 child: Column(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
                     Center(
@@ -356,7 +356,7 @@ class _MyAppState extends State<day31> {
                           fontWeight: FontWeight.bold,
                           fontFamily: fntfamily),
                     )),
-                    SizedBox(height: 8),
+                    const SizedBox(height: 8),
                     Center(
                         child: Text(
                       "Senior Cardiologist and Surgeon United State medical college & hospital",

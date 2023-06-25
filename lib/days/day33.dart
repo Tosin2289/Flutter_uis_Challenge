@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day33 extends StatelessWidget {
-  const day33({Key? key}) : super(key: key);
+class Day33 extends StatelessWidget {
+  const Day33({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +47,7 @@ class day33 extends StatelessWidget {
                     child: Container(
                       height: MediaQuery.of(context).size.height / 1.6,
                       width: MediaQuery.of(context).size.width,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(35),
@@ -82,7 +82,7 @@ class day33 extends StatelessWidget {
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(
+                                    const Text(
                                       '\$1300',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
@@ -169,7 +169,7 @@ class day33 extends StatelessWidget {
                                       radius: 40,
                                       backgroundColor:
                                           Colors.grey.withOpacity(0.3),
-                                      child: Icon(
+                                      child: const Icon(
                                         Icons.king_bed_outlined,
                                         size: 37,
                                         color: Colors.teal,
@@ -183,7 +183,7 @@ class day33 extends StatelessWidget {
                                           height: 2.5,
                                           fontWeight: FontWeight.bold),
                                     ),
-                                    Text(
+                                    const Text(
                                       '30 sqft',
                                       style: TextStyle(
                                           fontSize: 16.5,
@@ -198,7 +198,7 @@ class day33 extends StatelessWidget {
                                       radius: 40,
                                       backgroundColor:
                                           Colors.grey.withOpacity(0.3),
-                                      child: Icon(
+                                      child: const Icon(
                                         Icons.living_outlined,
                                         size: 37,
                                         color: Colors.teal,
@@ -212,7 +212,7 @@ class day33 extends StatelessWidget {
                                           height: 2.5,
                                           fontWeight: FontWeight.bold),
                                     ),
-                                    Text(
+                                    const Text(
                                       '90 sqft',
                                       style: TextStyle(
                                           fontSize: 16.5,
@@ -227,7 +227,7 @@ class day33 extends StatelessWidget {
                                       radius: 40,
                                       backgroundColor:
                                           Colors.grey.withOpacity(0.3),
-                                      child: Icon(
+                                      child: const Icon(
                                         Icons.kitchen,
                                         size: 37,
                                         color: Colors.teal,
@@ -241,7 +241,7 @@ class day33 extends StatelessWidget {
                                           height: 2.5,
                                           fontWeight: FontWeight.bold),
                                     ),
-                                    Text(
+                                    const Text(
                                       '10 sqft',
                                       style: TextStyle(
                                           fontSize: 16.5,
@@ -265,7 +265,7 @@ class day33 extends StatelessWidget {
                                 child: Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
-                                  children: [
+                                  children: const [
                                     Text(
                                       'Book Now',
                                       style: TextStyle(
@@ -275,7 +275,7 @@ class day33 extends StatelessWidget {
                                     ),
                                     CircleAvatar(
                                       backgroundColor: Colors.white,
-                                      child: const Icon(
+                                      child: Icon(
                                         Icons.arrow_forward_ios_rounded,
                                         color: Colors.black,
                                         size: 18,
@@ -299,7 +299,7 @@ class day33 extends StatelessWidget {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.white),
-                      child: Icon(
+                      child: const Icon(
                         Icons.favorite,
                         color: Colors.teal,
                         size: 22,

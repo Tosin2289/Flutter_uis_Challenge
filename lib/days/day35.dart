@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day35 extends StatelessWidget {
-  const day35({Key? key}) : super(key: key);
+class Day35 extends StatelessWidget {
+  const Day35({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class day35 extends StatelessWidget {
             children: [
               Container(
                 height: 797,
-                color: Color(0xff01156B),
+                color: const Color(0xff01156B),
                 child: Column(
                   children: [
                     Row(
@@ -26,16 +26,16 @@ class day35 extends StatelessWidget {
                             width: 30,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15),
-                              color: Color(0xff192E7D),
+                              color: const Color(0xff192E7D),
                             ),
-                            child: Icon(
+                            child: const Icon(
                               Icons.drag_handle_outlined,
                               size: 18,
                               color: Colors.white,
                             ),
                           ),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Padding(
                           padding: const EdgeInsets.only(top: 25),
                           child: Container(
@@ -43,9 +43,9 @@ class day35 extends StatelessWidget {
                             width: 30,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15),
-                              color: Color(0xff192E7D),
+                              color: const Color(0xff192E7D),
                             ),
-                            child: Icon(
+                            child: const Icon(
                               Icons.notifications,
                               size: 18,
                               color: Colors.white,
@@ -60,9 +60,9 @@ class day35 extends StatelessWidget {
                             width: 30,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15),
-                              color: Color(0xff192E7D),
+                              color: const Color(0xff192E7D),
                             ),
-                            child: Icon(
+                            child: const Icon(
                               Icons.settings,
                               size: 18,
                               color: Colors.white,
@@ -71,7 +71,7 @@ class day35 extends StatelessWidget {
                         )
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     Center(
@@ -80,10 +80,10 @@ class day35 extends StatelessWidget {
                         width: 325,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(25),
-                            color: Color(0xff192E7D)),
+                            color: const Color(0xff192E7D)),
                         child: Row(
                           children: [
-                            Padding(
+                            const Padding(
                               padding: const EdgeInsets.only(left: 18),
                               child: Icon(
                                 Icons.search,
@@ -91,10 +91,10 @@ class day35 extends StatelessWidget {
                                 color: Colors.white60,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
-                            Text(
+                            const Text(
                               "Search Artwork",
                               style: TextStyle(
                                   fontSize: 16, color: Colors.white60),
@@ -105,7 +105,7 @@ class day35 extends StatelessWidget {
                               width: 1.5,
                               color: Colors.white60,
                             ),
-                            Icon(
+                            const Icon(
                               Icons.mic_none,
                               color: Colors.white60,
                             )
@@ -113,11 +113,11 @@ class day35 extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     Row(
-                      children: [
+                      children: const [
                         Padding(
                           padding: const EdgeInsets.only(left: 32, right: 175),
                           child: Text(
@@ -151,16 +151,15 @@ class day35 extends StatelessWidget {
                       Positioned(
                         top: 850,
                         child: Container(
-                          margin: EdgeInsets.only(top: 220),
+                          margin: const EdgeInsets.only(top: 220),
                           height: 170,
                           width: 390,
                           child: Column(
                             children: [
                               Row(
-                                children: [
+                                children: const [
                                   Padding(
-                                    padding: const EdgeInsets.only(
-                                        left: 40, top: 25),
+                                    padding: EdgeInsets.only(left: 40, top: 25),
                                     child: Text(
                                       "Top Creators",
                                       style: TextStyle(
@@ -170,7 +169,7 @@ class day35 extends StatelessWidget {
                                   ),
                                   Spacer(),
                                   Padding(
-                                    padding: const EdgeInsets.only(
+                                    padding: EdgeInsets.only(
                                         left: 40, top: 25, right: 30),
                                     child: Text(
                                       "See All",
@@ -184,18 +183,18 @@ class day35 extends StatelessWidget {
                               ),
                               Center(
                                 child: Container(
-                                  margin: EdgeInsets.only(top: 25),
+                                  margin: const EdgeInsets.only(top: 25),
                                   height: 70,
                                   width: 310,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(20),
-                                    color: Color(0xffFFFCFF),
+                                    color: const Color(0xffFFFCFF),
                                   ),
                                   child: Row(
                                     children: [
                                       Container(
-                                        margin:
-                                            EdgeInsets.only(left: 25, top: 15),
+                                        margin: const EdgeInsets.only(
+                                            left: 25, top: 15),
                                         height: 42,
                                         width: 42,
                                         decoration: BoxDecoration(
@@ -211,9 +210,9 @@ class day35 extends StatelessWidget {
                                       Column(
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
-                                        children: [
+                                        children: const [
                                           Padding(
-                                            padding: const EdgeInsets.only(
+                                            padding: EdgeInsets.only(
                                                 left: 8, top: 24),
                                             child: Text(
                                               "Dio Brando",
@@ -224,7 +223,7 @@ class day35 extends StatelessWidget {
                                             ),
                                           ),
                                           Padding(
-                                            padding: const EdgeInsets.only(
+                                            padding: EdgeInsets.only(
                                                 left: 8, top: 2),
                                             child: Text(
                                               "12M Followers",
@@ -236,10 +235,10 @@ class day35 extends StatelessWidget {
                                           ),
                                         ],
                                       ),
-                                      Spacer(),
+                                      const Spacer(),
                                       Container(
-                                        margin:
-                                            EdgeInsets.only(right: 10, top: 20),
+                                        margin: const EdgeInsets.only(
+                                            right: 10, top: 20),
                                         height: 28,
                                         width: 75,
                                         decoration: BoxDecoration(
@@ -250,7 +249,7 @@ class day35 extends StatelessWidget {
                                         child: Row(
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,
-                                          children: [
+                                          children: const [
                                             Text(
                                               "Follow",
                                               style: TextStyle(
@@ -280,7 +279,7 @@ class day35 extends StatelessWidget {
                   width: 330,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: Color(0xffFFFCFF),
+                    color: const Color(0xffFFFCFF),
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -307,7 +306,7 @@ class day35 extends StatelessWidget {
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(40),
                                       color: Colors.white38),
-                                  child: Center(
+                                  child: const Center(
                                     child: Text(
                                       "2h 10m 20s",
                                       style: TextStyle(
@@ -327,7 +326,7 @@ class day35 extends StatelessWidget {
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(18),
                                       color: Colors.white38),
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.favorite_border,
                                     color: Colors.white,
                                     size: 22,
@@ -338,8 +337,8 @@ class day35 extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 15, top: 18),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 15, top: 18),
                         child: Text(
                           "The Blue Moscrepe",
                           style: TextStyle(
@@ -349,7 +348,7 @@ class day35 extends StatelessWidget {
                       Row(
                         children: [
                           Container(
-                            margin: EdgeInsets.only(left: 25, top: 15),
+                            margin: const EdgeInsets.only(left: 25, top: 15),
                             height: 42,
                             width: 42,
                             decoration: BoxDecoration(
@@ -361,10 +360,9 @@ class day35 extends StatelessWidget {
                           ),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
+                            children: const [
                               Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 8, top: 14),
+                                padding: EdgeInsets.only(left: 8, top: 14),
                                 child: Text(
                                   "Cretator",
                                   style: TextStyle(
@@ -372,7 +370,7 @@ class day35 extends StatelessWidget {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(left: 8, top: 2),
+                                padding: EdgeInsets.only(left: 8, top: 2),
                                 child: Text(
                                   "Dio Brando",
                                   style: TextStyle(
@@ -383,18 +381,18 @@ class day35 extends StatelessWidget {
                               ),
                             ],
                           ),
-                          Spacer(),
+                          const Spacer(),
                           Container(
-                            margin: EdgeInsets.only(right: 25, top: 20),
+                            margin: const EdgeInsets.only(right: 25, top: 20),
                             height: 35,
                             width: 70,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
-                              color: Color(0xffFFF5D1),
+                              color: const Color(0xffFFF5D1),
                             ),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
+                              children: const [
                                 Icon(
                                   Icons.monetization_on_outlined,
                                   color: Color(0xffDAA92D),
