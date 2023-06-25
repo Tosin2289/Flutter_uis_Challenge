@@ -274,26 +274,11 @@ final Widget homeScreenBottom = Column(
 
 List<CityCard> cityCards = [
   const CityCard(
-      "https://cdn.pixabay.com/photo/2013/03/02/02/41/city-89197_960_720.jpg",
-      "Kathmandu",
-      "12 Feb",
-      "10",
-      "500",
-      '440'),
+      "images/assets177/img1.jpg", "Kathmandu", "12 Feb", "10", "500", '440'),
   const CityCard(
-      "https://cdn.pixabay.com/photo/2017/12/10/17/40/prague-3010407_960_720.jpg",
-      "Bhaktapur",
-      "12 Feb",
-      "10",
-      "500",
-      '440'),
+      "images/assets177/img2.jpg", "Bhaktapur", "12 Feb", "10", "500", '440'),
   const CityCard(
-      "https://cdn.pixabay.com/photo/2014/07/01/12/35/taxi-cab-381233_960_720.jpg",
-      "Morang",
-      "12 Feb",
-      "10",
-      "500",
-      '440'),
+      "images/assets177/img3.jpg", "Morang", "12 Feb", "10", "500", '440'),
 ];
 
 class CityCard extends StatelessWidget {
