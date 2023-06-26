@@ -32,6 +32,7 @@ class _Day178State extends State<Day178> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.deepOrange,
         title: const Text("Chat"),
       ),
       body: Column(
@@ -117,7 +118,7 @@ class _Day178State extends State<Day178> {
         SizedBox(width: current ? 30.0 : 20.0),
         if (!current) ...[
           CircleAvatar(
-            backgroundImage: NetworkImage(
+            backgroundImage: AssetImage(
               current ? avatars[0] : avatars[1],
             ),
             radius: 20.0,
@@ -197,7 +198,7 @@ class _Day178State extends State<Day178> {
         if (current) ...[
           const SizedBox(width: 5.0),
           CircleAvatar(
-            backgroundImage: NetworkImage(
+            backgroundImage: AssetImage(
               current ? avatars[0] : avatars[1],
             ),
             radius: 10.0,
