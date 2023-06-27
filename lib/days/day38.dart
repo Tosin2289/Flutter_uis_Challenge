@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class day38 extends StatelessWidget {
-  const day38({Key? key}) : super(key: key);
+class Day38 extends StatelessWidget {
+  const Day38({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xfffffff),
+        backgroundColor: const Color(0xfffffff),
         title: const Text(
           "Financial",
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
@@ -94,7 +94,8 @@ class day38 extends StatelessWidget {
                       CircleAvatar(
                           backgroundColor: Colors.pink.shade300,
                           radius: 25,
-                          child: Icon(Icons.diamond, color: Colors.white)),
+                          child:
+                              const Icon(Icons.diamond, color: Colors.white)),
                       Text(
                         "data",
                         style: TextStyle(

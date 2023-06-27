@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 
-class day40 extends StatelessWidget {
-  day40({Key? key}) : super(key: key);
+class Day40 extends StatefulWidget {
+  const Day40({Key? key}) : super(key: key);
+
+  @override
+  State<Day40> createState() => _Day40State();
+}
+
+class _Day40State extends State<Day40> {
   TextEditingController firstname = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
