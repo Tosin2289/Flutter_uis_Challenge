@@ -6,16 +6,16 @@ class Day36 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      body: SizedBox(
         child: Column(
-          children: [
-            Container(
+          children: const [
+            SizedBox(
               child: Frist(),
             ),
-            Container(child: Second()),
-            Container(child: Third()),
-            Container(child: Four()),
-            Container(child: Five())
+            SizedBox(child: Second()),
+            SizedBox(child: Third()),
+            SizedBox(child: Four()),
+            SizedBox(child: Five())
           ],
         ),
       ),
@@ -33,8 +33,8 @@ class Frist extends StatefulWidget {
 class _FristState extends State<Frist> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-        child: Container(
+    return SizedBox(
+        child: SizedBox(
       child: Column(
         children: [
           Stack(
@@ -49,7 +49,7 @@ class _FristState extends State<Frist> {
                         borderRadius: BorderRadius.circular(10)),
                     width: 40,
                     height: 40,
-                    child: Icon(Icons.arrow_back_ios_new)),
+                    child: const Icon(Icons.arrow_back_ios_new)),
               ),
               Positioned(
                 top: 15,
@@ -92,31 +92,31 @@ class _SecondState extends State<Second> {
                 Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.all(5.0),
+                      padding: const EdgeInsets.all(5.0),
                       child: ListTile(
-                          title: Text(
+                          title: const Text(
                             "Komodo lsland",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 25,
                             ),
                           ),
-                          subtitle: Container(
+                          subtitle: SizedBox(
                               child: Row(
                             children: [
                               Container(
                                   padding: EdgeInsets.only(left: 0.1, top: 10),
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.location_on_outlined,
                                     color: Colors.blue,
                                   )),
                               Container(
                                 width: MediaQuery.of(context).size.width / 2,
-                                padding: EdgeInsets.only(
+                                padding: const EdgeInsets.only(
                                   top: 10,
                                 ),
-                                margin: EdgeInsets.only(left: 10),
-                                child: Text("Sumbewa, indonesia",
+                                margin: const EdgeInsets.only(left: 10),
+                                child: const Text("Sumbewa, indonesia",
                                     style: TextStyle(
                                         fontSize: 15,
                                         fontWeight: FontWeight.bold,
@@ -124,11 +124,11 @@ class _SecondState extends State<Second> {
                               )
                             ],
                           )),
-                          trailing: Container(
+                          trailing: SizedBox(
                               width: 70,
                               child: Row(
                                 children: [
-                                  Container(
+                                  const SizedBox(
                                     child: Icon(
                                       Icons.star_border,
                                       color: Colors.yellow,
@@ -136,7 +136,7 @@ class _SecondState extends State<Second> {
                                   ),
                                   Container(
                                     padding: EdgeInsets.only(left: 10),
-                                    child: Text("2.4k",
+                                    child: const Text("2.4k",
                                         style: TextStyle(
                                           fontSize: 15,
                                           fontWeight: FontWeight.bold,
@@ -164,12 +164,12 @@ class Third extends StatefulWidget {
 class _ThirdState extends State<Third> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       child: Column(
         children: [
           Container(
             padding: EdgeInsets.only(right: 290, top: 15),
-            child: Text(
+            child: const Text(
               "About",
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
@@ -178,16 +178,16 @@ class _ThirdState extends State<Third> {
             width: MediaQuery.of(context).size.width,
           ),
           Container(
-            padding: EdgeInsets.only(top: 15),
+            padding: const EdgeInsets.only(top: 15),
             width: MediaQuery.of(context).size.width / 1.2,
-            child: Text(
+            child: const Text(
               "Komodo (Indonesian: Pulau Komodo) is one of the 17,508 islands that comprise the Republic of Indonesia. The island is particularly notable as the habitat of the Komodo dragon.",
               style: TextStyle(letterSpacing: 1.0, height: 1.8),
             ),
           ),
           Container(
-            padding: EdgeInsets.only(right: 290, top: 15),
-            child: Text(
+            padding: const EdgeInsets.only(right: 290, top: 15),
+            child: const Text(
               "Image",
               style: TextStyle(
                 fontSize: 20,
@@ -211,7 +211,7 @@ class Four extends StatefulWidget {
 class _FourState extends State<Four> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
         width: MediaQuery.of(context).size.width / 1,
         height: MediaQuery.of(context).size.width / 5,
         child: ListView(
@@ -222,25 +222,25 @@ class _FourState extends State<Four> {
                   BoxDecoration(borderRadius: BorderRadius.circular(300)),
               height: MediaQuery.of(context).size.width / 4,
               width: 100,
-              padding: EdgeInsets.only(top: 20, left: 20),
+              padding: const EdgeInsets.only(top: 20, left: 20),
               child: Image.asset("images/assets36/komo.jpg"),
             ),
             Container(
               height: MediaQuery.of(context).size.width / 4,
               width: 100,
-              padding: EdgeInsets.only(top: 20, left: 20),
+              padding: const EdgeInsets.only(top: 20, left: 20),
               child: Image.asset("images/assets36/komo.jpg"),
             ),
             Container(
               height: MediaQuery.of(context).size.width / 4,
               width: 100,
-              padding: EdgeInsets.only(top: 20, left: 20),
+              padding: const EdgeInsets.only(top: 20, left: 20),
               child: Image.asset("images/assets36/komo.jpg"),
             ),
             Container(
               height: MediaQuery.of(context).size.width / 4,
               width: 100,
-              padding: EdgeInsets.only(top: 20, left: 20),
+              padding: const EdgeInsets.only(top: 20, left: 20),
               child: Image.asset("images/assets36/komo.jpg"),
             ),
           ],
@@ -258,14 +258,14 @@ class Five extends StatefulWidget {
 class _FiveState extends State<Five> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       child: Row(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 80,
             width: 20,
           ),
-          Container(
+          const SizedBox(
             height: 30,
             width: 50,
             child: Icon(
@@ -273,19 +273,19 @@ class _FiveState extends State<Five> {
               color: Colors.red,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: 20,
           ),
           Container(
-            constraints: BoxConstraints(maxWidth: 250.0, minHeight: 50.0),
-            margin: EdgeInsets.all(10),
+            constraints: const BoxConstraints(maxWidth: 250.0, minHeight: 50.0),
+            margin: const EdgeInsets.all(10),
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
                 color: Theme.of(context).accentColor,
               ),
               child: Padding(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: Container(
                   alignment: Alignment.center,
                   child: Row(

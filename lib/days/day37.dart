@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day37 extends StatelessWidget {
-  const day37({Key? key}) : super(key: key);
+class Day37 extends StatelessWidget {
+  const Day37({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class day37 extends StatelessWidget {
               SizedBox(
                 height: size,
               ),
-              Container(
+              SizedBox(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -44,7 +44,7 @@ class day37 extends StatelessWidget {
                         size: size + size,
                       ),
                     ),
-                    Container(
+                    SizedBox(
                       child: Icon(
                         Icons.stars_sharp,
                         color: Colors.green[900],
@@ -85,7 +85,7 @@ class day37 extends StatelessWidget {
               SizedBox(
                 height: size + size,
               ),
-              Container(
+              SizedBox(
                 height: mheight / 6,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
