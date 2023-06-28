@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day42 extends StatelessWidget {
-  day42({Key? key}) : super(key: key);
+class Day42 extends StatelessWidget {
+  Day42({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class day42 extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Container(
+              SizedBox(
                 height: MediaQuery.of(context).size.height / 2 - 50,
                 width: MediaQuery.of(context).size.width,
                 child: Stack(
@@ -19,7 +19,7 @@ class day42 extends StatelessWidget {
                     Container(
                       height: MediaQuery.of(context).size.height / 3,
                       width: MediaQuery.of(context).size.width,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           borderRadius: BorderRadius.only(
                             bottomLeft: Radius.circular(70),
                             bottomRight: Radius.circular(70),
@@ -34,21 +34,22 @@ class day42 extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Container(
-                                    padding: EdgeInsets.only(left: 20, top: 20),
+                                    padding: const EdgeInsets.only(
+                                        left: 20, top: 20),
                                     child: IconButton(
                                         onPressed: () {},
-                                        icon: Icon(
+                                        icon: const Icon(
                                           Icons.arrow_back_ios,
                                           color: Colors.white70,
                                         ))),
                                 Container(
-                                    padding:
-                                        EdgeInsets.only(right: 20, top: 20),
+                                    padding: const EdgeInsets.only(
+                                        right: 20, top: 20),
                                     child: CircleAvatar(
                                       maxRadius: 20,
                                       backgroundColor:
                                           Colors.white60.withOpacity(0.4),
-                                      child: Icon(
+                                      child: const Icon(
                                         Icons.favorite_outlined,
                                         color: Colors.white,
                                       ),
@@ -56,7 +57,7 @@ class day42 extends StatelessWidget {
                               ],
                             ),
                             Container(
-                                padding: EdgeInsets.only(top: 20),
+                                padding: const EdgeInsets.only(top: 20),
                                 child: Center(
                                   child: CircleAvatar(
                                     maxRadius: 25,
@@ -64,7 +65,7 @@ class day42 extends StatelessWidget {
                                         Colors.white.withOpacity(0.5),
                                     child: IconButton(
                                       onPressed: () {},
-                                      icon: Icon(
+                                      icon: const Icon(
                                         Icons.play_arrow,
                                         color: Colors.white,
                                         size: 26,
@@ -77,8 +78,8 @@ class day42 extends StatelessWidget {
                             ),
                             Container(
                                 alignment: Alignment.centerLeft,
-                                padding: EdgeInsets.only(left: 35),
-                                child: Text(
+                                padding: const EdgeInsets.only(left: 35),
+                                child: const Text(
                                   "Little Orpheus",
                                   style: TextStyle(
                                       fontSize: 30,
@@ -90,25 +91,26 @@ class day42 extends StatelessWidget {
                               child: Row(
                                 children: [
                                   Container(
-                                      padding:
-                                          EdgeInsets.only(left: 5, bottom: 5),
-                                      child: Icon(
+                                      padding: const EdgeInsets.only(
+                                          left: 5, bottom: 5),
+                                      child: const Icon(
                                         Icons.local_play_outlined,
                                         color: Colors.white70,
                                       )),
                                   Container(
-                                      padding: EdgeInsets.only(bottom: 10),
-                                      child: Text(
+                                      padding:
+                                          const EdgeInsets.only(bottom: 10),
+                                      child: const Text(
                                         "  by the Chinese room :  2m  34 s",
                                         style: TextStyle(
                                             fontSize: 13,
                                             color: Colors.white70),
                                       )),
                                   Container(
-                                      padding: EdgeInsets.only(left: 140),
+                                      padding: const EdgeInsets.only(left: 140),
                                       child: IconButton(
                                         onPressed: () {},
-                                        icon: Icon(
+                                        icon: const Icon(
                                           Icons.more_vert_rounded,
                                           color: Colors.white70,
                                         ),
@@ -136,9 +138,9 @@ class day42 extends StatelessWidget {
                             ),
                             child: SingleChildScrollView(
                               child: Column(
-                                children: [
+                                children: const [
                                   Padding(
-                                    padding: const EdgeInsets.all(8.0),
+                                    padding: EdgeInsets.all(8.0),
                                     child: Icon(
                                       Icons.star_rate_rounded,
                                       size: 25,
@@ -146,7 +148,7 @@ class day42 extends StatelessWidget {
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.all(8.0),
+                                    padding: EdgeInsets.all(8.0),
                                     child: Text(
                                       "Rating",
                                       style: TextStyle(
@@ -172,9 +174,9 @@ class day42 extends StatelessWidget {
                               borderRadius: BorderRadius.circular(30),
                             ),
                             child: Column(
-                              children: [
+                              children: const [
                                 Padding(
-                                  padding: const EdgeInsets.all(8.0),
+                                  padding: EdgeInsets.all(8.0),
                                   child: Icon(
                                     Icons.fiber_smart_record,
                                     size: 25,
@@ -182,7 +184,7 @@ class day42 extends StatelessWidget {
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.all(8.0),
+                                  padding: EdgeInsets.all(8.0),
                                   child: Text(
                                     "Players",
                                     style:
@@ -207,9 +209,9 @@ class day42 extends StatelessWidget {
                               borderRadius: BorderRadius.circular(30),
                             ),
                             child: Column(
-                              children: [
+                              children: const [
                                 Padding(
-                                  padding: const EdgeInsets.all(8.0),
+                                  padding: EdgeInsets.all(8.0),
                                   child: Icon(
                                     Icons.circle_notifications,
                                     size: 25,
@@ -217,7 +219,7 @@ class day42 extends StatelessWidget {
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.all(8.0),
+                                  padding: EdgeInsets.all(8.0),
                                   child: Text(
                                     "category",
                                     style:
@@ -239,8 +241,8 @@ class day42 extends StatelessWidget {
               ),
               Container(
                   alignment: Alignment.centerLeft,
-                  padding: EdgeInsets.only(left: 40),
-                  child: Text(
+                  padding: const EdgeInsets.only(left: 40),
+                  child: const Text(
                     "About",
                     style: TextStyle(
                         fontSize: 20,
@@ -250,7 +252,7 @@ class day42 extends StatelessWidget {
               SizedBox(
                 height: MediaQuery.of(context).size.height / 70,
               ),
-              Container(
+              SizedBox(
                 height: MediaQuery.of(context).size.height / 11,
                 width: MediaQuery.of(context).size.width / 1.5 + 65,
                 child: SingleChildScrollView(
@@ -260,7 +262,7 @@ class day42 extends StatelessWidget {
                       SingleChildScrollView(
                         scrollDirection: Axis.horizontal,
                         child: Row(
-                          children: [
+                          children: const [
                             Text(
                               "Come and a look at this 4 bedroom and 3 bath ranch with full basement.",
                               style:
@@ -275,7 +277,7 @@ class day42 extends StatelessWidget {
                       SingleChildScrollView(
                         scrollDirection: Axis.horizontal,
                         child: Row(
-                          children: [
+                          children: const [
                             Text(
                               "Home also features living room on main level,eat in kitchen and all",
                               style:
@@ -290,7 +292,7 @@ class day42 extends StatelessWidget {
                       SingleChildScrollView(
                         scrollDirection: Axis.horizontal,
                         child: Row(
-                          children: [
+                          children: const [
                             Text(
                               "three bedrooms.Super cut layout..Basement has unfinished laundry",
                               style:
@@ -305,7 +307,7 @@ class day42 extends StatelessWidget {
                       SingleChildScrollView(
                         scrollDirection: Axis.horizontal,
                         child: Row(
-                          children: [
+                          children: const [
                             Text(
                               "room with tons of storage and partially finished rec room on other side...",
                               style:
@@ -323,11 +325,11 @@ class day42 extends StatelessWidget {
               ),
               Container(
                   alignment: Alignment.centerLeft,
-                  padding: EdgeInsets.only(left: 30),
+                  padding: const EdgeInsets.only(left: 30),
                   child: ElevatedButton(
                     style: flatButtonStyle,
                     onPressed: () {},
-                    child: Text("Read more"),
+                    child: const Text("Read more"),
                   )),
               SizedBox(
                 height: MediaQuery.of(context).size.height / 100,
@@ -336,18 +338,18 @@ class day42 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                      padding: EdgeInsets.only(left: 30),
-                      child: Text(
+                      padding: const EdgeInsets.only(left: 30),
+                      child: const Text(
                         "Ratings",
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.w600),
                       )),
                   Container(
-                      padding: EdgeInsets.only(right: 20),
+                      padding: const EdgeInsets.only(right: 20),
                       alignment: Alignment.centerRight,
                       child: TextButton(
                         onPressed: () {},
-                        child: Text("See all"),
+                        child: const Text("See all"),
                       )),
                 ],
               ),
@@ -367,7 +369,7 @@ class day42 extends StatelessWidget {
                         width: MediaQuery.of(context).size.width / 6,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image: AssetImage("images/assets42/img1.jpg"),
                             fit: BoxFit.cover,
                           ),
@@ -384,22 +386,22 @@ class day42 extends StatelessWidget {
                             children: [
                               Row(
                                 children: [
-                                  Text(
+                                  const Text(
                                     "Catherine 23",
                                     style: TextStyle(
                                         fontSize: 18,
                                         fontWeight: FontWeight.w500),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 60,
                                   ),
-                                  Container(
+                                  SizedBox(
                                     height:
                                         MediaQuery.of(context).size.height / 60,
                                     width:
                                         MediaQuery.of(context).size.width / 5,
                                     child: Row(
-                                      children: [
+                                      children: const [
                                         Icon(
                                           Icons.star_rate_rounded,
                                           size: 15,
@@ -420,7 +422,7 @@ class day42 extends StatelessWidget {
                               SingleChildScrollView(
                                 scrollDirection: Axis.horizontal,
                                 child: Row(
-                                  children: [
+                                  children: const [
                                     Text(
                                       "Thoroughly enjoing this game.im finding it",
                                       style: TextStyle(
@@ -436,7 +438,7 @@ class day42 extends StatelessWidget {
                               SingleChildScrollView(
                                 scrollDirection: Axis.horizontal,
                                 child: Row(
-                                  children: [
+                                  children: const [
                                     Text(
                                       "quite addictive. Some of the levels are quite...",
                                       style: TextStyle(
@@ -472,7 +474,7 @@ class day42 extends StatelessWidget {
                         width: MediaQuery.of(context).size.width / 6,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image: AssetImage("images/assets42/img2.jpg"),
                             fit: BoxFit.cover,
                           ),
@@ -481,7 +483,7 @@ class day42 extends StatelessWidget {
                       SizedBox(
                         width: MediaQuery.of(context).size.width / 23,
                       ),
-                      Container(
+                      SizedBox(
                         height: MediaQuery.of(context).size.height / 12,
                         width: MediaQuery.of(context).size.width / 1.5,
                         child: SingleChildScrollView(
@@ -491,19 +493,19 @@ class day42 extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text(
+                                  const Text(
                                     "RoboGame_22",
                                     style: TextStyle(
                                         fontSize: 18,
                                         fontWeight: FontWeight.w500),
                                   ),
-                                  Container(
+                                  SizedBox(
                                     height:
                                         MediaQuery.of(context).size.height / 60,
                                     width:
                                         MediaQuery.of(context).size.width / 5,
                                     child: Row(
-                                      children: [
+                                      children: const [
                                         Icon(
                                           Icons.star_rate_rounded,
                                           size: 15,
@@ -524,7 +526,7 @@ class day42 extends StatelessWidget {
                               SingleChildScrollView(
                                 scrollDirection: Axis.horizontal,
                                 child: Row(
-                                  children: [
+                                  children: const [
                                     Text(
                                       "This is really fun game! The graphics quality",
                                       style: TextStyle(
@@ -540,7 +542,7 @@ class day42 extends StatelessWidget {
                               SingleChildScrollView(
                                 scrollDirection: Axis.horizontal,
                                 child: Row(
-                                  children: [
+                                  children: const [
                                     Text(
                                       "is amazing. i do wish there were move level...",
                                       style: TextStyle(
@@ -566,8 +568,8 @@ class day42 extends StatelessWidget {
 
   final ButtonStyle flatButtonStyle = TextButton.styleFrom(
     primary: Colors.white,
-    minimumSize: Size(88, 36),
-    padding: EdgeInsets.symmetric(horizontal: 16.0),
+    minimumSize: const Size(88, 36),
+    padding: const EdgeInsets.symmetric(horizontal: 16.0),
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.all(Radius.circular(20)),
     ),

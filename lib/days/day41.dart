@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day extends StatelessWidget {
-  const day({Key? key}) : super(key: key);
+class Day41 extends StatelessWidget {
+  const Day41({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class day extends StatelessWidget {
         ShaderMask(
           blendMode: BlendMode.srcATop,
           shaderCallback: (Rect bounds) {
-            return LinearGradient(colors: const [
+            return const LinearGradient(colors: [
               Colors.black,
               Colors.transparent,
               Colors.transparent,
@@ -31,7 +31,7 @@ class day extends StatelessWidget {
           child: Container(
             padding: EdgeInsets.all(sbxHt + 7),
             alignment: Alignment.topCenter,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.black,
               image: DecorationImage(
                   image: AssetImage(
@@ -43,13 +43,13 @@ class day extends StatelessWidget {
             child: Row(
               children: [
                 IconButton(
-                    icon: Icon(Icons.arrow_back_ios_new_sharp,
+                    icon: const Icon(Icons.arrow_back_ios_new_sharp,
                         color: Colors.white),
                     onPressed: () {},
                     tooltip: "back"),
                 Expanded(child: Container(height: sbxHt)),
                 IconButton(
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.search,
                     color: Colors.white,
                   ),
@@ -106,7 +106,7 @@ class day extends StatelessWidget {
                           children: [
                             Container(
                               width: conHt,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 image: DecorationImage(
                                   image: AssetImage(
                                     "images/assets41/img1.jpg",
@@ -120,7 +120,7 @@ class day extends StatelessWidget {
 //CONTAINER 2
                             Container(
                               width: conHt,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 image: DecorationImage(
                                   image: AssetImage(
                                     "images/assets41/img2.jpg",
@@ -134,7 +134,7 @@ class day extends StatelessWidget {
 //CONTAINER 3
                             Container(
                                 width: conHt,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                     image: DecorationImage(
                                   image: AssetImage(
                                     "images/assets41/img3.jpg",
@@ -146,7 +146,7 @@ class day extends StatelessWidget {
 // CONTAINER 4
                             Container(
                                 width: conHt,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                     image: DecorationImage(
                                   image: AssetImage(
                                     "images/assets41/img4.jpg",
