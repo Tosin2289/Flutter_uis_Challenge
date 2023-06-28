@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day46 extends StatelessWidget {
-  const day46({Key? key}) : super(key: key);
+class Day46 extends StatelessWidget {
+  const Day46({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,28 +11,28 @@ class day46 extends StatelessWidget {
       children: [
         Container(
           height: MediaQuery.of(context).size.height / 2.4,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               image: DecorationImage(
                   image: AssetImage("images/assets46/cafe.jpg"),
                   fit: BoxFit.cover)),
           child: Column(
             children: [
               Container(
-                  margin: EdgeInsets.only(top: 35),
-                  padding: EdgeInsets.only(right: 15, left: 15),
+                  margin: const EdgeInsets.only(top: 35),
+                  padding: const EdgeInsets.only(right: 15, left: 15),
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
+                      children: const [
                         Icon(Icons.arrow_back_sharp, color: Colors.white),
                         Icon(Icons.favorite_outlined, color: Colors.white)
                       ])),
               Container(
-                  margin: EdgeInsets.only(top: 190),
-                  padding: EdgeInsets.only(right: 15, left: 15),
+                  margin: const EdgeInsets.only(top: 190),
+                  padding: const EdgeInsets.only(right: 15, left: 15),
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Wiltons",
                           style: TextStyle(
                               color: Colors.white,
@@ -40,7 +40,7 @@ class day46 extends StatelessWidget {
                               fontWeight: FontWeight.bold),
                         ),
                         Row(
-                          children: [
+                          children: const [
                             Icon(Icons.star_rate_rounded,
                                 color: Colors.white, size: 18),
                             Text(
@@ -59,7 +59,7 @@ class day46 extends StatelessWidget {
         Expanded(
           child: Container(
             color: Colors.grey[300],
-            padding: EdgeInsets.only(left: 15, right: 15),
+            padding: const EdgeInsets.only(left: 15, right: 15),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -67,13 +67,13 @@ class day46 extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
+                    SizedBox(
                       width: MediaQuery.of(context).size.width / 1.9,
                       height: MediaQuery.of(context).size.height / 6,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                               "London/s oldest restaurant is a noble and unapologetic slice of quaint,quintessential...",
                               softWrap: true,
                               style:
@@ -83,7 +83,7 @@ class day46 extends StatelessWidget {
                             children: [
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
+                                children: const [
                                   Text("OPEN NOW",
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold)),
@@ -95,7 +95,7 @@ class day46 extends StatelessWidget {
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
+                                children: const [
                                   Text("12 POSTS",
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold)),
@@ -115,15 +115,15 @@ class day46 extends StatelessWidget {
                       width: MediaQuery.of(context).size.width / 4,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               image: AssetImage("images/assets46/map.jpg"),
                               fit: BoxFit.cover)),
                     )
                   ],
                 ),
                 Container(
-                    margin: EdgeInsetsDirectional.only(top: 18),
-                    child: Text('MENU',
+                    margin: const EdgeInsetsDirectional.only(top: 18),
+                    child: const Text('MENU',
                         style: TextStyle(
                             color: Colors.grey, fontWeight: FontWeight.bold))),
                 Container(
@@ -145,21 +145,21 @@ class day46 extends StatelessWidget {
                       width: 90,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               image: AssetImage("images/assets46/food.jpg"),
                               fit: BoxFit.cover)),
                     ),
                     Container(
                       height: 90,
                       width: 190,
-                      margin: EdgeInsets.only(left: 20),
+                      margin: const EdgeInsets.only(left: 20),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Cropwell Bishop Stilton souffle",
+                          const Text("Cropwell Bishop Stilton souffle",
                               style: TextStyle(fontWeight: FontWeight.bold)),
-                          Text("Omelette, fresh vegetables...",
+                          const Text("Omelette, fresh vegetables...",
                               style: TextStyle(color: Colors.grey)),
                           Container(
                             height: 22,

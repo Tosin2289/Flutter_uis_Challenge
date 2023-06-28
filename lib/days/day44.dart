@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_carousel_slider/carousel_slider.dart';
 
-class day44 extends StatefulWidget {
-  const day44({Key? key}) : super(key: key);
+class Day44 extends StatefulWidget {
+  const Day44({Key? key}) : super(key: key);
 
   @override
-  State<day44> createState() => _day44State();
+  State<Day44> createState() => _Day44State();
 }
 
-class _day44State extends State<day44> {
+class _Day44State extends State<Day44> {
   @override
   Widget build(BuildContext context) {
     final List letters = [
@@ -32,7 +32,7 @@ class _day44State extends State<day44> {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              Container(
+              SizedBox(
                 height: MediaQuery.of(context).size.height / 2,
                 child: CarouselSlider.builder(
                   unlimitedMode: true,
@@ -54,7 +54,7 @@ class _day44State extends State<day44> {
                     currentIndicatorColor: Colors.white,
                     itemSpacing: 14,
                     indicatorRadius: 3,
-                    padding: EdgeInsets.only(bottom: 32),
+                    padding: const EdgeInsets.only(bottom: 32),
                     indicatorBorderColor: Colors.white,
                   ),
                   itemCount: letters.length,
@@ -94,7 +94,7 @@ class _day44State extends State<day44> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            Container(
+                            SizedBox(
                               child: Row(
                                 children: [
                                   Icon(
@@ -141,9 +141,9 @@ class _day44State extends State<day44> {
                         const SizedBox(
                           height: 10,
                         ),
-                        Container(
+                        const SizedBox(
                           height: 100,
-                          child: const Text(
+                          child: Text(
                             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                             overflow: TextOverflow.fade,
                             style: TextStyle(color: Colors.grey),

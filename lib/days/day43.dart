@@ -1,49 +1,50 @@
 import 'package:flutter/material.dart';
 
-class day43 extends StatelessWidget {
-  const day43({Key? key}) : super(key: key);
+class Day43 extends StatelessWidget {
+  const Day43({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-        child: Container(
-      child: Scaffold(
-        backgroundColor: Colors.transparent,
-        appBar: AppBar(
+      child: Container(
+        decoration: const BoxDecoration(
+            gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                stops: [
+              0.1,
+              1.0,
+            ],
+                colors: [
+              Color.fromRGBO(218, 203, 244, 1),
+              Color.fromRGBO(230, 255, 255, 1),
+              // 227, 226, 250,
+            ])),
+        child: Scaffold(
           backgroundColor: Colors.transparent,
-          elevation: 0,
-          title: Text(
-            "Local screencast",
-            style: TextStyle(
-                color: Colors.indigo[900],
-                fontSize: MediaQuery.of(context).size.width / 20,
-                fontWeight: FontWeight.w600),
+          appBar: AppBar(
+            backgroundColor: Colors.transparent,
+            elevation: 0,
+            title: Text(
+              "Local screencast",
+              style: TextStyle(
+                  color: Colors.indigo[900],
+                  fontSize: MediaQuery.of(context).size.width / 20,
+                  fontWeight: FontWeight.w600),
+            ),
+            centerTitle: true,
+            leading: IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.arrow_back,
+                  color: Colors.indigo[900],
+                  size: MediaQuery.of(context).size.width / 12.5,
+                )),
           ),
-          centerTitle: true,
-          leading: IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.arrow_back,
-                color: Colors.indigo[900],
-                size: MediaQuery.of(context).size.width / 12.5,
-              )),
+          body: const Body(),
         ),
-        body: const Body(),
       ),
-      decoration: const BoxDecoration(
-          gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              stops: [
-            0.1,
-            1.0,
-          ],
-              colors: [
-            Color.fromRGBO(218, 203, 244, 1),
-            Color.fromRGBO(230, 255, 255, 1),
-            // 227, 226, 250,
-          ])),
-    ));
+    );
   }
 }
 
@@ -92,6 +93,9 @@ class _BodyState extends State<Body> {
             Container(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height / 8,
+              decoration: BoxDecoration(
+                  color: Colors.indigo[50],
+                  borderRadius: BorderRadius.circular(50)),
               child: Stack(
                 clipBehavior: Clip.none,
                 children: [
@@ -126,9 +130,6 @@ class _BodyState extends State<Body> {
                       ))
                 ],
               ),
-              decoration: BoxDecoration(
-                  color: Colors.indigo[50],
-                  borderRadius: BorderRadius.circular(50)),
             ),
             SizedBox(
               height: MediaQuery.of(context).size.height / 25,
@@ -149,9 +150,16 @@ class _BodyState extends State<Body> {
             horizontal: MediaQuery.of(context).size.width / 20),
         child: Container(
           padding: const EdgeInsets.all(1),
+          decoration: BoxDecoration(
+              color: Colors.indigo.withOpacity(0.1),
+              borderRadius: BorderRadius.circular(30)),
           child: Column(
             children: [
               Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(30),
+                  color: Colors.indigo[50],
+                ),
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height / 7,
                 child: Row(
@@ -189,10 +197,6 @@ class _BodyState extends State<Body> {
                       ],
                     )
                   ],
-                ),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30),
-                  color: Colors.indigo[50],
                 ),
               ),
               SizedBox(
@@ -261,9 +265,6 @@ class _BodyState extends State<Body> {
               ),
             ],
           ),
-          decoration: BoxDecoration(
-              color: Colors.indigo.withOpacity(0.1),
-              borderRadius: BorderRadius.circular(30)),
         ),
       ),
     ]);
@@ -300,6 +301,16 @@ class _MediaState extends State<Media> {
           return Column(
             children: [
               Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: index == 0
+                      ? Colors.indigo[200]
+                      : index == 1
+                          ? Colors.orange[100]
+                          : index == 2
+                              ? Colors.blueGrey[100]
+                              : Colors.amber[100],
+                ),
                 margin: EdgeInsets.symmetric(
                     horizontal: MediaQuery.of(context).size.width / 30),
                 height: MediaQuery.of(context).size.height / 4,
@@ -308,16 +319,6 @@ class _MediaState extends State<Media> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-                      padding: EdgeInsets.all(
-                          MediaQuery.of(context).size.width / 40),
-                      child: Container(
-                        height: MediaQuery.of(context).size.height / 20,
-                        width: MediaQuery.of(context).size.width / 10,
-                        decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage(midiai[index]),
-                                fit: BoxFit.fill)),
-                      ),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
                         color: index == 0
@@ -327,6 +328,16 @@ class _MediaState extends State<Media> {
                                 : index == 2
                                     ? Colors.blueGrey[50]
                                     : Colors.amber[50],
+                      ),
+                      padding: EdgeInsets.all(
+                          MediaQuery.of(context).size.width / 40),
+                      child: Container(
+                        height: MediaQuery.of(context).size.height / 20,
+                        width: MediaQuery.of(context).size.width / 10,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage(midiai[index]),
+                                fit: BoxFit.fill)),
                       ),
                     ),
                     SizedBox(
@@ -344,16 +355,6 @@ class _MediaState extends State<Media> {
                           color: Colors.indigo[900]),
                     )
                   ],
-                ),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: index == 0
-                      ? Colors.indigo[200]
-                      : index == 1
-                          ? Colors.orange[100]
-                          : index == 2
-                              ? Colors.blueGrey[100]
-                              : Colors.amber[100],
                 ),
               ),
             ],
