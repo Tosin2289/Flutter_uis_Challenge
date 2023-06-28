@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day50 extends StatelessWidget {
-  const day50({Key? key}) : super(key: key);
+class Day50 extends StatelessWidget {
+  const Day50({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class day50 extends StatelessWidget {
                   "images/assets50/child.png",
                   height: 300,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 Container(
@@ -31,13 +31,13 @@ class day50 extends StatelessWidget {
                     child: Row(
                       children: [
                         Image.asset("images/assets50/food1.png"),
-                        SizedBox(
+                        const SizedBox(
                           width: 15,
                         ),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
+                          children: const [
                             Text(
                               "Kacang Almond",
                               style: TextStyle(
@@ -49,18 +49,18 @@ class day50 extends StatelessWidget {
                             ),
                           ],
                         ),
-                        Spacer(),
+                        const Spacer(),
                         CircleAvatar(
                           maxRadius: MediaQuery.of(context).size.height / 60,
                           backgroundColor: Colors.deepOrangeAccent[200],
-                          child:
-                              Icon(Icons.done, size: 20, color: Colors.white),
+                          child: const Icon(Icons.done,
+                              size: 20, color: Colors.white),
                         )
                       ],
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Container(
@@ -75,13 +75,13 @@ class day50 extends StatelessWidget {
                     child: Row(
                       children: [
                         Image.asset("images/assets50/food2.png"),
-                        SizedBox(
+                        const SizedBox(
                           width: 15,
                         ),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
+                          children: const [
                             Text(
                               "Donat Strawbarry",
                               style: TextStyle(
@@ -93,33 +93,33 @@ class day50 extends StatelessWidget {
                             ),
                           ],
                         ),
-                        Spacer(),
+                        const Spacer(),
                         CircleAvatar(
                           maxRadius: MediaQuery.of(context).size.height / 60,
                           backgroundColor: Colors.deepOrangeAccent[200],
-                          child:
-                              Icon(Icons.done, size: 20, color: Colors.white),
+                          child: const Icon(Icons.done,
+                              size: 20, color: Colors.white),
                         )
                       ],
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16.0),
                   child: Divider(
                     thickness: 1,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   child: Row(
-                    children: [
+                    children: const [
                       Text(
                         "Terima Kasih",
                         style: TextStyle(
@@ -128,35 +128,35 @@ class day50 extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16.0),
                   child: Text(
                     "Pembayaran Anda tolah kami terima dan silahkan menunggu untuk datangnya\n barang yang Anda beli",
                     textAlign: TextAlign.start,
                     style: TextStyle(color: Colors.grey),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Container(
+                SizedBox(
                   height: 50,
                   width: MediaQuery.of(context).size.width,
                   child: ElevatedButton(
                     onPressed: () {},
-                    child: Text(
-                      "Ke halaman utama",
-                    ),
                     style: ButtonStyle(
                         backgroundColor:
                             MaterialStateProperty.all<Color>(Colors.black54),
                         shape: MaterialStateProperty.all(RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30)))),
+                    child: const Text(
+                      "Ke halaman utama",
+                    ),
                   ),
-                )
+                ),
               ],
             ),
           ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day48 extends StatelessWidget {
-  const day48({Key? key}) : super(key: key);
+class Day48 extends StatelessWidget {
+  const Day48({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,12 +10,12 @@ class day48 extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
-        leading: Icon(
+        leading: const Icon(
           Icons.arrow_back_ios,
           color: Colors.black,
         ),
         centerTitle: true,
-        title: Text(
+        title: const Text(
           "Payment",
           style: TextStyle(color: Colors.black),
         ),
@@ -24,7 +24,7 @@ class day48 extends StatelessWidget {
         padding: const EdgeInsets.all(12.0),
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Container(
@@ -39,34 +39,34 @@ class day48 extends StatelessWidget {
                 child: Column(
                   children: [
                     Row(
-                      children: [
+                      children: const [
                         Text(
                           "Credit Card",
                           style: TextStyle(color: Colors.white, fontSize: 18),
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     Row(
-                      children: [
+                      children: const [
                         Text(
                           "3541 4485402 00436",
                           style: TextStyle(color: Colors.white, fontSize: 20),
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
                     Row(
                       children: [
-                        Text(
+                        const Text(
                           "Dainor Smith",
                           style: TextStyle(color: Colors.white, fontSize: 14),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Image.asset(
                           "images/assets48/mastercard.png",
                           height: 50,
@@ -78,11 +78,11 @@ class day48 extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
             Row(
-              children: [
+              children: const [
                 Text(
                   "Choose Payment Method",
                   style: TextStyle(
@@ -92,7 +92,7 @@ class day48 extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Row(
@@ -147,7 +147,7 @@ class day48 extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(color: Colors.transparent),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Icon(
                       Icons.more_horiz,
                       size: 28,
@@ -156,11 +156,11 @@ class day48 extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Row(
-              children: [
+              children: const [
                 Text(
                   "Promo Code",
                   style: TextStyle(
@@ -170,7 +170,7 @@ class day48 extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Container(
@@ -185,7 +185,7 @@ class day48 extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       "Promo Code",
                       style: TextStyle(
                           fontSize: 23,
@@ -200,7 +200,7 @@ class day48 extends StatelessWidget {
                             10,
                           ),
                           color: Colors.black),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           "Apply",
                           style: TextStyle(color: Colors.white, fontSize: 19),
@@ -211,12 +211,12 @@ class day48 extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
+              children: const [
                 Text(
                   "Total Payment",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
@@ -227,7 +227,7 @@ class day48 extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Container(
@@ -235,7 +235,7 @@ class day48 extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10), color: Colors.black),
-              child: Center(
+              child: const Center(
                 child: Text(
                   "Pay",
                   style: TextStyle(fontSize: 20, color: Colors.white),

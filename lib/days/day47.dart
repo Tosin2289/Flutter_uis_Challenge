@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day47 extends StatelessWidget {
-  const day47({Key? key}) : super(key: key);
+class Day47 extends StatelessWidget {
+  const Day47({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -108,13 +108,13 @@ class day47 extends StatelessWidget {
                   ),
                 )),
             Positioned(
+              bottom: MediaQuery.of(context).size.height / 2.61,
               child: Text(
                 " Lifestyle Pro Excercise",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: MediaQuery.of(context).size.width / 14.9),
               ),
-              bottom: MediaQuery.of(context).size.height / 2.61,
             ),
             Positioned(
                 bottom: MediaQuery.of(context).size.height / 2.84,
@@ -176,14 +176,14 @@ class day47 extends StatelessWidget {
                       Container(
                         height: MediaQuery.of(context).size.height / 18,
                         width: MediaQuery.of(context).size.width / 8.5,
+                        decoration: BoxDecoration(boxShadow: [
+                          BoxShadow(color: Colors.orange.shade100)
+                        ], borderRadius: BorderRadius.circular(21)),
                         child: Icon(
                           Icons.play_arrow_rounded,
                           size: MediaQuery.of(context).size.width / 12,
                           color: Colors.yellow.shade700,
                         ),
-                        decoration: BoxDecoration(boxShadow: [
-                          BoxShadow(color: Colors.orange.shade100)
-                        ], borderRadius: BorderRadius.circular(21)),
                       )
                     ],
                   ),
@@ -239,14 +239,14 @@ class day47 extends StatelessWidget {
                       Container(
                         height: MediaQuery.of(context).size.height / 18,
                         width: MediaQuery.of(context).size.width / 8.5,
+                        decoration: BoxDecoration(boxShadow: [
+                          BoxShadow(color: Colors.orange.shade100)
+                        ], borderRadius: BorderRadius.circular(21)),
                         child: Icon(
                           Icons.play_arrow_rounded,
                           size: MediaQuery.of(context).size.width / 13,
                           color: Colors.yellow.shade700,
                         ),
-                        decoration: BoxDecoration(boxShadow: [
-                          BoxShadow(color: Colors.orange.shade100)
-                        ], borderRadius: BorderRadius.circular(21)),
                       )
                     ],
                   ),
@@ -267,16 +267,16 @@ class day47 extends StatelessWidget {
                     child: Row(
                       children: [
                         Container(
-                          child: Icon(
-                            Icons.lock,
-                            color: Colors.white,
-                            size: MediaQuery.of(context).size.width / 13,
-                          ),
                           height: MediaQuery.of(context).size.height / 13.7,
                           width: MediaQuery.of(context).size.width / 6.8,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(40),
                               color: Colors.orange),
+                          child: Icon(
+                            Icons.lock,
+                            color: Colors.white,
+                            size: MediaQuery.of(context).size.width / 13,
+                          ),
                         ),
                         Text(
                           "  Unlock Course Now ",

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class day49 extends StatefulWidget {
-  const day49({Key? key}) : super(key: key);
+class Day49 extends StatefulWidget {
+  const Day49({Key? key}) : super(key: key);
 
   @override
-  State<day49> createState() => _day49State();
+  State<Day49> createState() => _Day49State();
 }
 
-class _day49State extends State<day49> {
+class _Day49State extends State<Day49> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
@@ -188,7 +188,7 @@ class _Screen1State extends State<Screen1> {
             Positioned(
               bottom: 0,
               child: Container(
-                padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+                padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
                 height: size.height / 2.1,
                 width: size.width,
                 child: Column(
@@ -229,9 +229,7 @@ class _Screen1State extends State<Screen1> {
                         selected: true,
                         dense: true,
                         enabled: true,
-                        onLongPress: () {
-                          print("hello");
-                        }),
+                        onLongPress: () {}),
                     ListTile(
                       leading: Container(
                         width: size.width / 7.5,
@@ -261,9 +259,7 @@ class _Screen1State extends State<Screen1> {
                       selected: true,
                       dense: true,
                       enabled: true,
-                      onLongPress: () {
-                        print("hello");
-                      },
+                      onLongPress: () {},
                     ),
                     ListTile(
                       leading: Container(
@@ -294,9 +290,7 @@ class _Screen1State extends State<Screen1> {
                       selected: true,
                       dense: true,
                       enabled: true,
-                      onLongPress: () {
-                        print("/hello/");
-                      },
+                      onLongPress: () {},
                     ),
                     ListTile(
                       leading: Container(
@@ -327,9 +321,7 @@ class _Screen1State extends State<Screen1> {
                       selected: true,
                       dense: true,
                       enabled: true,
-                      onLongPress: () {
-                        print("hello");
-                      },
+                      onLongPress: () {},
                     ),
                   ],
                 ),
