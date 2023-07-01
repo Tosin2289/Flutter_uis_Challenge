@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import "package:flutter/services.dart";
 
-class day53 extends StatelessWidget {
-  const day53({Key? key}) : super(key: key);
+class Day53 extends StatelessWidget {
+  const Day53({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -45,12 +45,12 @@ class day53 extends StatelessWidget {
                     top: MediaQuery.of(context).size.width / 50 - 15,
                     right: MediaQuery.of(context).size.width / 50 - 5,
                     child: CircleAvatar(
-                      child: Text(
+                      backgroundColor: Colors.blue[300],
+                      radius: MediaQuery.of(context).size.width / 40,
+                      child: const Text(
                         "1",
                         style: TextStyle(color: Colors.white),
                       ),
-                      backgroundColor: Colors.blue[300],
-                      radius: MediaQuery.of(context).size.width / 40,
                     ),
                   )
                 ],
@@ -105,7 +105,7 @@ class _BodyState extends State<Body> {
                   itemCount: productN.length,
                   itemBuilder: (context, index) {
                     return ListTile(
-                      contentPadding: EdgeInsets.all(1),
+                      contentPadding: const EdgeInsets.all(1),
                       title: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
@@ -141,18 +141,14 @@ class _BodyState extends State<Body> {
                                       fontWeight: FontWeight.bold)),
                               Row(children: [
                                 IconButton(
-                                  onPressed: () {
-                                    print("Ok Done-");
-                                  },
-                                  icon: Icon(Icons.remove_sharp),
+                                  onPressed: () {},
+                                  icon: const Icon(Icons.remove_sharp),
                                   splashColor: Colors.transparent,
                                 ),
-                                Text("1"),
+                                const Text("1"),
                                 IconButton(
-                                  onPressed: () {
-                                    print("Ok Done+");
-                                  },
-                                  icon: Icon(Icons.add),
+                                  onPressed: () {},
+                                  icon: const Icon(Icons.add),
                                   splashColor: Colors.transparent,
                                 ),
                               ]),
@@ -174,9 +170,7 @@ class _BodyState extends State<Body> {
                               height: MediaQuery.of(context).size.height / 25,
                               width: MediaQuery.of(context).size.width / 11,
                               child: IconButton(
-                                onPressed: () {
-                                  print("Ok Done Delete");
-                                },
+                                onPressed: () {},
                                 icon: Icon(
                                   Icons.delete_rounded,
                                   color: Colors.pink[100],
@@ -204,19 +198,17 @@ class _BodyState extends State<Body> {
                   hintText: "Promo Code",
                   border: InputBorder.none,
                   suffixIcon: ElevatedButton(
-                    onPressed: () {
-                      print("Ok Done Apply");
-                    },
-                    child: Text("Apply",
-                        style: TextStyle(
-                          fontSize: MediaQuery.of(context).size.width / 25,
-                        )),
+                    onPressed: () {},
                     style: ElevatedButton.styleFrom(
                         primary: Colors.black,
                         fixedSize: Size(MediaQuery.of(context).size.width / 4,
                             MediaQuery.of(context).size.height / 10),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20))),
+                    child: Text("Apply",
+                        style: TextStyle(
+                          fontSize: MediaQuery.of(context).size.width / 25,
+                        )),
                   ),
                 ),
               ),
@@ -235,7 +227,7 @@ class _BodyState extends State<Body> {
                         fontSize: MediaQuery.of(context).size.width / 20,
                         color: Colors.grey),
                   ),
-                  Expanded(child: Divider()),
+                  const Expanded(child: Divider()),
                   Text(
                     "\$367.00",
                     style: TextStyle(
@@ -257,7 +249,7 @@ class _BodyState extends State<Body> {
                         fontSize: MediaQuery.of(context).size.width / 20,
                         color: Colors.grey),
                   ),
-                  Expanded(child: Divider()),
+                  const Expanded(child: Divider()),
                   Text(
                     "\$4.00",
                     style: TextStyle(
@@ -279,7 +271,7 @@ class _BodyState extends State<Body> {
                         fontSize: MediaQuery.of(context).size.width / 20,
                         color: Colors.grey),
                   ),
-                  Expanded(child: Divider()),
+                  const Expanded(child: Divider()),
                   Text(
                     "\$371.00",
                     style: TextStyle(
@@ -294,21 +286,19 @@ class _BodyState extends State<Body> {
               height: MediaQuery.of(context).size.height / 45,
             ),
             ElevatedButton(
-              onPressed: () {
-                print("Ok Done Checkout");
-              },
-              child: Text(
-                "Proceed to Checkout",
-                style: TextStyle(
-                  fontSize: MediaQuery.of(context).size.width / 25,
-                ),
-              ),
+              onPressed: () {},
               style: ElevatedButton.styleFrom(
                   primary: Colors.black,
                   fixedSize: Size(MediaQuery.of(context).size.width,
                       MediaQuery.of(context).size.height / 11),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20))),
+              child: Text(
+                "Proceed to Checkout",
+                style: TextStyle(
+                  fontSize: MediaQuery.of(context).size.width / 25,
+                ),
+              ),
             ),
           ],
         ),

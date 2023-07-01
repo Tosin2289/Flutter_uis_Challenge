@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day55 extends StatelessWidget {
-  const day55({Key? key}) : super(key: key);
+class Day55 extends StatelessWidget {
+  const Day55({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,21 +13,21 @@ class day55 extends StatelessWidget {
             child: Column(
               children: [
                 Row(
-                  children: [
+                  children: const [
                     Text(
                       "Hello,",
                       style: TextStyle(color: Colors.grey),
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       "Saepul R.",
                       style: TextStyle(color: Colors.black, fontSize: 25),
                     ),
@@ -40,7 +40,7 @@ class day55 extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Container(
@@ -56,7 +56,7 @@ class day55 extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
-                            children: [
+                            children: const [
                               Icon(
                                 Icons.search,
                                 color: Colors.orange,
@@ -71,13 +71,13 @@ class day55 extends StatelessWidget {
                               )
                             ],
                           ),
-                          Icon(Icons.keyboard_arrow_down)
+                          const Icon(Icons.keyboard_arrow_down)
                         ],
                       ),
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Container(
@@ -90,11 +90,11 @@ class day55 extends StatelessWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: Column(
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Row(
-                          children: [
+                          children: const [
                             Text(
                               "What do You",
                               style: TextStyle(
@@ -103,7 +103,7 @@ class day55 extends StatelessWidget {
                           ],
                         ),
                         Row(
-                          children: [
+                          children: const [
                             Text(
                               "Want to learn",
                               style: TextStyle(
@@ -112,7 +112,7 @@ class day55 extends StatelessWidget {
                           ],
                         ),
                         Row(
-                          children: [
+                          children: const [
                             Text(
                               "today?",
                               style: TextStyle(
@@ -120,7 +120,7 @@ class day55 extends StatelessWidget {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Row(
@@ -131,7 +131,7 @@ class day55 extends StatelessWidget {
                               decoration: BoxDecoration(
                                   color: Colors.orange,
                                   borderRadius: BorderRadius.circular(10)),
-                              child: Center(
+                              child: const Center(
                                 child: Text(
                                   "Get Started",
                                   style: TextStyle(color: Colors.white),
@@ -144,18 +144,18 @@ class day55 extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Row(
-                  children: [
+                  children: const [
                     Text(
                       "Last seen courses",
                       style: TextStyle(fontSize: 20),
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Container(
@@ -180,13 +180,13 @@ class day55 extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(10),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
                             Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
+                              children: const [
                                 Text(
                                   "Basic what is PHP?",
                                   style: TextStyle(
@@ -212,7 +212,7 @@ class day55 extends StatelessWidget {
                           child: CircleAvatar(
                             radius: 23,
                             backgroundColor: Colors.orange.shade50,
-                            child: Icon(
+                            child: const Icon(
                               Icons.arrow_right_outlined,
                               size: 40,
                               color: Colors.orange,
@@ -223,7 +223,7 @@ class day55 extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Container(
@@ -248,13 +248,13 @@ class day55 extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(10),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
                             Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
+                              children: const [
                                 Text(
                                   "Story of my life?",
                                   style: TextStyle(
@@ -280,7 +280,7 @@ class day55 extends StatelessWidget {
                           child: CircleAvatar(
                             radius: 23,
                             backgroundColor: Colors.orange.shade50,
-                            child: Icon(
+                            child: const Icon(
                               Icons.arrow_right_outlined,
                               size: 40,
                               color: Colors.orange,
@@ -291,7 +291,7 @@ class day55 extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Container(
@@ -316,13 +316,13 @@ class day55 extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(10),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
                             Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
+                              children: const [
                                 Text(
                                   "How to win PES",
                                   style: TextStyle(
@@ -348,7 +348,7 @@ class day55 extends StatelessWidget {
                           child: CircleAvatar(
                             radius: 23,
                             backgroundColor: Colors.orange.shade50,
-                            child: Icon(
+                            child: const Icon(
                               Icons.arrow_right_outlined,
                               size: 40,
                               color: Colors.orange,
@@ -359,7 +359,7 @@ class day55 extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
               ],

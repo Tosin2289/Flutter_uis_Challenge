@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
-class day54 extends StatelessWidget {
-  day54({Key? key}) : super(key: key);
+class Day54 extends StatefulWidget {
+  const Day54({Key? key}) : super(key: key);
 
+  @override
+  State<Day54> createState() => _Day54State();
+}
+
+class _Day54State extends State<Day54> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -273,5 +278,5 @@ class day54 extends StatelessWidget {
     );
   }
 
-  var containerRadius = Radius.circular(30);
+  var containerRadius = const Radius.circular(30);
 }

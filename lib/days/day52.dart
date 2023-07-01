@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day52 extends StatelessWidget {
-  const day52({Key? key}) : super(key: key);
+class Day52 extends StatelessWidget {
+  const Day52({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,18 +12,18 @@ class day52 extends StatelessWidget {
             Expanded(
               flex: 2,
               child: Container(
-                padding: EdgeInsets.all(2),
+                padding: const EdgeInsets.all(2),
                 height: MediaQuery.of(context).size.height / 1.7,
                 child: Container(
-                  padding: EdgeInsets.all(15),
-                  decoration: new BoxDecoration(
+                  padding: const EdgeInsets.all(15),
+                  decoration: const BoxDecoration(
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(35),
                       bottomRight: Radius.circular(35),
                       topLeft: Radius.circular(35),
                       topRight: Radius.circular(35),
                     ),
-                    image: new DecorationImage(
+                    image: DecorationImage(
                       fit: BoxFit.cover,
                       image: AssetImage("images/assets52/night.jpg"),
                     ),
@@ -34,7 +34,7 @@ class day52 extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
-                            children: [
+                            children: const [
                               Icon(
                                 Icons.arrow_back_ios_rounded,
                                 color: Colors.white,
@@ -48,7 +48,7 @@ class day52 extends StatelessWidget {
                           Column(
                             children: [
                               Row(
-                                children: [
+                                children: const [
                                   Text(
                                     "\$995",
                                     style: TextStyle(
@@ -62,11 +62,11 @@ class day52 extends StatelessWidget {
                                   Text(""),
                                 ],
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 14,
                               ),
                               Row(
-                                children: [
+                                children: const [
                                   Text(
                                     "Get our into new",
                                     style: TextStyle(
@@ -79,7 +79,7 @@ class day52 extends StatelessWidget {
                                 ],
                               ),
                               Row(
-                                children: [
+                                children: const [
                                   Text(
                                     "Sea Heven in Bali",
                                     style: TextStyle(
@@ -93,15 +93,15 @@ class day52 extends StatelessWidget {
                                   Text(""),
                                 ],
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 14,
                               ),
                               Row(
                                 children: [
-                                  Container(
+                                  SizedBox(
                                     width: 60,
                                     child: Stack(
-                                      children: [
+                                      children: const [
                                         CircleAvatar(
                                           backgroundImage: AssetImage(
                                               "images/assets52/img1.jpg"),
@@ -117,18 +117,18 @@ class day52 extends StatelessWidget {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 12,
                                   ),
-                                  Text(
+                                  const Text(
                                     "Safe, Lauren + 13 more",
                                     style: TextStyle(
                                         fontSize: 10, color: Colors.white),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 100,
                                   ),
-                                  Text(""),
+                                  const Text(""),
                                 ],
                               ),
                             ],
@@ -143,15 +143,15 @@ class day52 extends StatelessWidget {
             Expanded(
               flex: 1,
               child: Container(
-                padding: EdgeInsets.all(2),
+                padding: const EdgeInsets.all(2),
                 child: Column(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 25,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
+                      children: const [
                         Icon(
                           Icons.check_circle,
                           color: Colors.grey,
@@ -169,12 +169,12 @@ class day52 extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
+                      children: const [
                         Text(
                           "Verified User",
                           style: TextStyle(
@@ -201,7 +201,7 @@ class day52 extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 25,
                     ),
                     Row(
@@ -209,20 +209,20 @@ class day52 extends StatelessWidget {
                         Expanded(
                           child: Stack(
                             children: [
-                              Text(
+                              const Text(
                                 "Flutter is an open-source UI software development kit created by Google. It is used to develop cross platform applications for Android, iOS, Linux, Mac, Windows, Google Fuchsia, Web platform, and the web from a single codebase. First described in 2015, Flutter was released in May 2017 , To solve this error we have to wrap all the child widgets in SingleChildScrollView() widget. The Scroll view widget will enable scrolling Scroll view .",
                                 style:
                                     TextStyle(color: Colors.grey, fontSize: 12),
                               ),
                               Positioned(
                                 top: 48,
-                                child: Container(
+                                child: SizedBox(
                                   width: MediaQuery.of(context).size.width,
                                   child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceAround,
                                     children: [
-                                      SizedBox(),
+                                      const SizedBox(),
                                       CircleAvatar(
                                         maxRadius: 25,
                                         backgroundColor: Colors.red.shade100,
@@ -249,17 +249,6 @@ class day52 extends StatelessWidget {
                                                 2,
                                         child: ElevatedButton(
                                           onPressed: () {},
-                                          child: SizedBox(
-                                            width: MediaQuery.of(context)
-                                                .size
-                                                .width,
-                                            child: Text(
-                                              "BOOK NOW",
-                                              textAlign: TextAlign.center,
-                                              style: TextStyle(
-                                                  color: Colors.green.shade900),
-                                            ),
-                                          ),
                                           style: ButtonStyle(
                                             shape: MaterialStateProperty.all<
                                                     RoundedRectangleBorder>(
@@ -270,6 +259,17 @@ class day52 extends StatelessWidget {
                                             backgroundColor:
                                                 MaterialStateProperty.all(
                                                     Colors.green.shade100),
+                                          ),
+                                          child: SizedBox(
+                                            width: MediaQuery.of(context)
+                                                .size
+                                                .width,
+                                            child: Text(
+                                              "BOOK NOW",
+                                              textAlign: TextAlign.center,
+                                              style: TextStyle(
+                                                  color: Colors.green.shade900),
+                                            ),
                                           ),
                                         ),
                                       ),

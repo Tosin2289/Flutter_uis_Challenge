@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day51 extends StatelessWidget {
-  const day51({Key? key}) : super(key: key);
+class Day51 extends StatelessWidget {
+  const Day51({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class day51 extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     ClipRRect(
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
+                      borderRadius: const BorderRadius.all(Radius.circular(20)),
                       child: Stack(
                         children: [
                           Image.asset(
@@ -33,11 +33,11 @@ class day51 extends StatelessWidget {
                             child: Container(
                               height: 45,
                               width: 45,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(10)),
                                   color: Colors.black),
-                              child: Center(
+                              child: const Center(
                                   child: Icon(
                                 Icons.arrow_back_ios_new,
                                 color: Colors.white,
@@ -103,7 +103,7 @@ class day51 extends StatelessWidget {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
                     Padding(
@@ -115,26 +115,26 @@ class day51 extends StatelessWidget {
                               Container(
                                 height: 25,
                                 width: 65,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   borderRadius: BorderRadius.all(
                                     Radius.circular(10),
                                   ),
                                   color: Color(0xfff9bbea),
                                 ),
-                                child: Center(
+                                child: const Center(
                                     child: Text(
                                   "Closed",
                                   style: TextStyle(
                                       fontSize: 18, color: Colors.pinkAccent),
                                 )),
                               ),
-                              Spacer(),
-                              Icon(
+                              const Spacer(),
+                              const Icon(
                                 Icons.star_rate_rounded,
                                 color: Colors.amber,
                                 size: 25,
                               ),
-                              Text(
+                              const Text(
                                 "(4.8)",
                                 style: TextStyle(
                                     color: Colors.amber, fontSize: 18),
@@ -144,7 +144,7 @@ class day51 extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Padding(
+                    const Padding(
                       padding: const EdgeInsets.only(left: 25, right: 25),
                       child: Text(
                         "Shabi Hair Studio",
@@ -152,13 +152,13 @@ class day51 extends StatelessWidget {
                             fontSize: 25, fontWeight: FontWeight.bold),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
-                    Text("""
+                    const Text("""
          Soudabad No 15 Malir Contonment, Karchi City,
          Sindh."""),
-                    SizedBox(
+                    const SizedBox(
                       height: 25,
                     ),
                     Center(
@@ -172,9 +172,8 @@ class day51 extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(20),
                                 color: Colors.black12,
                               ),
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 140, top: 24),
+                              child: const Padding(
+                                padding: EdgeInsets.only(left: 140, top: 24),
                                 child: Text(
                                   "About us",
                                   style: TextStyle(
@@ -192,7 +191,7 @@ class day51 extends StatelessWidget {
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(15),
                                     color: Colors.white),
-                                child: Center(
+                                child: const Center(
                                     child: Text(
                                   "Services",
                                   style: TextStyle(
@@ -205,7 +204,7 @@ class day51 extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.only(right: 20),
                             child: Row(
-                              children: [
+                              children: const [
                                 Padding(
                                   padding: const EdgeInsets.all(28.0),
                                   child: Text(
@@ -231,7 +230,7 @@ class day51 extends StatelessWidget {
                             children: [
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
+                                children: const [
                                   Text(
                                     "Man's Haircut . Wash . Styled",
                                     style: TextStyle(
@@ -247,15 +246,15 @@ class day51 extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              Spacer(),
-                              Text(
+                              const Spacer(),
+                              const Text(
                                 "\$35.00",
                                 style: TextStyle(
                                     fontSize: 25, fontWeight: FontWeight.w600),
                               )
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 7,
                           ),
                           Container(
@@ -263,14 +262,14 @@ class day51 extends StatelessWidget {
                             width: 300,
                             color: Colors.grey,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 7,
                           ),
                           Row(
                             children: [
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
+                                children: const [
                                   Text(
                                     "Full Set Acrylic - Hands",
                                     style: TextStyle(
@@ -279,8 +278,8 @@ class day51 extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              Spacer(),
-                              Text(
+                              const Spacer(),
+                              const Text(
                                 "\$85.00",
                                 style: TextStyle(
                                     fontSize: 25, fontWeight: FontWeight.w600),
@@ -301,7 +300,7 @@ class day51 extends StatelessWidget {
                 borderRadius: BorderRadius.circular(25),
                 color: Colors.black,
               ),
-              child: Center(
+              child:   const Center(
                 child: Text(
                   "BOOK NOW",
                   style: TextStyle(
