@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day62 extends StatelessWidget {
-  const day62({Key? key}) : super(key: key);
+class Day62 extends StatelessWidget {
+  const Day62({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class day62 extends StatelessWidget {
           child: Container(
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
                   image: AssetImage("images/assets62/img2.jpg"),
                   fit: BoxFit.fill),
@@ -35,7 +35,7 @@ class day62 extends StatelessWidget {
                           width: 50,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            image: DecorationImage(
+                            image: const DecorationImage(
                                 image: AssetImage("images/assets62/img1.jpg"),
                                 fit: BoxFit.cover),
                           ),
@@ -44,25 +44,25 @@ class day62 extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Expanded(
+                const Expanded(
                   flex: 1,
-                  child: Container(
+                  child: SizedBox(
                     child: Text(
                       "HoteloApp",
                       style: TextStyle(fontSize: 50, color: Colors.white),
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Expanded(
                   flex: 4,
                   child: Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(50),
                             topRight: Radius.circular(50)),
@@ -70,13 +70,13 @@ class day62 extends StatelessWidget {
                     child: Center(
                         child: Column(
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           height: 30,
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 20.0),
                           child: Row(
-                            children: [
+                            children: const [
                               Text(
                                 "Search Hotel",
                                 style: TextStyle(
@@ -90,13 +90,13 @@ class day62 extends StatelessWidget {
                             ],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 5,
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 20),
                           child: Row(
-                            children: [
+                            children: const [
                               Text(
                                 "Find hotel as you need with demand.",
                                 style: TextStyle(color: Colors.grey),
@@ -104,13 +104,13 @@ class day62 extends StatelessWidget {
                             ],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 20),
                           child: Row(
-                            children: [
+                            children: const [
                               Text(
                                 "City",
                                 style: TextStyle(
@@ -119,7 +119,7 @@ class day62 extends StatelessWidget {
                             ],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Padding(
@@ -136,7 +136,7 @@ class day62 extends StatelessWidget {
                                   child: Padding(
                                     padding: const EdgeInsets.all(12.0),
                                     child: Row(
-                                      children: [
+                                      children: const [
                                         Text(
                                           "Mimmi,USA",
                                           style: TextStyle(
@@ -150,13 +150,13 @@ class day62 extends StatelessWidget {
                             ],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 20),
                           child: Row(
-                            children: [
+                            children: const [
                               Text(
                                 "Arrival",
                                 style: TextStyle(
@@ -173,7 +173,7 @@ class day62 extends StatelessWidget {
                             ],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Padding(
@@ -190,7 +190,7 @@ class day62 extends StatelessWidget {
                                   child: Padding(
                                     padding: const EdgeInsets.all(12.0),
                                     child: Row(
-                                      children: [
+                                      children: const [
                                         Text(
                                           "20 October",
                                           style: TextStyle(
@@ -201,7 +201,7 @@ class day62 extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 20,
                               ),
                               Container(
@@ -214,7 +214,7 @@ class day62 extends StatelessWidget {
                                   child: Padding(
                                     padding: const EdgeInsets.all(12.0),
                                     child: Row(
-                                      children: [
+                                      children: const [
                                         Text(
                                           "25 October",
                                           style: TextStyle(
@@ -228,13 +228,13 @@ class day62 extends StatelessWidget {
                             ],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 20),
                           child: Row(
-                            children: [
+                            children: const [
                               Text(
                                 "Star",
                                 style: TextStyle(
@@ -251,7 +251,7 @@ class day62 extends StatelessWidget {
                             ],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Padding(
@@ -270,7 +270,7 @@ class day62 extends StatelessWidget {
                                     child: Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceAround,
-                                      children: [
+                                      children: const [
                                         Icon(
                                           Icons.remove,
                                           color: Colors.grey,
@@ -286,7 +286,7 @@ class day62 extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 20,
                               ),
                               Container(
@@ -301,7 +301,7 @@ class day62 extends StatelessWidget {
                                     child: Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceAround,
-                                      children: [
+                                      children: const [
                                         Icon(
                                           Icons.remove,
                                           color: Colors.grey,
@@ -320,7 +320,7 @@ class day62 extends StatelessWidget {
                             ],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Container(
@@ -329,9 +329,9 @@ class day62 extends StatelessWidget {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.green),
-                          child: Center(
+                          child: const Center(
                             child: Padding(
-                              padding: const EdgeInsets.all(12.0),
+                              padding: EdgeInsets.all(12.0),
                               child: Text(
                                 "Search",
                                 style: TextStyle(

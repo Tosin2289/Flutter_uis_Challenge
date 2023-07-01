@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day64 extends StatelessWidget {
-  day64({Key? key}) : super(key: key);
+class Day64 extends StatelessWidget {
+  Day64({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class day64 extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
                       color: Colors.amber,
-                      image: new DecorationImage(
+                      image: const DecorationImage(
                         image: AssetImage("images/assets64/img1.jpg"),
                         fit: BoxFit.cover,
                       ),
@@ -31,25 +31,25 @@ class day64 extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Container(
-                          padding: EdgeInsets.only(left: 20, top: 20),
+                          padding: const EdgeInsets.only(left: 20, top: 20),
                           alignment: Alignment.topLeft,
                           child: CircleAvatar(
                             backgroundColor: Colors.white.withOpacity(0.7),
                             child: IconButton(
                               onPressed: () {},
-                              icon: Icon(Icons.arrow_back_ios_new),
+                              icon: const Icon(Icons.arrow_back_ios_new),
                               color: Colors.grey,
                             ),
                           ),
                         ),
                         Container(
                           alignment: Alignment.topRight,
-                          padding: EdgeInsets.only(right: 15, top: 20),
+                          padding: const EdgeInsets.only(right: 15, top: 20),
                           child: CircleAvatar(
                             backgroundColor: Colors.white.withOpacity(0.8),
                             child: IconButton(
                               onPressed: () {},
-                              icon: Icon(Icons.bookmark_border),
+                              icon: const Icon(Icons.bookmark_border),
                               color: Colors.grey,
                             ),
                           ),
@@ -63,31 +63,31 @@ class day64 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
+                    padding: const EdgeInsets.only(left: 40, top: 25),
                     width: 200,
                     alignment: Alignment.centerLeft,
-                    child: Text(
+                    child: const Text(
                       "Clerck Well House",
                       style:
                           TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
                     ),
-                    padding: EdgeInsets.only(left: 40, top: 25),
                   ),
                   Container(
-                    child: Icon(
+                    padding: const EdgeInsets.only(right: 45, top: 20),
+                    child: const Icon(
                       Icons.star_rate_rounded,
                       color: Colors.lightBlue,
                     ),
-                    padding: EdgeInsets.only(right: 45, top: 20),
                   ),
                 ],
               ),
               Container(
-                child: Text(
+                alignment: Alignment.topRight,
+                padding: const EdgeInsets.only(right: 50),
+                child: const Text(
                   "4.8",
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
-                alignment: Alignment.topRight,
-                padding: EdgeInsets.only(right: 50),
               ),
               Row(
                 children: [
@@ -103,19 +103,19 @@ class day64 extends StatelessWidget {
                         Container(
                           alignment: Alignment.centerLeft,
                           width: MediaQuery.of(context).size.width,
-                          child: CircleAvatar(
+                          child: const CircleAvatar(
                             backgroundImage:
                                 AssetImage("images/assets64/img2.jpg"),
                           ),
                         ),
-                        Positioned(
+                        const Positioned(
                             left: 20,
                             bottom: 2,
                             child: CircleAvatar(
                               backgroundImage:
                                   AssetImage("images/assets64/img3.jpg"),
                             )),
-                        Positioned(
+                        const Positioned(
                           left: 40,
                           bottom: 2,
                           child: CircleAvatar(
@@ -126,42 +126,43 @@ class day64 extends StatelessWidget {
                       ],
                     ),
                   ),
-                  TextButton(onPressed: () {}, child: Text("20+ Membership"))
+                  TextButton(
+                      onPressed: () {}, child: const Text("20+ Membership"))
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Column(
                 children: [
                   Container(
                     alignment: Alignment.centerLeft,
-                    padding: EdgeInsets.only(left: 50),
-                    child: Text(
+                    padding: const EdgeInsets.only(left: 50),
+                    child: const Text(
                       "Travel by water often Provided more confort and",
                       style: TextStyle(fontSize: 15),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
                   Container(
                     alignment: Alignment.centerLeft,
-                    padding: EdgeInsets.only(left: 50),
-                    child: Text(
+                    padding: const EdgeInsets.only(left: 50),
+                    child: const Text(
                       "speed than land-travel,at least untill the advertise of a",
                       style: TextStyle(fontSize: 15),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
                   Row(
                     children: [
                       Container(
                         alignment: Alignment.centerLeft,
-                        padding: EdgeInsets.only(left: 50),
-                        child: Text(
+                        padding: const EdgeInsets.only(left: 50),
+                        child: const Text(
                           "network of railways in the...",
                           style: TextStyle(fontSize: 15),
                         ),
@@ -174,7 +175,7 @@ class day64 extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Row(
@@ -182,8 +183,8 @@ class day64 extends StatelessWidget {
                 children: [
                   Container(
                       alignment: Alignment.centerLeft,
-                      padding: EdgeInsets.only(left: 50),
-                      child: Text(
+                      padding: const EdgeInsets.only(left: 50),
+                      child: const Text(
                         "Facilities",
                         style: TextStyle(
                             fontSize: 25, fontWeight: FontWeight.bold),
@@ -191,13 +192,13 @@ class day64 extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Container(
+                      SizedBox(
                           child: Text(
                         "all",
                         style: TextStyle(color: Colors.lightBlue.shade500),
                       )),
                       Container(
-                          padding: EdgeInsets.only(right: 50),
+                          padding: const EdgeInsets.only(right: 50),
                           child: Icon(
                             Icons.arrow_forward_ios_outlined,
                             size: 10,
@@ -221,7 +222,7 @@ class day64 extends StatelessWidget {
                         decoration: BoxDecoration(
                           color: Colors.blue.shade50,
                           borderRadius: BorderRadius.circular(50),
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               image: AssetImage("images/assets64/img5.png"),
                               fit: BoxFit.cover),
                         ),
@@ -229,7 +230,7 @@ class day64 extends StatelessWidget {
                       SizedBox(
                         height: MediaQuery.of(context).size.height / 50,
                       ),
-                      Text("2 Beds"),
+                      const Text("2 Beds"),
                     ],
                   ),
                   Column(
@@ -240,7 +241,7 @@ class day64 extends StatelessWidget {
                         decoration: BoxDecoration(
                           color: Colors.blue.shade50,
                           borderRadius: BorderRadius.circular(50),
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image: AssetImage("images/assets64/img6.png"),
                           ),
                         ),
@@ -248,7 +249,7 @@ class day64 extends StatelessWidget {
                       SizedBox(
                         height: MediaQuery.of(context).size.height / 50,
                       ),
-                      Text("Movies"),
+                      const Text("Movies"),
                     ],
                   ),
                   Column(
@@ -259,7 +260,7 @@ class day64 extends StatelessWidget {
                         decoration: BoxDecoration(
                           color: Colors.blue.shade50,
                           borderRadius: BorderRadius.circular(50),
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               image: AssetImage("images/assets64/img7.png"),
                               fit: BoxFit.cover),
                         ),
@@ -267,7 +268,7 @@ class day64 extends StatelessWidget {
                       SizedBox(
                         height: MediaQuery.of(context).size.height / 50,
                       ),
-                      Text("Tea-coffee"),
+                      const Text("Tea-coffee"),
                     ],
                   ),
                   Column(
@@ -278,7 +279,7 @@ class day64 extends StatelessWidget {
                         decoration: BoxDecoration(
                           color: Colors.blue.shade50,
                           borderRadius: BorderRadius.circular(50),
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image: AssetImage("images/assets64/img8.png"),
                           ),
                         ),
@@ -286,7 +287,7 @@ class day64 extends StatelessWidget {
                       SizedBox(
                         height: MediaQuery.of(context).size.height / 50,
                       ),
-                      Text("Swimming"),
+                      const Text("Swimming"),
                     ],
                   ),
                 ],
@@ -296,7 +297,7 @@ class day64 extends StatelessWidget {
               ),
               Row(
                 children: [
-                  Container(
+                  SizedBox(
                     height: MediaQuery.of(context).size.height / 10,
                     width: MediaQuery.of(context).size.width / 3,
                     child: Column(
@@ -313,7 +314,7 @@ class day64 extends StatelessWidget {
                         SizedBox(
                           height: MediaQuery.of(context).size.height / 150,
                         ),
-                        Text(
+                        const Text(
                           "\$320",
                           style: TextStyle(
                               fontSize: 30, fontWeight: FontWeight.w500),
@@ -321,14 +322,14 @@ class day64 extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     height: MediaQuery.of(context).size.height / 10,
                     width: MediaQuery.of(context).size.width / 2 + 40,
                     child: ElevatedButton(
                       style: flatButtonStyle,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
+                        children: const [
                           Text(
                             "Book Now",
                             style: TextStyle(fontSize: 20, color: Colors.white),
@@ -353,8 +354,8 @@ class day64 extends StatelessWidget {
 
   final ButtonStyle flatButtonStyle = TextButton.styleFrom(
     primary: Colors.black87,
-    minimumSize: Size(88, 36),
-    padding: EdgeInsets.symmetric(horizontal: 16.0),
+    minimumSize: const Size(88, 36),
+    padding: const EdgeInsets.symmetric(horizontal: 16.0),
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.all(Radius.circular(20)),
     ),

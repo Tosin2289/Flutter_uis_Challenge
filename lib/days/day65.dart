@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day65 extends StatelessWidget {
-  const day65({Key? key}) : super(key: key);
+class Day65 extends StatelessWidget {
+  const Day65({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,11 +15,6 @@ class day65 extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     ElevatedButton(
-                      onPressed: () {},
-                      child: Icon(
-                        Icons.arrow_back_ios,
-                        color: Colors.black87,
-                      ),
                       style: ButtonStyle(
                         shape:
                             MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -29,14 +24,15 @@ class day65 extends StatelessWidget {
                         ),
                         backgroundColor:
                             MaterialStateProperty.all(Colors.white70),
+                      ),
+                      onPressed: () {},
+                      child: const Icon(
+                        Icons.arrow_back_ios,
+                        color: Colors.black87,
                       ),
                     ),
                     ElevatedButton(
                       onPressed: () {},
-                      child: Icon(
-                        Icons.list,
-                        color: Colors.black87,
-                      ),
                       style: ButtonStyle(
                         shape:
                             MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -47,24 +43,28 @@ class day65 extends StatelessWidget {
                         backgroundColor:
                             MaterialStateProperty.all(Colors.white70),
                       ),
+                      child: const Icon(
+                        Icons.list,
+                        color: Colors.black87,
+                      ),
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 70,
                   backgroundImage: AssetImage("images/assets65/img1.jpg"),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                Text(
+                const Text(
                   "Sunny Leon",
                   style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Text(
@@ -74,11 +74,11 @@ class day65 extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       color: Colors.pink.shade200),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
+                const Padding(
+                  padding: EdgeInsets.all(8.0),
                   child: TextField(
                     decoration: InputDecoration(
                         iconColor: Colors.grey,
@@ -92,14 +92,14 @@ class day65 extends StatelessWidget {
                         suffixIcon: Icon(Icons.save)),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
-                Text(
+                const Text(
                   "Followed By",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Row(
@@ -107,10 +107,10 @@ class day65 extends StatelessWidget {
                     SizedBox(
                       width: MediaQuery.of(context).size.width / 3.5,
                     ),
-                    Container(
+                    SizedBox(
                       width: 200,
                       child: Stack(
-                        children: [
+                        children: const [
                           CircleAvatar(
                             backgroundColor: Colors.blue,
                             backgroundImage:
@@ -167,10 +167,10 @@ class day65 extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Container(
+                SizedBox(
                   height: 100,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -184,7 +184,7 @@ class day65 extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
+                                children: const [
                                   Text(
                                     "999",
                                     style: TextStyle(
@@ -201,14 +201,14 @@ class day65 extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 30,
                               ),
                               Column(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
+                                children: const [
                                   Text(
                                     "1299",
                                     style: TextStyle(
@@ -227,12 +227,11 @@ class day65 extends StatelessWidget {
                               ),
                             ],
                           ),
-                          Container(
+                          SizedBox(
                             child: SizedBox(
                               height: 50,
                               child: ElevatedButton(
                                 onPressed: () {},
-                                child: Text("Follow"),
                                 style: ButtonStyle(
                                   shape: MaterialStateProperty.all<
                                       RoundedRectangleBorder>(
@@ -243,6 +242,7 @@ class day65 extends StatelessWidget {
                                   backgroundColor:
                                       MaterialStateProperty.all(Colors.white),
                                 ),
+                                child: const Text("Follow"),
                               ),
                             ),
                           ),
@@ -251,7 +251,7 @@ class day65 extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Container(
@@ -261,7 +261,7 @@ class day65 extends StatelessWidget {
                   child: Column(
                     children: [
                       Row(
-                        children: [
+                        children: const [
                           Text(
                             "Bio",
                             style: TextStyle(
@@ -269,16 +269,16 @@ class day65 extends StatelessWidget {
                           ),
                         ],
                       ),
-                      Text(
+                      const Text(
                         "___________________________________________",
                         style: TextStyle(
                           fontSize: 20,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 15,
                       ),
-                      Text(
+                      const Text(
                         "Lovinf Memory is a Digital expression of storage texhnology concep.",
                         style: TextStyle(fontSize: 18, color: Colors.grey),
                       ),
@@ -291,7 +291,7 @@ class day65 extends StatelessWidget {
                     color: Colors.grey.shade200,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
+                      children: const [
                         Icon(Icons.star),
                         Text(
                           "@CHINTUKANANI",

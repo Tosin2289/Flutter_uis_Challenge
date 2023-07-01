@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day61 extends StatelessWidget {
-  day61({Key? key}) : super(key: key);
+class Day61 extends StatelessWidget {
+  const Day61({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -165,16 +165,16 @@ class day61 extends StatelessWidget {
                                     ),
                                   ),
                                   Positioned(
+                                    left: h / 6.5,
+                                    top: 5,
                                     child: CircleAvatar(
                                       radius: 12,
+                                      backgroundColor: white,
                                       child: Image.asset(
                                         "images/assets61/img4.png",
                                         height: h / 50,
                                       ),
-                                      backgroundColor: white,
                                     ),
-                                    left: h / 6.5,
-                                    top: 5,
                                   )
                                 ],
                               ),
@@ -301,16 +301,16 @@ class day61 extends StatelessWidget {
                                     ),
                                   ),
                                   Positioned(
+                                    left: h / 6.5,
+                                    top: 5,
                                     child: CircleAvatar(
+                                      backgroundColor: white,
                                       radius: 12,
                                       child: Image.asset(
                                         "images/assets61/img4.png",
                                         height: h / 50,
                                       ),
-                                      backgroundColor: white,
                                     ),
-                                    left: h / 6.5,
-                                    top: 5,
                                   )
                                 ],
                               ),
@@ -437,16 +437,16 @@ class day61 extends StatelessWidget {
                                     ),
                                   ),
                                   Positioned(
+                                    left: h / 6.5,
+                                    top: 5,
                                     child: CircleAvatar(
                                       radius: 12,
+                                      backgroundColor: white,
                                       child: Image.asset(
                                         "images/assets61/img4.png",
                                         height: h / 50,
                                       ),
-                                      backgroundColor: white,
                                     ),
-                                    left: h / 6.5,
-                                    top: 5,
                                   )
                                 ],
                               ),

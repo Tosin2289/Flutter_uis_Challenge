@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day63 extends StatelessWidget {
-  const day63({Key? key}) : super(key: key);
+class Day63 extends StatelessWidget {
+  const Day63({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class day63 extends StatelessWidget {
                     spreadRadius: 2.0,
                   ),
                 ]),
-            padding: EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
             child: Row(
               children: [
                 Container(
@@ -48,7 +48,7 @@ class day63 extends StatelessWidget {
                       child: CircleAvatar(
                           radius: 10,
                           backgroundColor: Colors.grey.shade300,
-                          child: Icon(
+                          child: const Icon(
                             Icons.play_arrow,
                             size: 18,
                             color: Colors.black,
@@ -56,7 +56,7 @@ class day63 extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -64,7 +64,7 @@ class day63 extends StatelessWidget {
                     Text("Introduction",
                         style: TextStyle(
                             fontSize: h2Font + 5, fontWeight: FontWeight.bold)),
-                    Text("Variables allow user to hold..."),
+                    const Text("Variables allow user to hold..."),
                   ],
                 )
               ],
@@ -83,7 +83,7 @@ class day63 extends StatelessWidget {
           ShaderMask(
             blendMode: BlendMode.srcATop,
             shaderCallback: (Rect bounds) {
-              return LinearGradient(colors: [
+              return const LinearGradient(colors: [
                 Colors.purple,
                 Colors.purple,
                 Colors.transparent,
@@ -93,7 +93,7 @@ class day63 extends StatelessWidget {
             child: Container(
               height: height,
               width: width,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage(
                     "images/assets63/img2.jpg",
@@ -101,7 +101,7 @@ class day63 extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              padding: EdgeInsets.symmetric(horizontal: 30),
+              padding: const EdgeInsets.symmetric(horizontal: 30),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -115,7 +115,7 @@ class day63 extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: h3Font),
-                  Text(
+                  const Text(
                     "Basic guideline and tips and tricks for how to become a UX designer easily",
                     style: TextStyle(
                       color: Colors.white,
@@ -130,6 +130,7 @@ class day63 extends StatelessWidget {
                         children: const [
                           CircleAvatar(
                             radius: 20,
+                            backgroundColor: Colors.white,
                             child: CircleAvatar(
                               radius: 17,
                               backgroundColor: Colors.yellow,
@@ -137,7 +138,6 @@ class day63 extends StatelessWidget {
                                 "assets/img3.jpg",
                               ),
                             ),
-                            backgroundColor: Colors.white,
                           ),
                           Text(" Author :",
                               style: TextStyle(color: Colors.white)),
@@ -150,7 +150,7 @@ class day63 extends StatelessWidget {
                         ],
                       ),
                       Row(
-                        children: [
+                        children: const [
                           Text("4.8 ",
                               style: TextStyle(
                                   color: Colors.white,
@@ -182,8 +182,8 @@ class day63 extends StatelessWidget {
               DefaultTabController(
                 length: 3,
                 child: Container(
-                  padding: EdgeInsets.all(20),
-                  decoration: BoxDecoration(
+                  padding: const EdgeInsets.all(20),
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(40),
@@ -191,12 +191,12 @@ class day63 extends StatelessWidget {
                         bottomLeft: Radius.zero,
                         bottomRight: Radius.zero),
                   ),
-                  child: TabBar(
+                  child: const TabBar(
                     labelColor: Colors.black,
                     indicatorSize: TabBarIndicatorSize.label,
                     indicatorColor: Colors.black,
                     unselectedLabelColor: Colors.grey,
-                    tabs: const [
+                    tabs: [
                       Tab(text: "PlayList"),
                       Tab(text: "Review"),
                       Tab(text: "Author"),
@@ -206,10 +206,10 @@ class day63 extends StatelessWidget {
               ),
               Expanded(
                 child: Container(
-                  padding: EdgeInsets.only(left: 30, right: 30),
+                  padding: const EdgeInsets.only(left: 30, right: 30),
                   color: Colors.white,
                   child: ListView(
-                    padding: EdgeInsets.all(0),
+                    padding: const EdgeInsets.all(0),
                     children: [
                       Column(
                         children: [
@@ -218,7 +218,7 @@ class day63 extends StatelessWidget {
                             decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(15)),
+                                    const BorderRadius.all(Radius.circular(15)),
                                 boxShadow: <BoxShadow>[
                                   BoxShadow(
                                     color: Colors.grey.shade200,
@@ -230,15 +230,15 @@ class day63 extends StatelessWidget {
                                     spreadRadius: 2.0,
                                   ),
                                 ]),
-                            padding: EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(10),
                             child: Row(
                               children: [
                                 Container(
                                   width: whiteConHt / 2,
                                   decoration: BoxDecoration(
                                     color: Colors.grey.shade200,
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(10)),
+                                    borderRadius: const BorderRadius.all(
+                                        Radius.circular(10)),
                                   ),
                                   child: Center(
                                     child: CircleAvatar(
@@ -251,7 +251,7 @@ class day63 extends StatelessWidget {
                                         )),
                                   ),
                                 ),
-                                SizedBox(width: 10),
+                                const SizedBox(width: 10),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisAlignment:
@@ -261,7 +261,8 @@ class day63 extends StatelessWidget {
                                         style: TextStyle(
                                             fontSize: h2Font + 5,
                                             fontWeight: FontWeight.bold)),
-                                    Text("Variables allow user to hold..."),
+                                    const Text(
+                                        "Variables allow user to hold..."),
                                   ],
                                 )
                               ],
