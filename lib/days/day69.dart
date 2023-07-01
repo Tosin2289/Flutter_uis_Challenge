@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class day69 extends StatefulWidget {
-  const day69({Key? key}) : super(key: key);
+class Day69 extends StatefulWidget {
+  const Day69({Key? key}) : super(key: key);
 
   @override
-  State<day69> createState() => _day69State();
+  State<Day69> createState() => _Day69State();
 }
 
-class _day69State extends State<day69> {
+class _Day69State extends State<Day69> {
   bool swvalue1 = false;
 
   bool swvalue2 = false;
@@ -40,12 +40,12 @@ class _day69State extends State<day69> {
       appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.purple[100]?.withAlpha(100),
-          leading: Icon(
+          leading: const Icon(
             Icons.arrow_back,
             color: Colors.grey,
           ),
           centerTitle: true,
-          title: Text(
+          title: const Text(
             "KITCHEN",
             style: TextStyle(color: Colors.black),
           )),
@@ -55,7 +55,7 @@ class _day69State extends State<day69> {
           width: MediaQuery.of(context).size.width,
           color: Colors.purple[100]?.withAlpha(100),
           child: Padding(
-            padding: EdgeInsets.fromLTRB(10, 30, 10, 8),
+            padding: const EdgeInsets.fromLTRB(10, 30, 10, 8),
             child: SingleChildScrollView(
               child: Column(
                 children: [
@@ -70,7 +70,7 @@ class _day69State extends State<day69> {
                         Card(
                             elevation: ele1,
                             shape: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                     width: 0, color: Colors.transparent),
                                 borderRadius: BorderRadius.circular(18)),
                             child: Container(
@@ -80,11 +80,12 @@ class _day69State extends State<day69> {
                                   borderRadius: BorderRadius.circular(18),
                                   color: clr1),
                               child: Padding(
-                                padding: EdgeInsets.fromLTRB(15, 18, 15, 18),
+                                padding:
+                                    const EdgeInsets.fromLTRB(15, 18, 15, 18),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Icon(Icons.insert_emoticon_sharp),
+                                    const Icon(Icons.insert_emoticon_sharp),
                                     SizedBox(
                                         height:
                                             MediaQuery.of(context).size.height /
@@ -113,7 +114,7 @@ class _day69State extends State<day69> {
                                         height:
                                             MediaQuery.of(context).size.height /
                                                 26),
-                                    Container(
+                                    SizedBox(
                                       height:
                                           MediaQuery.of(context).size.height /
                                               50,
@@ -147,7 +148,7 @@ class _day69State extends State<day69> {
                         Card(
                             elevation: ele2,
                             shape: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                     width: 0, color: Colors.transparent),
                                 borderRadius: BorderRadius.circular(18)),
                             child: Container(
@@ -157,11 +158,13 @@ class _day69State extends State<day69> {
                                   borderRadius: BorderRadius.circular(18),
                                   color: clr2),
                               child: Padding(
-                                padding: EdgeInsets.fromLTRB(15, 18, 15, 18),
+                                padding:
+                                    const EdgeInsets.fromLTRB(15, 18, 15, 18),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Icon(Icons.cleaning_services_outlined),
+                                    const Icon(
+                                        Icons.cleaning_services_outlined),
                                     SizedBox(
                                         height:
                                             MediaQuery.of(context).size.height /
@@ -190,7 +193,7 @@ class _day69State extends State<day69> {
                                         height:
                                             MediaQuery.of(context).size.height /
                                                 26),
-                                    Container(
+                                    SizedBox(
                                       height:
                                           MediaQuery.of(context).size.height /
                                               50,
@@ -235,7 +238,7 @@ class _day69State extends State<day69> {
                         Card(
                             elevation: ele3,
                             shape: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                     width: 0, color: Colors.transparent),
                                 borderRadius: BorderRadius.circular(18)),
                             child: Container(
@@ -245,11 +248,12 @@ class _day69State extends State<day69> {
                                   borderRadius: BorderRadius.circular(18),
                                   color: clr3),
                               child: Padding(
-                                padding: EdgeInsets.fromLTRB(15, 18, 15, 18),
+                                padding:
+                                    const EdgeInsets.fromLTRB(15, 18, 15, 18),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Icon(Icons.speed_sharp),
+                                    const Icon(Icons.speed_sharp),
                                     SizedBox(
                                         height:
                                             MediaQuery.of(context).size.height /
@@ -278,7 +282,7 @@ class _day69State extends State<day69> {
                                         height:
                                             MediaQuery.of(context).size.height /
                                                 26),
-                                    Container(
+                                    SizedBox(
                                       height:
                                           MediaQuery.of(context).size.height /
                                               50,
@@ -312,7 +316,7 @@ class _day69State extends State<day69> {
                         Card(
                             elevation: ele4,
                             shape: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                     width: 0, color: Colors.transparent),
                                 borderRadius: BorderRadius.circular(18)),
                             child: Container(
@@ -322,11 +326,12 @@ class _day69State extends State<day69> {
                                   borderRadius: BorderRadius.circular(18),
                                   color: clr4),
                               child: Padding(
-                                padding: EdgeInsets.fromLTRB(15, 18, 15, 18),
+                                padding:
+                                    const EdgeInsets.fromLTRB(15, 18, 15, 18),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Icon(Icons.whatshot),
+                                    const Icon(Icons.whatshot),
                                     SizedBox(
                                         height:
                                             MediaQuery.of(context).size.height /
@@ -355,7 +360,7 @@ class _day69State extends State<day69> {
                                         height:
                                             MediaQuery.of(context).size.height /
                                                 26),
-                                    Container(
+                                    SizedBox(
                                       height:
                                           MediaQuery.of(context).size.height /
                                               50,
@@ -393,7 +398,7 @@ class _day69State extends State<day69> {
                     height: MediaQuery.of(context).size.height / 50,
                   ),
                   ListTile(
-                    leading: Icon(
+                    leading: const Icon(
                       Icons.share_location_rounded,
                       size: 45,
                     ),
@@ -419,7 +424,7 @@ class _day69State extends State<day69> {
                           fontSize: MediaQuery.of(context).size.width / 19),
                     ),
                   ),
-                  Divider(
+                  const Divider(
                     height: 0,
                     thickness: 1,
                   ),

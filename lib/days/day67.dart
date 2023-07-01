@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import "package:google_fonts/google_fonts.dart";
 
-class day67 extends StatelessWidget {
-  day67({Key? key}) : super(key: key);
+class Day67 extends StatelessWidget {
+  Day67({Key? key}) : super(key: key);
   final fntfamily = GoogleFonts.nunito().fontFamily;
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class day67 extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            SizedBox(height: 24),
+            const SizedBox(height: 24),
             Stack(
               children: [
                 Padding(
@@ -34,7 +34,7 @@ class day67 extends StatelessWidget {
                       height: screenHeight * 0.42,
                       width: screenWidth,
                       decoration: BoxDecoration(
-                        image: DecorationImage(
+                        image: const DecorationImage(
                             image: AssetImage("images/assets67/img1.png"),
                             fit: BoxFit.cover),
                         borderRadius: BorderRadius.circular(28),
@@ -57,48 +57,50 @@ class day67 extends StatelessWidget {
                         Stack(
                           clipBehavior: Clip.none,
                           children: [
-                            Padding(
-                              padding: const EdgeInsets.only(left: 12),
+                            const Padding(
+                              padding: EdgeInsets.only(left: 12),
                               child: CircleAvatar(
+                                backgroundColor: Colors.white,
+                                radius: 22,
                                 child: CircleAvatar(
                                   radius: 20,
                                   backgroundColor: Colors.grey,
                                   backgroundImage:
                                       AssetImage("images/assets67/img2.png"),
                                 ),
-                                backgroundColor: Colors.white,
-                                radius: 22,
                               ),
                             ),
-                            Positioned(
+                            const Positioned(
                               left: 40,
                               child: CircleAvatar(
+                                backgroundColor: Colors.white,
+                                radius: 22,
                                 child: CircleAvatar(
                                   radius: 20,
                                   backgroundColor: Colors.grey,
                                   backgroundImage:
                                       AssetImage("images/assets67/img3.jpg"),
                                 ),
-                                backgroundColor: Colors.white,
-                                radius: 22,
                               ),
                             ),
-                            Positioned(
+                            const Positioned(
                               left: 70,
                               child: CircleAvatar(
+                                backgroundColor: Colors.white,
+                                radius: 22,
                                 child: CircleAvatar(
                                   radius: 20,
                                   backgroundColor: Colors.grey,
                                   backgroundImage:
                                       AssetImage("images/assets67/img4.jpg"),
                                 ),
-                                backgroundColor: Colors.white,
-                                radius: 22,
                               ),
                             ),
                             Positioned(
                               left: 100,
                               child: CircleAvatar(
+                                backgroundColor: Colors.white,
+                                radius: 22,
                                 child: CircleAvatar(
                                     backgroundColor: Colors.white,
                                     foregroundColor: Colors.tealAccent.shade400,
@@ -109,8 +111,6 @@ class day67 extends StatelessWidget {
                                           fontWeight: FontWeight.bold,
                                           fontFamily: fntfamily),
                                     ))),
-                                backgroundColor: Colors.white,
-                                radius: 22,
                               ),
                             ),
                             Positioned(
@@ -134,7 +134,7 @@ class day67 extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.only(right: 14, left: 14),
               child: ListTile(
@@ -147,7 +147,7 @@ class day67 extends StatelessWidget {
                       color: Colors.indigoAccent.shade100,
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    child: Icon(Icons.location_searching_outlined,
+                    child: const Icon(Icons.location_searching_outlined,
                         color: Colors.white),
                   ),
                 ),
@@ -188,9 +188,9 @@ class day67 extends StatelessWidget {
                 isThreeLine: true,
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Padding(
-              padding: EdgeInsets.only(left: 24, right: 24),
+              padding: const EdgeInsets.only(left: 24, right: 24),
               child: Text(
                 "The Similan Islands is and archipelago in the Andaman Sea off the coast of, and part of, Phang Nga Province southern Thiland. it is the maritime border between India and Thailand.it was established as Mu Ko Similan National Park in 1982 after a one-year assessment by the forestry department.",
                 style: TextStyle(
@@ -199,37 +199,28 @@ class day67 extends StatelessWidget {
                     color: Colors.black),
               ),
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Padding(
-                    padding: EdgeInsets.only(left: 24),
+                    padding: const EdgeInsets.only(left: 24),
                     child: imgprovider(
                       img: "images/assets67/img5.jpg",
                     )),
                 imgprovider(img: "images/assets67/img6.png"),
                 imgprovider(img: "images/assets67/img7.jpg"),
                 Padding(
-                    padding: EdgeInsets.only(right: 24),
+                    padding: const EdgeInsets.only(right: 24),
                     child: imgprovider(img: "images/assets67/img8.png")),
               ],
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             Padding(
               padding: const EdgeInsets.only(left: 24, right: 24),
               child: Row(
                 children: [
                   ElevatedButton(
-                    child: Text(
-                      "Buy Now",
-                      style: TextStyle(
-                          fontSize:
-                              MediaQuery.of(context).size.width * 0.14 / 3,
-                          fontFamily: fntfamily,
-                          color: Colors.white,
-                          fontWeight: FontWeight.w700),
-                    ),
                     onPressed: () {},
                     style: ButtonStyle(
                       shadowColor: MaterialStateProperty.all(Colors.black),
@@ -242,8 +233,17 @@ class day67 extends StatelessWidget {
                       shape: MaterialStateProperty.all(RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(16))),
                     ),
+                    child: Text(
+                      "Buy Now",
+                      style: TextStyle(
+                          fontSize:
+                              MediaQuery.of(context).size.width * 0.14 / 3,
+                          fontFamily: fntfamily,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w700),
+                    ),
                   ),
-                  Spacer(
+                  const Spacer(
                     flex: 2,
                   ),
                   Container(

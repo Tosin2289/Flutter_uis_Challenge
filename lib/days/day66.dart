@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day66 extends StatelessWidget {
-  const day66({Key? key}) : super(key: key);
+class Day66 extends StatelessWidget {
+  const Day66({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,11 +17,11 @@ class day66 extends StatelessWidget {
     double h3Font = MediaQuery.of(context).size.height * 0.02;
     getContainer(
         String url, Icon ic, String s1, String s2, String s3, String s4) {
-      return Container(
+      return SizedBox(
           height: con3Ht * 0.15,
           child: Row(
             children: [
-              Container(
+              SizedBox(
                 child: CircleAvatar(
                   radius: (con3Ht * 0.15) / 2.5,
                   backgroundColor: Colors.grey,
@@ -50,7 +50,7 @@ class day66 extends StatelessWidget {
                   ],
                 ),
               ),
-              Expanded(child: SizedBox()),
+              const Expanded(child: SizedBox()),
               Container(
                 padding: EdgeInsets.only(top: sbxHt / 2, bottom: sbxHt / 2),
                 width: con1Ht,
@@ -66,10 +66,10 @@ class day66 extends StatelessWidget {
                             fontSize: con3Ht * 0.04,
                             fontWeight: FontWeight.bold),
                       ),
-                      Container(
+                      SizedBox(
                         child: Row(
                           children: [
-                            Expanded(child: SizedBox()),
+                            const Expanded(child: SizedBox()),
                             Icon(Icons.favorite,
                                 size: h2Font - 3, color: Colors.cyan),
                             Text(
@@ -99,14 +99,14 @@ class day66 extends StatelessWidget {
                 SizedBox(height: con1Ht),
                 Container(
                     height: con1Ht,
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: Row(
                       children: [
-                        Container(
+                        SizedBox(
                           child: CircleAvatar(
                             radius: con1Ht * 0.4,
                             backgroundImage:
-                                AssetImage('images/assets66/img1.png'),
+                                const AssetImage('images/assets66/img1.png'),
                           ),
                         ),
                         SizedBox(
@@ -134,7 +134,7 @@ class day66 extends StatelessWidget {
                             ],
                           ),
                         ),
-                        Expanded(child: SizedBox()),
+                        const Expanded(child: SizedBox()),
                         Container(
                           width: con1Ht,
                           alignment: Alignment.center,
@@ -153,7 +153,7 @@ class day66 extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              child: CircleAvatar(
+                              child: const CircleAvatar(
                                   backgroundColor: Colors.white,
                                   child: Icon(
                                     Icons.notifications_none,
@@ -169,7 +169,7 @@ class day66 extends StatelessWidget {
                     height: con2Ht,
                     padding: EdgeInsets.all(sbxHt + 5),
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
+                      borderRadius: const BorderRadius.all(Radius.circular(20)),
                       color: Colors.deepPurple.shade600,
                     ),
                     child: Row(
@@ -194,7 +194,7 @@ class day66 extends StatelessWidget {
                             ),
                           ],
                         ),
-                        Expanded(child: SizedBox()),
+                        const Expanded(child: SizedBox()),
                         ElevatedButton.icon(
                           icon: Icon(
                             Icons.favorite,
@@ -231,7 +231,7 @@ class day66 extends StatelessWidget {
                         spreadRadius: 2.0,
                       ),
                     ],
-                    borderRadius: BorderRadius.all(Radius.circular(15)),
+                    borderRadius: const BorderRadius.all(Radius.circular(15)),
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -267,19 +267,19 @@ class day66 extends StatelessWidget {
                             Expanded(
                                 child: Container(
                               alignment: Alignment.center,
-                              child: Text("Pending"),
+                              child: const Text("Pending"),
                             ))
                           ],
                         ),
                       ),
                       SizedBox(height: sbxHt),
                       Expanded(
-                          child: Container(
+                          child: SizedBox(
                         child: Column(
                           children: [
                             getContainer(
                                 "images/assets66/img2.png",
-                                Icon(Icons.bluetooth),
+                                const Icon(Icons.bluetooth),
                                 "Bitcoin",
                                 "102 BTC",
                                 "\$35595,91",
@@ -287,7 +287,7 @@ class day66 extends StatelessWidget {
                             SizedBox(height: sbxHt * 0.5),
                             getContainer(
                                 "images/assets66/img3.jpg",
-                                Icon(Icons.bluetooth),
+                                const Icon(Icons.bluetooth),
                                 "Ethereum",
                                 "091 ETH",
                                 "\$1,922,01",
@@ -295,7 +295,7 @@ class day66 extends StatelessWidget {
                             SizedBox(height: sbxHt * 0.5),
                             getContainer(
                                 "images/assets66/img4.jpg",
-                                Icon(Icons.bluetooth),
+                                const Icon(Icons.bluetooth),
                                 "Chainlink",
                                 "92.11 LINK",
                                 "\$1,812,01",
@@ -320,7 +320,7 @@ class day66 extends StatelessWidget {
                           blurRadius: 20.0,
                           spreadRadius: 2.0),
                     ],
-                    borderRadius: BorderRadius.all(Radius.circular(15)),
+                    borderRadius: const BorderRadius.all(Radius.circular(15)),
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -354,7 +354,7 @@ class day66 extends StatelessWidget {
               color: Colors.white,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
+                children: const [
                   Icon(Icons.crop_square, color: Colors.black),
                   Icon(Icons.search, color: Colors.grey),
                   Icon(Icons.access_time_sharp, color: Colors.grey),

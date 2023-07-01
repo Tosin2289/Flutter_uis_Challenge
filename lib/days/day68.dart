@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day68 extends StatelessWidget {
-  const day68({Key? key}) : super(key: key);
+class Day68 extends StatelessWidget {
+  const Day68({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -43,18 +43,18 @@ class day68 extends StatelessWidget {
                         ),
                       ),
                     ),
-                    title: Text(
+                    title: const Text(
                       "Steve Johnson",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
                     ),
-                    subtitle: Text("30 Sec Ago"),
-                    trailing: Icon(
+                    subtitle: const Text("30 Sec Ago"),
+                    trailing: const Icon(
                       Icons.list_alt_outlined,
                       color: Colors.black,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Padding(
@@ -65,7 +65,7 @@ class day68 extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: Colors.blue,
                         borderRadius: BorderRadius.circular(20),
-                        image: DecorationImage(
+                        image: const DecorationImage(
                             image: AssetImage("images/assets68/bg.jpg"),
                             fit: BoxFit.fill),
                       ),
@@ -76,7 +76,7 @@ class day68 extends StatelessWidget {
                           decoration: BoxDecoration(
                               color: Colors.grey.withOpacity(0.5),
                               borderRadius: BorderRadius.circular(16)),
-                          child: Icon(
+                          child: const Icon(
                             Icons.play_arrow,
                             color: Colors.grey,
                             size: 50,
@@ -89,30 +89,30 @@ class day68 extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
                       children: [
-                        Icon(Icons.favorite_rounded,
+                        const Icon(Icons.favorite_rounded,
                             size: 30, color: Colors.red),
-                        SizedBox(
+                        const SizedBox(
                           width: 15,
                         ),
-                        Icon(Icons.mode_comment_outlined, size: 30),
-                        SizedBox(
+                        const Icon(Icons.mode_comment_outlined, size: 30),
+                        const SizedBox(
                           width: 15,
                         ),
-                        Icon(Icons.send_outlined, size: 30),
+                        const Icon(Icons.send_outlined, size: 30),
                         Expanded(
                           child: Container(),
                         ),
-                        Icon(Icons.bookmark_border_rounded, size: 30),
+                        const Icon(Icons.bookmark_border_rounded, size: 30),
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16.0),
                     child: Row(
-                      children: [
+                      children: const [
                         Text("4,555,500 Liked By Afshint2y"),
                       ],
                     ),

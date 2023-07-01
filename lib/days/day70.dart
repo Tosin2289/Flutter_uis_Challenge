@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day70 extends StatelessWidget {
-  const day70({Key? key}) : super(key: key);
+class Day70 extends StatelessWidget {
+  const Day70({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -81,7 +81,7 @@ class day70 extends StatelessWidget {
                                   decoration: BoxDecoration(
                                     color: Colors.grey[300],
                                     borderRadius: BorderRadius.circular(20),
-                                    image: DecorationImage(
+                                    image: const DecorationImage(
                                       image: AssetImage(
                                           "images/assets70/img3.jpg"),
                                     ),
@@ -223,7 +223,7 @@ class day70 extends StatelessWidget {
                                             color: Colors.grey,
                                             width: size.width / 200),
                                       ),
-                                      child: Center(
+                                      child: const Center(
                                         child: Icon(
                                           Icons.add,
                                           color: Colors.grey,
