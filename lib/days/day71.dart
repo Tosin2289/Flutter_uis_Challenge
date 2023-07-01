@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day71 extends StatelessWidget {
-  const day71({Key? key}) : super(key: key);
+class Day71 extends StatelessWidget {
+  const Day71({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,26 +11,42 @@ class day71 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
+              height: MediaQuery.of(context).size.height * 0.5,
+              width: MediaQuery.of(context).size.width,
+              margin: const EdgeInsets.all(15),
+              decoration: BoxDecoration(
+                color: Colors.black87,
+                borderRadius: BorderRadius.circular(30),
+                image: const DecorationImage(
+                  fit: BoxFit.cover,
+                  image: AssetImage("images/assets71/bg.jpg"),
+                ),
+              ),
               child: Padding(
                 padding: const EdgeInsets.all(20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      child: Icon(Icons.arrow_back),
                       height: MediaQuery.of(context).size.height / 18,
                       width: MediaQuery.of(context).size.width / 7.5,
                       decoration: BoxDecoration(
                           color: Colors.white70,
                           borderRadius: BorderRadius.circular(10)),
+                      child: const Icon(Icons.arrow_back),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 220,
                     ),
                     Container(
+                      height: MediaQuery.of(context).size.height / 18,
+                      width: MediaQuery.of(context).size.width / 2.5,
+                      decoration: BoxDecoration(
+                          color: Colors.white70,
+                          borderRadius: BorderRadius.circular(10)),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
+                        children: const [
                           Icon(
                             Icons.location_on_sharp,
                             color: Colors.white,
@@ -44,23 +60,18 @@ class day71 extends StatelessWidget {
                           ),
                         ],
                       ),
-                      height: MediaQuery.of(context).size.height / 18,
-                      width: MediaQuery.of(context).size.width / 2.5,
-                      decoration: BoxDecoration(
-                          color: Colors.white70,
-                          borderRadius: BorderRadius.circular(10)),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 3,
                     ),
-                    Text(
+                    const Text(
                       "Ice Caves",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w700,
                           color: Colors.white),
                     ),
-                    Text(
+                    const Text(
                       "\$200",
                       style: TextStyle(
                           fontSize: 20,
@@ -70,20 +81,9 @@ class day71 extends StatelessWidget {
                   ],
                 ),
               ),
-              height: MediaQuery.of(context).size.height * 0.5,
-              width: MediaQuery.of(context).size.width,
-              margin: EdgeInsets.all(15),
-              decoration: BoxDecoration(
-                color: Colors.black87,
-                borderRadius: BorderRadius.circular(30),
-                image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: AssetImage("images/assets71/bg.jpg"),
-                ),
-              ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 23, right: 23),
+            const Padding(
+              padding: EdgeInsets.only(left: 23, right: 23),
               child: Text(
                 "About the place",
                 style: TextStyle(
@@ -92,11 +92,11 @@ class day71 extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 23, right: 23),
+            const Padding(
+              padding: EdgeInsets.only(left: 23, right: 23),
               child: Text(
                 "start an adventure with a 3-days journey in iceland and explore the caves ",
                 style: TextStyle(
@@ -105,7 +105,7 @@ class day71 extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Padding(
@@ -113,7 +113,7 @@ class day71 extends StatelessWidget {
               child: Column(
                 children: [
                   Row(
-                    children: [
+                    children: const [
                       Icon(
                         Icons.watch_later,
                         color: Colors.black26,
@@ -140,64 +140,64 @@ class day71 extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Row(
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.people_rounded,
                         color: Colors.black26,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
-                      Text(
+                      const Text(
                         "Persons",
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.w900,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 75,
                       ),
                       ElevatedButton(
-                        child: const Icon(Icons.minimize_outlined),
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10)),
-                            primary: Colors.black,
+                            backgroundColor: Colors.black,
                             padding: const EdgeInsets.symmetric(
                                 horizontal: -40, vertical: 15),
                             textStyle: const TextStyle(
                                 fontSize: 15, fontWeight: FontWeight.bold)),
+                        child: const Icon(Icons.minimize_outlined),
                       ),
-                      SizedBox(width: 10),
-                      Text(
+                      const SizedBox(width: 10),
+                      const Text(
                         "2",
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w900,
                         ),
                       ),
-                      SizedBox(width: 8),
+                      const SizedBox(width: 8),
                       ElevatedButton(
-                        child: const Icon(Icons.add),
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10)),
-                            primary: Colors.black,
+                            backgroundColor: Colors.black,
                             padding: const EdgeInsets.symmetric(
                                 horizontal: -40, vertical: 15),
                             textStyle: const TextStyle(
                                 fontSize: 15, fontWeight: FontWeight.bold)),
+                        child: const Icon(Icons.add),
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 19,
                   ),
                   Row(
@@ -205,61 +205,63 @@ class day71 extends StatelessWidget {
                     children: [
                       Stack(
                         clipBehavior: Clip.none,
-                        children: [
+                        children: const [
                           Positioned(
                             child: CircleAvatar(
+                              backgroundColor: Colors.white,
+                              radius: 22,
                               child: CircleAvatar(
                                 radius: 20,
                                 backgroundColor: Colors.black,
                                 backgroundImage:
                                     AssetImage("images/assets71/apple.jpg"),
                               ),
-                              backgroundColor: Colors.white,
-                              radius: 22,
                             ),
                           ),
                           Positioned(
                             right: -30,
                             child: CircleAvatar(
+                              backgroundColor: Colors.white,
+                              radius: 22,
                               child: CircleAvatar(
                                 radius: 20,
                                 backgroundColor: Colors.black,
                                 backgroundImage:
                                     AssetImage("images/assets71/orange.jpg"),
                               ),
-                              backgroundColor: Colors.white,
-                              radius: 22,
                             ),
                           ),
                           Positioned(
                             right: -60,
                             child: CircleAvatar(
+                              backgroundColor: Colors.white,
+                              radius: 22,
                               child: CircleAvatar(
                                 radius: 20,
                                 backgroundColor: Colors.black,
                                 backgroundImage:
                                     AssetImage("images/assets71/banana.jpg"),
                               ),
-                              backgroundColor: Colors.white,
-                              radius: 22,
                             ),
                           ),
                           Positioned(
                             right: -90,
                             child: CircleAvatar(
+                              backgroundColor: Colors.white,
+                              radius: 22,
                               child: CircleAvatar(
                                 radius: 20,
                                 backgroundColor: Colors.black,
                                 backgroundImage:
                                     AssetImage("images/assets71/pineapple.jpg"),
                               ),
-                              backgroundColor: Colors.white,
-                              radius: 22,
                             ),
                           ),
                           Positioned(
                             right: -120,
                             child: CircleAvatar(
+                              backgroundColor: Colors.white,
+                              radius: 22,
                               child: CircleAvatar(
                                   backgroundColor: Colors.purple,
                                   foregroundColor: Colors.yellow,
@@ -271,8 +273,6 @@ class day71 extends StatelessWidget {
                                         fontWeight: FontWeight.w900,
                                         color: Colors.black),
                                   ))),
-                              backgroundColor: Colors.white,
-                              radius: 22,
                             ),
                           ),
                         ],
@@ -281,12 +281,12 @@ class day71 extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         height: 120,
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                        children: const [
                           Text(
                             "\$400",
                             style: TextStyle(
@@ -303,20 +303,20 @@ class day71 extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 65,
                       ),
                       ElevatedButton(
-                        child: const Text("BOOK NOW"),
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10)),
-                            primary: Colors.black,
+                            backgroundColor: Colors.black,
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 50, vertical: 20),
                             textStyle: const TextStyle(
                                 fontSize: 15, fontWeight: FontWeight.bold)),
+                        child: const Text("BOOK NOW"),
                       ),
                     ],
                   ),

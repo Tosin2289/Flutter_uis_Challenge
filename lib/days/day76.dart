@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day76 extends StatelessWidget {
-  const day76({Key? key}) : super(key: key);
+class Day76 extends StatelessWidget {
+  const Day76({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,16 +17,16 @@ class day76 extends StatelessWidget {
                       margin: EdgeInsets.only(
                           left: MediaQuery.of(context).size.width / 40,
                           right: MediaQuery.of(context).size.width / 40),
-                      padding: EdgeInsets.all(5),
+                      padding: const EdgeInsets.all(5),
                       height: MediaQuery.of(context).size.height / 1.7,
-                      decoration: new BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topRight: Radius.circular(12.0),
                           topLeft: Radius.circular(12.0),
                           bottomLeft: Radius.circular(12.0),
                           bottomRight: Radius.circular(12.0),
                         ),
-                        image: new DecorationImage(
+                        image: DecorationImage(
                           fit: BoxFit.cover,
                           image: AssetImage("images/assets76/img1.jpg"),
                         ),
@@ -58,14 +58,14 @@ class day76 extends StatelessWidget {
                           ),
                           height: MediaQuery.of(context).size.height / 4,
                           width: MediaQuery.of(context).size.width / 1.16,
-                          decoration: new BoxDecoration(
+                          decoration: const BoxDecoration(
                             borderRadius: BorderRadius.only(
                               topRight: Radius.circular(20),
                               topLeft: Radius.circular(20),
                               bottomLeft: Radius.circular(20),
                               bottomRight: Radius.circular(20),
                             ),
-                            image: new DecorationImage(
+                            image: DecorationImage(
                               fit: BoxFit.cover,
                               image: AssetImage("images/assets76/img2.jpg"),
                             ),
@@ -105,7 +105,7 @@ class day76 extends StatelessWidget {
                                     size:
                                         MediaQuery.of(context).size.height / 35,
                                   ),
-                                  Text(" Santorinl Island, Greece"),
+                                  const Text(" Santorinl Island, Greece"),
                                 ],
                               ),
                               SizedBox(
@@ -117,8 +117,8 @@ class day76 extends StatelessWidget {
                                     width:
                                         MediaQuery.of(context).size.width / 16,
                                   ),
-                                  Text("\$1890"),
-                                  Text(
+                                  const Text("\$1890"),
+                                  const Text(
                                     "/night",
                                     style: TextStyle(color: Colors.black87),
                                   ),
@@ -139,13 +139,13 @@ class day76 extends StatelessWidget {
                         SizedBox(
                           height: MediaQuery.of(context).size.height / 1.17,
                         ),
-                        Text(""),
+                        const Text(""),
                       ],
                     ),
                   ),
                   Column(
                     children: [
-                      Text(""),
+                      const Text(""),
                       SizedBox(
                         height: MediaQuery.of(context).size.height / 1.7,
                       ),
@@ -164,12 +164,12 @@ class day76 extends StatelessWidget {
                               fontSize: MediaQuery.of(context).size.height / 37,
                             ),
                           ),
-                          Spacer(),
-                          Text(
+                          const Spacer(),
+                          const Text(
                             "VIew all",
                             style: TextStyle(color: Colors.grey),
                           ),
-                          Icon(
+                          const Icon(
                             Icons.arrow_forward_ios,
                             color: Colors.grey,
                             size: 16,
@@ -186,7 +186,7 @@ class day76 extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           Container(
-                            padding: EdgeInsets.all(2),
+                            padding: const EdgeInsets.all(2),
                             color: Colors.grey.shade200,
                             height: MediaQuery.of(context).size.height / 15,
                             width: MediaQuery.of(context).size.height / 15,
@@ -196,7 +196,7 @@ class day76 extends StatelessWidget {
                                   Icons.bus_alert,
                                   color: Colors.red.shade200,
                                 ),
-                                Spacer(),
+                                const Spacer(),
                                 Text(
                                   "2 Bag",
                                   style: TextStyle(
@@ -208,7 +208,7 @@ class day76 extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            padding: EdgeInsets.all(2),
+                            padding: const EdgeInsets.all(2),
                             color: Colors.grey.shade200,
                             height: MediaQuery.of(context).size.height / 15,
                             width: MediaQuery.of(context).size.height / 15,
@@ -218,7 +218,7 @@ class day76 extends StatelessWidget {
                                   Icons.stairs,
                                   color: Colors.red.shade200,
                                 ),
-                                Spacer(),
+                                const Spacer(),
                                 Text(
                                   "Driver",
                                   style: TextStyle(
@@ -230,7 +230,7 @@ class day76 extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            padding: EdgeInsets.all(2),
+                            padding: const EdgeInsets.all(2),
                             color: Colors.grey.shade200,
                             height: MediaQuery.of(context).size.height / 15,
                             width: MediaQuery.of(context).size.height / 15,
@@ -240,7 +240,7 @@ class day76 extends StatelessWidget {
                                   Icons.border_all,
                                   color: Colors.red.shade200,
                                 ),
-                                Spacer(),
+                                const Spacer(),
                                 Text(
                                   "Pack",
                                   style: TextStyle(
@@ -252,7 +252,7 @@ class day76 extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            padding: EdgeInsets.all(2),
+                            padding: const EdgeInsets.all(2),
                             color: Colors.grey.shade200,
                             height: MediaQuery.of(context).size.height / 15,
                             width: MediaQuery.of(context).size.height / 15,
@@ -262,7 +262,7 @@ class day76 extends StatelessWidget {
                                   Icons.fire_hydrant,
                                   color: Colors.red.shade200,
                                 ),
-                                Spacer(),
+                                const Spacer(),
                                 Text(
                                   "Fire",
                                   style: TextStyle(
@@ -274,7 +274,7 @@ class day76 extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            padding: EdgeInsets.all(2),
+                            padding: const EdgeInsets.all(2),
                             color: Colors.grey.shade200,
                             height: MediaQuery.of(context).size.height / 15,
                             width: MediaQuery.of(context).size.height / 15,
@@ -284,7 +284,7 @@ class day76 extends StatelessWidget {
                                   Icons.air,
                                   color: Colors.red.shade200,
                                 ),
-                                Spacer(),
+                                const Spacer(),
                                 Text(
                                   "Air",
                                   style: TextStyle(
@@ -312,12 +312,12 @@ class day76 extends StatelessWidget {
                               fontSize: MediaQuery.of(context).size.height / 37,
                             ),
                           ),
-                          Spacer(),
-                          Text(
+                          const Spacer(),
+                          const Text(
                             "VIew all",
                             style: TextStyle(color: Colors.grey),
                           ),
-                          Icon(
+                          const Icon(
                             Icons.arrow_forward_ios,
                             color: Colors.grey,
                             size: 16,
@@ -334,51 +334,51 @@ class day76 extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Container(
-                            padding: EdgeInsets.all(11),
+                            padding: const EdgeInsets.all(11),
                             width: MediaQuery.of(context).size.height / 8,
                             height: MediaQuery.of(context).size.height / 7,
-                            decoration: new BoxDecoration(
+                            decoration: const BoxDecoration(
                               borderRadius: BorderRadius.only(
                                 topRight: Radius.circular(12.0),
                                 topLeft: Radius.circular(12.0),
                                 bottomLeft: Radius.circular(12.0),
                                 bottomRight: Radius.circular(12.0),
                               ),
-                              image: new DecorationImage(
+                              image: DecorationImage(
                                 fit: BoxFit.cover,
                                 image: AssetImage("images/assets76/img3.jpg"),
                               ),
                             ),
                           ),
                           Container(
-                            padding: EdgeInsets.all(11),
+                            padding: const EdgeInsets.all(11),
                             width: MediaQuery.of(context).size.height / 8,
                             height: MediaQuery.of(context).size.height / 7,
-                            decoration: new BoxDecoration(
+                            decoration: const BoxDecoration(
                               borderRadius: BorderRadius.only(
                                 topRight: Radius.circular(12.0),
                                 topLeft: Radius.circular(12.0),
                                 bottomLeft: Radius.circular(12.0),
                                 bottomRight: Radius.circular(12.0),
                               ),
-                              image: new DecorationImage(
+                              image: DecorationImage(
                                 fit: BoxFit.cover,
                                 image: AssetImage("images/assets76/img4.jpg"),
                               ),
                             ),
                           ),
                           Container(
-                            padding: EdgeInsets.all(11),
+                            padding: const EdgeInsets.all(11),
                             width: MediaQuery.of(context).size.height / 8,
                             height: MediaQuery.of(context).size.height / 7,
-                            decoration: new BoxDecoration(
+                            decoration: const BoxDecoration(
                               borderRadius: BorderRadius.only(
                                 topRight: Radius.circular(12.0),
                                 topLeft: Radius.circular(12.0),
                                 bottomLeft: Radius.circular(12.0),
                                 bottomRight: Radius.circular(12.0),
                               ),
-                              image: new DecorationImage(
+                              image: DecorationImage(
                                 fit: BoxFit.cover,
                                 image: AssetImage("images/assets76/img5.jpg"),
                               ),

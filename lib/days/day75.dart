@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import "package:google_fonts/google_fonts.dart";
 
-class day75 extends StatelessWidget {
-  const day75({Key? key}) : super(key: key);
+class Day75 extends StatelessWidget {
+  const Day75({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,15 +13,15 @@ class day75 extends StatelessWidget {
       return Column(
         children: [
           Container(
+            decoration: BoxDecoration(
+              color: Colors.grey.shade200,
+              borderRadius: BorderRadius.circular(50),
+            ),
             height: 50,
             width: 50,
             child: Icon(
               icn,
               color: Colors.grey.shade700,
-            ),
-            decoration: BoxDecoration(
-              color: Colors.grey.shade200,
-              borderRadius: BorderRadius.circular(50),
             ),
           ),
           Text(
@@ -38,7 +38,7 @@ class day75 extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(height: 24),
+          const SizedBox(height: 24),
           Stack(
             children: [
               Padding(
@@ -52,7 +52,7 @@ class day75 extends StatelessWidget {
                     height: screenHeight * 0.42,
                     width: screenWidth,
                     decoration: BoxDecoration(
-                      image: DecorationImage(
+                      image: const DecorationImage(
                           image: AssetImage("images/assets75/img1.jpg"),
                           fit: BoxFit.cover),
                       borderRadius: BorderRadius.circular(28),
@@ -71,7 +71,8 @@ class day75 extends StatelessWidget {
                     color: Colors.white70,
                   ),
                   child: IconButton(
-                      onPressed: () {}, icon: Icon(Icons.arrow_back_ios_new)),
+                      onPressed: () {},
+                      icon: const Icon(Icons.arrow_back_ios_new)),
                 ),
               ),
               Positioned(
@@ -86,12 +87,12 @@ class day75 extends StatelessWidget {
                   ),
                   child: IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.bookmark_border_outlined)),
+                      icon: const Icon(Icons.bookmark_border_outlined)),
                 ),
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 24,
           ),
           Padding(
@@ -108,8 +109,8 @@ class day75 extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              Padding(
-                padding: const EdgeInsets.only(right: 24),
+              const Padding(
+                padding: EdgeInsets.only(right: 24),
                 child: Icon(Icons.star, color: Colors.grey),
               ),
               Row(
@@ -117,43 +118,43 @@ class day75 extends StatelessWidget {
                   Stack(
                     clipBehavior: Clip.none,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 24),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 24),
                         child: CircleAvatar(
+                          backgroundColor: Colors.white,
+                          radius: 22,
                           child: CircleAvatar(
                             radius: 20,
                             backgroundColor: Colors.grey,
                             backgroundImage:
                                 AssetImage("images/assets75/img2.png"),
                           ),
-                          backgroundColor: Colors.white,
-                          radius: 22,
                         ),
                       ),
-                      Positioned(
+                      const Positioned(
                         left: 52,
                         child: CircleAvatar(
+                          backgroundColor: Colors.white,
+                          radius: 22,
                           child: CircleAvatar(
                             radius: 20,
                             backgroundColor: Colors.grey,
                             backgroundImage:
                                 AssetImage("images/assets75/img3.jpg"),
                           ),
-                          backgroundColor: Colors.white,
-                          radius: 22,
                         ),
                       ),
-                      Positioned(
+                      const Positioned(
                         left: 82,
                         child: CircleAvatar(
+                          backgroundColor: Colors.white,
+                          radius: 22,
                           child: CircleAvatar(
                             radius: 20,
                             backgroundColor: Colors.grey,
                             backgroundImage:
                                 AssetImage("images/assets75/img4.jpg"),
                           ),
-                          backgroundColor: Colors.white,
-                          radius: 22,
                         ),
                       ),
                       Positioned(
@@ -169,7 +170,7 @@ class day75 extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Spacer(flex: 1),
+                  const Spacer(flex: 1),
                   Padding(
                     padding: const EdgeInsets.only(right: 24),
                     child: Text(
@@ -182,7 +183,7 @@ class day75 extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               Padding(
                 padding: const EdgeInsets.only(right: 24, left: 24),
                 child: Wrap(
@@ -197,7 +198,7 @@ class day75 extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           Padding(
             padding: const EdgeInsets.only(left: 24, right: 24),
             child: Row(
@@ -210,17 +211,17 @@ class day75 extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       fontSize: MediaQuery.of(context).size.width / 22),
                 ),
-                Spacer(
+                const Spacer(
                   flex: 3,
                 ),
                 Text("All",
                     style:
                         TextStyle(color: Colors.black, fontFamily: fntfamily)),
-                Icon(Icons.arrow_right),
+                const Icon(Icons.arrow_right),
               ],
             ),
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           Padding(
             padding: const EdgeInsets.only(right: 24, left: 24),
             child: Row(
@@ -233,7 +234,7 @@ class day75 extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
           Padding(
@@ -257,7 +258,7 @@ class day75 extends StatelessWidget {
                     )
                   ],
                 ),
-                Spacer(flex: 2),
+                const Spacer(flex: 2),
                 InkWell(
                   onTap: () {},
                   child: Container(
@@ -289,7 +290,7 @@ class day75 extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
         ],

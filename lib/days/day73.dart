@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day73 extends StatelessWidget {
-  const day73({Key? key}) : super(key: key);
+class Day73 extends StatelessWidget {
+  const Day73({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,8 +19,8 @@ class day73 extends StatelessWidget {
                     Container(
                       height: MediaQuery.of(context).size.height / 21,
                       width: MediaQuery.of(context).size.width / 10,
-                      decoration: BoxDecoration(boxShadow: [
-                        const BoxShadow(color: Colors.white),
+                      decoration: BoxDecoration(boxShadow: const [
+                        BoxShadow(color: Colors.white),
                       ], borderRadius: BorderRadius.circular(20)),
                       child: Icon(
                         Icons.arrow_back_ios_new_rounded,
@@ -49,11 +49,11 @@ class day73 extends StatelessWidget {
                       padding: const EdgeInsets.all(10),
                       width: MediaQuery.of(context).size.width / 6.5,
                       height: MediaQuery.of(context).size.height / 13,
-                      decoration: new BoxDecoration(
+                      decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         image: const DecorationImage(
                           fit: BoxFit.cover,
-                          image: const AssetImage("images/assets73/img1.jpg"),
+                          image: AssetImage("images/assets73/img1.jpg"),
                         ),
                       ),
                     ),
@@ -92,7 +92,7 @@ class day73 extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                           color: Colors.black54),
                     ),
-                    Container(
+                    SizedBox(
                       height: MediaQuery.of(context).size.height / 20,
                       child: OutlinedButton(
                         style: ButtonStyle(
@@ -128,7 +128,7 @@ class day73 extends StatelessWidget {
                     Container(
                       height: MediaQuery.of(context).size.height / 5.90,
                       decoration: BoxDecoration(
-                          boxShadow: [const BoxShadow(color: Colors.white)],
+                          boxShadow: const [BoxShadow(color: Colors.white)],
                           borderRadius: BorderRadius.circular(20)),
                       padding: const EdgeInsets.all(9.5),
                       child: Row(
@@ -242,7 +242,7 @@ class day73 extends StatelessWidget {
                     ),
                     Container(
                       decoration: BoxDecoration(
-                          boxShadow: [const BoxShadow(color: Colors.white)],
+                          boxShadow: const [BoxShadow(color: Colors.white)],
                           borderRadius: BorderRadius.circular(20)),
                       height: MediaQuery.of(context).size.height / 5.90,
                       padding: const EdgeInsets.all(9.5),
@@ -359,7 +359,7 @@ class day73 extends StatelessWidget {
                       height: MediaQuery.of(context).size.height / 5.90,
                       padding: const EdgeInsets.all(9.5),
                       decoration: BoxDecoration(
-                          boxShadow: [const BoxShadow(color: Colors.white)],
+                          boxShadow: const [BoxShadow(color: Colors.white)],
                           borderRadius: BorderRadius.circular(20)),
                       child: Row(
                         children: [
@@ -468,7 +468,7 @@ class day73 extends StatelessWidget {
                     ),
                     Container(
                       decoration: BoxDecoration(
-                          boxShadow: [const BoxShadow(color: Colors.white)],
+                          boxShadow: const [BoxShadow(color: Colors.white)],
                           borderRadius: BorderRadius.circular(20)),
                       height: MediaQuery.of(context).size.height / 5.90,
                       padding: const EdgeInsets.all(9.5),

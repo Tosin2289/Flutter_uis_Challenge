@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day80 extends StatelessWidget {
-  const day80({Key? key}) : super(key: key);
+class Day80 extends StatelessWidget {
+  const Day80({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -112,7 +112,7 @@ class day80 extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Positioned(
+                  Positioned(
                       top: 366,
                       left: 26,
                       child: Text(

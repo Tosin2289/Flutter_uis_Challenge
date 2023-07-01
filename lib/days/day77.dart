@@ -1,13 +1,20 @@
 import 'package:flutter/material.dart';
 
-class day77 extends StatelessWidget {
-  day77({Key? key}) : super(key: key);
+class Day77 extends StatefulWidget {
+  const Day77({Key? key}) : super(key: key);
+
+  @override
+  State<Day77> createState() => _Day77State();
+}
+
+class _Day77State extends State<Day77> {
   List property = [
     "images/assets77/img1.png",
     "images/assets77/img2.png",
     "images/assets77/img3.png",
     "images/assets77/img4.png",
   ];
+
   @override
   Widget build(BuildContext context) {
     var h = MediaQuery.of(context).size.height;
@@ -92,6 +99,14 @@ class day77 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    height: MediaQuery.of(context).size.height / 17,
+                    width: MediaQuery.of(context).size.width / 1.4,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: const Color(0xFFefefef)),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(35),
+                    ),
                     child: Row(
                       children: [
                         Image.asset(
@@ -109,17 +124,9 @@ class day77 extends StatelessWidget {
                         ),
                       ],
                     ),
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    height: MediaQuery.of(context).size.height / 17,
-                    width: MediaQuery.of(context).size.width / 1.4,
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Color(0xFFefefef)),
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(35),
-                    ),
                   ),
                   CircleAvatar(
-                    backgroundColor: Color(0xFF2ba5a6),
+                    backgroundColor: const Color(0xFF2ba5a6),
                     child: Image.asset(
                       "images/assets77/img7.png",
                       color: Colors.white,
@@ -146,7 +153,7 @@ class day77 extends StatelessWidget {
                   ),
                   const Expanded(child: Text("")),
                   Row(
-                    children: [Icon(Icons.more_horiz)],
+                    children: const [Icon(Icons.more_horiz)],
                   )
                 ],
               ),
@@ -162,6 +169,10 @@ class day77 extends StatelessWidget {
                         width: h / 15,
                         padding: const EdgeInsets.all(10),
                         margin: const EdgeInsets.symmetric(horizontal: 20),
+                        decoration: BoxDecoration(
+                          color: Colors.grey.shade200,
+                          shape: BoxShape.circle,
+                        ),
                         child: Container(
                           height: h / 18,
                           width: h / 18,
@@ -169,10 +180,6 @@ class day77 extends StatelessWidget {
                               shape: BoxShape.circle,
                               image: DecorationImage(
                                   image: AssetImage(property[index]))),
-                        ),
-                        decoration: BoxDecoration(
-                          color: Colors.grey.shade200,
-                          shape: BoxShape.circle,
                         ),
                       );
                     }),
@@ -211,7 +218,7 @@ class day77 extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: Colors.grey[200],
                     borderRadius: BorderRadius.circular(10),
-                    image: DecorationImage(
+                    image: const DecorationImage(
                         image: AssetImage("images/assets77/img8.png"),
                         fit: BoxFit.fitWidth)),
               ),
@@ -276,7 +283,7 @@ class day77 extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: Colors.grey[200],
                     borderRadius: BorderRadius.circular(10),
-                    image: DecorationImage(
+                    image:const DecorationImage(
                         image: AssetImage("images/assets77/img10.jpeg"),
                         fit: BoxFit.fitWidth)),
               ),
