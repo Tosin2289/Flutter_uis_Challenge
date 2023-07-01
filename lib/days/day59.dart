@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day59 extends StatelessWidget {
-  const day59({Key? key}) : super(key: key);
+class Day59 extends StatelessWidget {
+  const Day59({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,19 +14,19 @@ class day59 extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.location_on_outlined,
                       color: Colors.cyan,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 5,
                     ),
-                    Text(
+                    const Text(
                       "City",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Container(
@@ -39,7 +39,7 @@ class day59 extends StatelessWidget {
                           child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Row(
-                          children: [
+                          children: const [
                             Icon(Icons.search, color: Colors.grey, size: 19),
                             Text(
                               "Search",
@@ -50,33 +50,33 @@ class day59 extends StatelessWidget {
                         ),
                       )),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 4,
                     ),
-                    Icon(
+                    const Icon(
                       Icons.moped_outlined,
                       color: Colors.cyan,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 5,
                     ),
-                    Text(
+                    const Text(
                       "1hour",
                       style: TextStyle(fontSize: 18, color: Colors.cyan),
                     )
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Image.asset("assets/img1.png",
                     height: 200, width: 450, fit: BoxFit.fill),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
+                  children: const [
                     fcon(
                       img: "images/assets59/img2.jpg",
                       text: "Staple",
@@ -95,22 +95,22 @@ class day59 extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Container(
-                  margin:
-                      EdgeInsets.only(left: 15, right: 20, top: 20, bottom: 20),
+                  margin: const EdgeInsets.only(
+                      left: 15, right: 20, top: 20, bottom: 20),
                   height: 80,
                   width: 450,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    color: Color(0xffDDF2E9),
+                    color: const Color(0xffDDF2E9),
                   ),
                   child: Center(
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
+                        children: const [
                           Text(
                             "SHARE AND POLITE",
                             style: TextStyle(
@@ -129,11 +129,11 @@ class day59 extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("Fresh Fruit",
+                    const Text("Fresh Fruit",
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 18)),
                     Row(
-                      children: [
+                      children: const [
                         Text(
                           "More",
                           style: TextStyle(
@@ -153,13 +153,13 @@ class day59 extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
-                    children: [
+                    children: const [
                       fcon2(
                         img: "images/assets59/img6.jpg",
                         text: "Avacado",
@@ -181,17 +181,17 @@ class day59 extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("Green Vegetables",
+                    const Text("Green Vegetables",
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 18)),
                     Row(
-                      children: [
+                      children: const [
                         Text(
                           "More",
                           style: TextStyle(
@@ -218,7 +218,7 @@ class day59 extends StatelessWidget {
       ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.cyan[800],
-        items: [
+        items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: ""),
           BottomNavigationBarItem(
               icon: Icon(Icons.shopping_cart_outlined), label: ""),
@@ -246,11 +246,11 @@ class fcon2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: 15, top: 15),
+      margin: const EdgeInsets.only(left: 15, top: 15),
       height: 150,
       width: 130,
       decoration: BoxDecoration(
-        color: Color(0xffEEF4F6),
+        color: const Color(0xffEEF4F6),
         borderRadius: BorderRadius.circular(5),
       ),
       child: Center(
@@ -265,7 +265,7 @@ class fcon2 extends StatelessWidget {
                   width: 70,
                   fit: BoxFit.cover,
                 )),
-            SizedBox(
+            const SizedBox(
               height: 4,
             ),
             Column(
@@ -273,15 +273,16 @@ class fcon2 extends StatelessWidget {
               children: [
                 Text(
                   text,
-                  style: TextStyle(fontSize: 17, fontWeight: FontWeight.w800),
+                  style: const TextStyle(
+                      fontSize: 17, fontWeight: FontWeight.w800),
                 ),
                 Text(
                   stext,
-                  style: TextStyle(fontSize: 8, color: Colors.black26),
+                  style: const TextStyle(fontSize: 8, color: Colors.black26),
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
@@ -291,7 +292,7 @@ class fcon2 extends StatelessWidget {
                   amount,
                   style: TextStyle(color: Colors.green),
                 ),
-                Text(
+                const Text(
                   "200g",
                   style: TextStyle(color: Colors.grey),
                 ),
@@ -316,7 +317,7 @@ class fcon extends StatelessWidget {
       height: 100,
       width: 80,
       decoration: BoxDecoration(
-        color: Color(0xffEEF4F6),
+        color: const Color(0xffEEF4F6),
         borderRadius: BorderRadius.circular(5),
       ),
       child: Center(
@@ -331,12 +332,12 @@ class fcon extends StatelessWidget {
                   width: 50,
                   fit: BoxFit.cover,
                 )),
-            SizedBox(
+            const SizedBox(
               height: 4,
             ),
             Text(
               text,
-              style: TextStyle(color: Colors.grey),
+              style: const TextStyle(color: Colors.grey),
             ),
           ],
         ),

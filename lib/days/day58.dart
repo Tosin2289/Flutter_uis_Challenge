@@ -1,39 +1,40 @@
 import 'package:flutter/material.dart';
 
-class day58 extends StatelessWidget {
-  const day58({Key? key}) : super(key: key);
+class Day58 extends StatelessWidget {
+  const Day58({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
           child: Container(
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         child: Column(
           children: [
             Row(
               children: [
-                Container(
+                SizedBox(
                     height: 40,
                     width: 40,
                     child: IconButton(
-                        onPressed: () {}, icon: Icon(Icons.arrow_back_ios))),
+                        onPressed: () {},
+                        icon: const Icon(Icons.arrow_back_ios))),
                 Container(
-                  padding: EdgeInsets.only(left: 110),
-                  child: Text(
+                  padding: const EdgeInsets.only(left: 110),
+                  child: const Text(
                     "Place Bid",
                     style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
                   ),
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Container(
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               height: MediaQuery.of(context).size.height / 2.2,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   color: Colors.amber,
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                   image: DecorationImage(
@@ -44,20 +45,20 @@ class day58 extends StatelessWidget {
                   children: [
                     Row(children: [
                       Container(
-                          child: Center(
-                              child: Text(
-                            "2h 10m 20s",
-                            style: TextStyle(color: Colors.white),
-                          )),
-                          height: MediaQuery.of(context).size.height / 19,
-                          width: MediaQuery.of(context).size.width / 4,
-                          decoration: BoxDecoration(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(20)),
-                              color: Colors.white12)),
+                        height: MediaQuery.of(context).size.height / 19,
+                        width: MediaQuery.of(context).size.width / 4,
+                        decoration: const BoxDecoration(
+                            borderRadius: BorderRadius.all(Radius.circular(20)),
+                            color: Colors.white12),
+                        child: const Center(
+                            child: Text(
+                          "2h 10m 20s",
+                          style: TextStyle(color: Colors.white),
+                        )),
+                      ),
                     ]),
                     Row(
-                      children: [
+                      children: const [
                         CircleAvatar(
                           backgroundImage:
                               AssetImage("images/assets58/img1.jpg"),
@@ -78,35 +79,35 @@ class day58 extends StatelessWidget {
                     )
                   ]),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Row(
-              children: [
+              children: const [
                 Text(
                   " The Blue Moscrepe",
                   style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             Container(
-                padding: EdgeInsets.all(5),
-                child: Text(
+                padding: const EdgeInsets.all(5),
+                child: const Text(
                   "Information that has been training and information confined to a single medium. General knowledge is essential compone",
                   style: TextStyle(wordSpacing: 2),
                 )),
             ListTile(
-              leading: CircleAvatar(
+              leading: const CircleAvatar(
                 backgroundImage: AssetImage("images/assets58/img2.jpg"),
               ),
-              title: Text(
+              title: const Text(
                 "Bid placed by Jotaro",
                 style: TextStyle(fontWeight: FontWeight.w600),
               ),
-              subtitle: Text("May20,2022 at 08:14am"),
+              subtitle: const Text("May20,2022 at 08:14am"),
               trailing: TextButton.icon(
                 icon: Icon(Icons.price_change, color: Colors.yellow[800]),
                 onPressed: () {},
@@ -116,20 +117,21 @@ class day58 extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            Container(
-                height: MediaQuery.of(context).size.height / 17,
-                width: MediaQuery.of(context).size.width / 2,
-                child: ElevatedButton(
-                  onPressed: () {},
-                  child: Text("Place Bid"),
-                  style: ButtonStyle(
-                    backgroundColor:
-                        MaterialStateProperty.all(Colors.orangeAccent[700]),
-                  ),
-                ))
+            SizedBox(
+              height: MediaQuery.of(context).size.height / 17,
+              width: MediaQuery.of(context).size.width / 2,
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all(Colors.orangeAccent[700]),
+                ),
+                child: const Text("Place Bid"),
+              ),
+            )
           ],
         ),
       )),

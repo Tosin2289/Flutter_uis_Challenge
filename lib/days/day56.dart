@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day56 extends StatelessWidget {
-  const day56({Key? key}) : super(key: key);
+class Day56 extends StatelessWidget {
+  const Day56({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class day56 extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
+                      SizedBox(
                         height: 50,
                         width: 50,
                         child: Center(
@@ -33,7 +33,7 @@ class day56 extends StatelessWidget {
                         child: Center(
                           child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
+                              children: const [
                                 Icon(
                                   Icons.search,
                                   color: Colors.grey,
@@ -52,7 +52,7 @@ class day56 extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Container(
@@ -80,7 +80,7 @@ class day56 extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Row(
-                              children: [
+                              children: const [
                                 Text(
                                   "International sports",
                                   style: TextStyle(
@@ -93,7 +93,7 @@ class day56 extends StatelessWidget {
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
                             child: Row(
-                              children: [
+                              children: const [
                                 Text(
                                   "News",
                                   style: TextStyle(
@@ -106,11 +106,11 @@ class day56 extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   ListTile(
-                    leading: CircleAvatar(
+                    leading: const CircleAvatar(
                       radius: 27,
                       backgroundColor: Colors.orange,
                       foregroundColor: Colors.white,
@@ -119,32 +119,32 @@ class day56 extends StatelessWidget {
                         style: TextStyle(fontSize: 18),
                       ),
                     ),
-                    title: Text(
+                    title: const Text(
                       "BBC News",
                       style: TextStyle(fontSize: 18),
                     ),
-                    subtitle: Text("Sep 16, 2019 - 10:10 am"),
+                    subtitle: const Text("Sep 16, 2019 - 10:10 am"),
                     trailing: Container(
                       height: 36,
                       width: 80,
                       decoration: BoxDecoration(
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(10)),
-                      child: Center(
+                      child: const Center(
                           child: Text(
                         "Fallow",
                         style: TextStyle(fontSize: 16),
                       )),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
-                  Text(
+                  const Text(
                     "The Pleasures And Sorrow    Of Fatasy Sports",
                     style: TextStyle(fontSize: 27, fontWeight: FontWeight.w700),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Text(
@@ -154,7 +154,7 @@ class day56 extends StatelessWidget {
                         fontSize: MediaQuery.of(context).size.height / 50,
                         fontWeight: FontWeight.w400),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Row(
@@ -186,15 +186,15 @@ class day56 extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
-                  Divider(),
-                  SizedBox(
+                  const Divider(),
+                  const SizedBox(
                     height: 10,
                   ),
                   ListTile(
-                    leading: CircleAvatar(
+                    leading: const CircleAvatar(
                       radius: 27,
                       backgroundColor: Colors.green,
                       foregroundColor: Colors.white,
@@ -203,25 +203,25 @@ class day56 extends StatelessWidget {
                         style: TextStyle(fontSize: 18),
                       ),
                     ),
-                    title: Text(
+                    title: const Text(
                       "NFC News",
                       style: TextStyle(fontSize: 18),
                     ),
-                    subtitle: Text("Sep 26, 2019 - 10:40 am"),
+                    subtitle: const Text("Sep 26, 2019 - 10:40 am"),
                     trailing: Container(
                       height: 36,
                       width: 80,
                       decoration: BoxDecoration(
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(10)),
-                      child: Center(
+                      child: const Center(
                           child: Text(
                         "Fallow",
                         style: TextStyle(fontSize: 16),
                       )),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Container(

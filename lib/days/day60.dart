@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day60 extends StatelessWidget {
-  const day60({Key? key}) : super(key: key);
+class Day60 extends StatelessWidget {
+  const Day60({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class day60 extends StatelessWidget {
               Row(
                 children: [
                   Row(
-                    children: [
+                    children: const [
                       Icon(
                         Icons.location_on,
                         color: Colors.yellow,
@@ -28,32 +28,32 @@ class day60 extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Spacer(),
-                  CircleAvatar(
+                  const Spacer(),
+                  const CircleAvatar(
                     backgroundImage: AssetImage("assets/img1.jpg"),
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Row(
-                children: [
+                children: const [
                   Text("Hello Jane",
                       style: TextStyle(fontWeight: FontWeight.bold))
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Row(
-                children: [
+                children: const [
                   Text("Find yourapecialist",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 28))
                 ],
               ),
-              SizedBox(height: 15),
+              const SizedBox(height: 15),
               Stack(
                 children: [
                   TextField(
@@ -72,7 +72,7 @@ class day60 extends StatelessWidget {
                       ),
                       hintStyle: TextStyle(color: Colors.grey[400]),
                     ),
-                    style: TextStyle(color: Colors.black),
+                    style: const TextStyle(color: Colors.black),
                     autofocus: false,
                   ),
                   Positioned(
@@ -84,7 +84,7 @@ class day60 extends StatelessWidget {
                       decoration: BoxDecoration(
                           color: Colors.lightBlue[100],
                           borderRadius: BorderRadius.circular(20)),
-                      child: Icon(
+                      child: const Icon(
                         Icons.sync_rounded,
                         color: Colors.white,
                         size: (30),
@@ -93,20 +93,20 @@ class day60 extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 15),
+              const SizedBox(height: 15),
               Row(
                 children: [
-                  Text("Top Doctore",
+                  const Text("Top Doctore",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 24)),
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     "See all",
                     style: TextStyle(color: Colors.lightBlue[200]),
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Container(
@@ -121,36 +121,36 @@ class day60 extends StatelessWidget {
                   child: Row(
                     children: [
                       Column(
-                        children: [
+                        children: const [
                           CircleAvatar(
                             radius: 40,
                             backgroundImage: AssetImage("assets/img2.jpg"),
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          const Text(
                             "Prof.Dr.Kevib Williams",
                             style: TextStyle(
                                 fontSize: 20, fontWeight: FontWeight.bold),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
-                          Text(
+                          const Text(
                             "Heart Surgan - United hospital",
                             style: TextStyle(fontSize: 16, color: Colors.grey),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                           Row(
-                            children: [
+                            children: const [
                               Icon(
                                 Icons.access_time_outlined,
                                 color: Colors.blue,
@@ -163,24 +163,19 @@ class day60 extends StatelessWidget {
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 1,
                           ),
                           Row(
                             children: [
-                              Text(
+                              const Text(
                                 "Fee: \$12",
                                 style: TextStyle(color: Colors.grey),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 80,
                               ),
                               OutlinedButton(
-                                child: Text(
-                                  "Appointment",
-                                  style: TextStyle(
-                                      color: Colors.white, fontSize: 10),
-                                ),
                                 onPressed: null,
                                 style: ButtonStyle(
                                   backgroundColor:
@@ -193,6 +188,11 @@ class day60 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(10))),
                                 ),
+                                child: const Text(
+                                  "Appointment",
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 10),
+                                ),
                               ),
                             ],
                           ),
@@ -202,7 +202,7 @@ class day60 extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Container(
@@ -217,36 +217,36 @@ class day60 extends StatelessWidget {
                   child: Row(
                     children: [
                       Column(
-                        children: [
+                        children: const [
                           CircleAvatar(
                             radius: 40,
                             backgroundImage: AssetImage("assets/img3.jpg"),
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          const Text(
                             "Prof.Dr.Kevib Williams",
                             style: TextStyle(
                                 fontSize: 20, fontWeight: FontWeight.bold),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
-                          Text(
+                          const Text(
                             "Heart Surgan - United hospital",
                             style: TextStyle(fontSize: 16, color: Colors.grey),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                           Row(
-                            children: [
+                            children: const [
                               Icon(
                                 Icons.access_time_outlined,
                                 color: Colors.blue,
@@ -259,35 +259,35 @@ class day60 extends StatelessWidget {
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 1,
                           ),
                           Row(
                             children: [
-                              Text(
+                              const Text(
                                 "Fee: \$12",
                                 style: TextStyle(color: Colors.grey),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 80,
                               ),
                               OutlinedButton(
-                                child: Text(
-                                  "Appointment",
-                                  style: TextStyle(
-                                      color: Colors.white, fontSize: 10),
-                                ),
                                 onPressed: null,
                                 style: ButtonStyle(
                                   backgroundColor:
                                       MaterialStateProperty.all<Color>(
                                           Colors.pink.shade200),
                                   minimumSize: MaterialStateProperty.all(
-                                      Size(100.0, 20.0)),
+                                      const Size(100.0, 20.0)),
                                   shape: MaterialStateProperty.all(
                                       RoundedRectangleBorder(
                                           borderRadius:
                                               BorderRadius.circular(10))),
+                                ),
+                                child: const Text(
+                                  "Appointment",
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 10),
                                 ),
                               ),
                             ],
@@ -298,22 +298,22 @@ class day60 extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Row(
                 children: [
-                  Text("Services",
+                  const Text("Services",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 24)),
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     "See all",
                     style: TextStyle(color: Colors.lightBlue[200]),
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Row(
@@ -325,7 +325,7 @@ class day60 extends StatelessWidget {
                       children: [
                         Image.asset("images/assets60/img4.jpg",
                             height: 100, width: 100, fit: BoxFit.cover),
-                        Positioned(
+                        const Positioned(
                           bottom: 10,
                           left: 20,
                           child: Text(
@@ -342,7 +342,7 @@ class day60 extends StatelessWidget {
                       children: [
                         Image.asset("images/assets60/img5.png",
                             height: 100, width: 100, fit: BoxFit.cover),
-                        Positioned(
+                        const Positioned(
                           bottom: 10,
                           left: 20,
                           child: Text(
@@ -359,7 +359,7 @@ class day60 extends StatelessWidget {
                       children: [
                         Image.asset("images/assets60/img6.png",
                             height: 100, width: 100, fit: BoxFit.cover),
-                        Positioned(
+                        const Positioned(
                           bottom: 10,
                           left: 20,
                           child: Text(

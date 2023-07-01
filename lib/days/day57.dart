@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day57 extends StatelessWidget {
-  const day57({Key? key}) : super(key: key);
+class Day57 extends StatelessWidget {
+  const Day57({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class day57 extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(25),
             child: Row(
-              children: <Widget>[
+              children: const <Widget>[
                 Icon(Icons.arrow_back_ios),
                 Spacer(),
                 Text(
@@ -27,7 +27,7 @@ class day57 extends StatelessWidget {
             ),
           ),
           ClipRRect(
-            borderRadius: BorderRadius.only(
+            borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(20), topRight: Radius.circular(20)),
             child: Stack(
               children: [
@@ -42,12 +42,12 @@ class day57 extends StatelessWidget {
                   child: Container(
                     height: 80,
                     width: 70,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(20),
                         ),
                         color: Color(0xffF4DCB0)),
-                    child: Center(
+                    child: const Center(
                       child: Text(
                         "\$40",
                         style: TextStyle(
@@ -73,7 +73,7 @@ class day57 extends StatelessWidget {
           Container(
             height: 540,
             width: MediaQuery.of(context).size.width,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(22),
                 topRight: Radius.circular(22),
@@ -93,12 +93,12 @@ class day57 extends StatelessWidget {
                       children: [
                         Column(
                           children: [
-                            Text(
+                            const Text(
                               "Description",
                               style:
                                   TextStyle(fontSize: 20, color: Colors.white),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
                             Container(
@@ -108,20 +108,20 @@ class day57 extends StatelessWidget {
                             )
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 50,
                         ),
-                        Text(
+                        const Text(
                           "Review",
                           style: TextStyle(fontSize: 20, color: Colors.white),
                         )
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 35,
                   ),
-                  Padding(
+                  const Padding(
                     padding: const EdgeInsets.only(left: 20),
                     child: Text(
                       "Ripped Straight Fit Jeans",
@@ -131,67 +131,67 @@ class day57 extends StatelessWidget {
                           fontWeight: FontWeight.w800),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
-                  Text(
+                  const Text(
                     """
       Mid-rise jeans made of rigid fabric with five
       pockets. Ripped details Front zip tly and
       metal top button fastening.""",
                     style: TextStyle(color: Colors.white),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Row(
                     children: [
-                      Padding(
+                      const Padding(
                         padding: const EdgeInsets.only(left: 20),
                         child: Text(
                           "Stock : 15",
                           style: TextStyle(fontSize: 15, color: Colors.white),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 80,
                       ),
-                      Text(
+                      const Text(
                         "S",
                         style:
                             TextStyle(fontSize: 15, color: Color(0xffF4DCB0)),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Container(
                         height: 30,
                         width: 30,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(5),
                             color: Color(0xffF4DCB0)),
-                        child: Center(
+                        child: const Center(
                             child: Text(
                           "M",
                           style: TextStyle(fontSize: 15, color: Colors.black),
                         )),
                       ),
-                      Spacer(),
-                      Text(
+                      const Spacer(),
+                      const Text(
                         "L",
                         style:
                             TextStyle(fontSize: 15, color: Color(0xffF4DCB0)),
                       ),
-                      Spacer(),
-                      Text(
+                      const Spacer(),
+                      const Text(
                         "XL",
                         style:
                             TextStyle(fontSize: 15, color: Color(0xffF4DCB0)),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 30,
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 22,
                   ),
                   Padding(
@@ -202,20 +202,21 @@ class day57 extends StatelessWidget {
                             height: 60,
                             width: 60,
                             decoration: BoxDecoration(
-                                border: Border.all(color: Color(0xffF4DCB0)),
+                                border:
+                                    Border.all(color: const Color(0xffF4DCB0)),
                                 borderRadius: BorderRadius.circular(12)),
-                            child: Icon(
+                            child: const Icon(
                               Icons.message_rounded,
                               color: Color(0xffF4DCB0),
                               size: 20,
                             )),
-                        Spacer(),
+                        const Spacer(),
                         Container(
                           height: 68,
                           width: 250,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(25),
-                            color: Color(0xffF4DCB0),
+                            color: const Color(0xffF4DCB0),
                           ),
                           child: const Center(
                             child: Text(
