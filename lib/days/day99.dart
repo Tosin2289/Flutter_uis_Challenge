@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day99 extends StatelessWidget {
-  const day99({Key? key}) : super(key: key);
+class Day99 extends StatelessWidget {
+  const Day99({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class day99 extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Container(
+              SizedBox(
                 child: Stack(
                   children: [
                     Container(
@@ -38,6 +38,10 @@ class day99 extends StatelessWidget {
                       ),
                     ),
                     Positioned(
+                      height: mheight / 15,
+                      width: mwidth / 3.7,
+                      bottom: -size,
+                      left: mwidth / 14,
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
@@ -86,24 +90,21 @@ class day99 extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                  width: mwidth / 20,
-                                  child: Text(
-                                    ("+5"),
-                                    style: TextStyle(
-                                        color: Colors.blue, fontSize: size + 3),
-                                  ),
-                                  decoration: BoxDecoration(
-                                      borderRadius:
-                                          BorderRadius.circular(mwidth / 20),
-                                      color: Colors.white24)),
+                                decoration: BoxDecoration(
+                                    borderRadius:
+                                        BorderRadius.circular(mwidth / 20),
+                                    color: Colors.white24),
+                                width: mwidth / 20,
+                                child: Text(
+                                  ("+5"),
+                                  style: TextStyle(
+                                      color: Colors.blue, fontSize: size + 3),
+                                ),
+                              ),
                             ],
                           ),
                         ),
                       ),
-                      height: mheight / 15,
-                      width: mwidth / 3.7,
-                      bottom: -size,
-                      left: mwidth / 14,
                     ),
                   ],
                 ),
@@ -163,7 +164,7 @@ class day99 extends StatelessWidget {
               SizedBox(
                 height: size,
               ),
-              Container(
+              SizedBox(
                 height: mwidth / 7,
                 child: ListView(scrollDirection: Axis.horizontal, children: [
                   Container(
@@ -220,19 +221,19 @@ class day99 extends StatelessWidget {
               SizedBox(
                 height: size,
               ),
-              Container(
+              SizedBox(
                 child: OutlinedButton(
-                  child: Text(
-                    "Bay now",
-                    style: TextStyle(color: Colors.white, fontSize: size),
-                  ),
                   onPressed: null,
                   style: ButtonStyle(
                     backgroundColor:
                         MaterialStateProperty.all<Color>(Colors.blue),
-                    minimumSize: MaterialStateProperty.all(Size(250.0, 45.0)),
+                    minimumSize: MaterialStateProperty.all(const Size(250.0, 45.0)),
                     shape: MaterialStateProperty.all(RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10))),
+                  ),
+                  child: Text(
+                    "Bay now",
+                    style: TextStyle(color: Colors.white, fontSize: size),
                   ),
                 ),
               )

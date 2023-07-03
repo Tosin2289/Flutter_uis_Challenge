@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day98 extends StatelessWidget {
-  const day98({Key? key}) : super(key: key);
+class Day98 extends StatelessWidget {
+  const Day98({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class day98 extends StatelessWidget {
       child: Scaffold(
         resizeToAvoidBottomInset: false,
         body: Padding(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           child: SafeArea(
             child: SingleChildScrollView(
               child: Column(
@@ -21,25 +21,26 @@ class day98 extends StatelessWidget {
                   Row(
                     children: [
                       Container(
-                        padding: EdgeInsets.only(left: 30, top: 20),
-                        child: CircleAvatar(
+                        padding: const EdgeInsets.only(left: 30, top: 20),
+                        child: const CircleAvatar(
                           maxRadius: 30,
                           backgroundImage:
                               AssetImage("images/assets98/img1.webp"),
                         ),
                       ),
                       Container(
-                          padding: EdgeInsets.only(left: 20),
+                          padding: const EdgeInsets.only(left: 20),
                           child: Column(
                             children: [
                               Container(
-                                  padding: EdgeInsets.only(right: 28, top: 20),
-                                  child: Text(
+                                  padding:
+                                      const EdgeInsets.only(right: 28, top: 20),
+                                  child: const Text(
                                     "Welcome",
                                     style: TextStyle(
                                         fontSize: 20, color: Colors.grey),
                                   )),
-                              Container(
+                              const SizedBox(
                                   child: Text(
                                 "Ghaleb Yera",
                                 style: TextStyle(
@@ -47,17 +48,17 @@ class day98 extends StatelessWidget {
                               ))
                             ],
                           )),
-                      Spacer(),
+                      const Spacer(),
                       Container(
-                        padding: EdgeInsets.only(top: 20),
-                        child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black45.withOpacity(0.1),
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        padding: const EdgeInsets.only(top: 20),
+                        child: SizedBox(
                           height: MediaQuery.of(context).size.height / 16,
                           width: MediaQuery.of(context).size.width / 7,
-                          child: Icon(Icons.notifications),
-                          decoration: BoxDecoration(
-                            color: Colors.black45.withOpacity(0.1),
-                            borderRadius: BorderRadius.circular(20),
-                          ),
+                          child: const Icon(Icons.notifications),
                         ),
                       ),
                     ],
@@ -68,14 +69,14 @@ class day98 extends StatelessWidget {
                       decoration: InputDecoration(
                         fillColor: Colors.grey.withOpacity(0.1),
                         filled: true,
-                        prefixIcon: Icon(
+                        prefixIcon: const Icon(
                           Icons.search,
                           color: Colors.black,
                           size: 30,
                         ),
                         hintText: "Search destination",
                         border: InputBorder.none,
-                        enabledBorder: OutlineInputBorder(
+                        enabledBorder: const OutlineInputBorder(
                           borderRadius: BorderRadius.all(
                             Radius.circular(10),
                           ),
@@ -86,7 +87,7 @@ class day98 extends StatelessWidget {
                       ),
                     ),
                   ),
-                  TabBar(
+                  const TabBar(
                     unselectedLabelColor: Colors.grey,
                     labelColor: Colors.black,
                     indicatorSize: TabBarIndicatorSize.label,
@@ -110,7 +111,7 @@ class day98 extends StatelessWidget {
                     width: MediaQuery.of(context).size.width / 1.2,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
-                      image: DecorationImage(
+                      image: const DecorationImage(
                           image: AssetImage("images/assets98/img2.jpg"),
                           fit: BoxFit.cover),
                     ),
@@ -118,50 +119,52 @@ class day98 extends StatelessWidget {
                       children: [
                         Container(
                           alignment: Alignment.topRight,
-                          padding: EdgeInsets.all(20),
+                          padding: const EdgeInsets.all(20),
                           child: Container(
-                            child: Icon(
-                              Icons.favorite_outline_rounded,
-                              color: Colors.white,
-                            ),
                             height: MediaQuery.of(context).size.height / 20,
                             width: MediaQuery.of(context).size.width / 9,
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(0.4),
                               borderRadius: BorderRadius.circular(10),
                             ),
+                            child: const Icon(
+                              Icons.favorite_outline_rounded,
+                              color: Colors.white,
+                            ),
                           ),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Container(
                             alignment: Alignment.bottomLeft,
-                            padding: EdgeInsets.only(left: 20),
-                            child: Text(
+                            padding: const EdgeInsets.only(left: 20),
+                            child: const Text(
                               "Kanlayas Eyrie",
                               style: TextStyle(
                                   fontSize: 22,
                                   fontWeight: FontWeight.w500,
                                   color: Colors.white),
                             )),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Row(
                           children: [
                             Container(
-                              padding: EdgeInsets.only(left: 17),
+                              padding: const EdgeInsets.only(left: 17),
                               child: Row(
                                 children: [
                                   Container(
-                                      padding: EdgeInsets.only(bottom: 10),
-                                      child: Icon(
+                                      padding:
+                                          const EdgeInsets.only(bottom: 10),
+                                      child: const Icon(
                                         Icons.location_on,
                                         color: Colors.white,
                                         size: 20,
                                       )),
                                   Container(
-                                      padding: EdgeInsets.only(bottom: 10),
-                                      child: Text("Pang Mapha, Thailand",
+                                      padding:
+                                          const EdgeInsets.only(bottom: 10),
+                                      child: const Text("Pang Mapha, Thailand",
                                           style: TextStyle(
                                               fontSize: 17,
                                               fontWeight: FontWeight.w400,
@@ -169,11 +172,11 @@ class day98 extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            Spacer(),
+                            const Spacer(),
                             Container(
-                              padding: EdgeInsets.only(bottom: 10),
+                              padding: const EdgeInsets.only(bottom: 10),
                               child: Row(
-                                children: [
+                                children: const [
                                   Text(
                                     "\$100/",
                                     style: TextStyle(
@@ -211,28 +214,28 @@ class day98 extends StatelessWidget {
                       children: [
                         IconButton(
                             onPressed: () {},
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.home_outlined,
                               color: Colors.red,
                               size: 30,
                             )),
                         IconButton(
                             onPressed: () {},
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.location_on_outlined,
                               color: Colors.white60,
                               size: 30,
                             )),
                         IconButton(
                             onPressed: () {},
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.calendar_today_outlined,
                               color: Colors.white60,
                               size: 30,
                             )),
                         IconButton(
                             onPressed: () {},
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.person_outline_outlined,
                               color: Colors.white60,
                               size: 30,

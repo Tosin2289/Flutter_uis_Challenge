@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day96 extends StatelessWidget {
-  const day96({Key? key}) : super(key: key);
+class Day96 extends StatelessWidget {
+  const Day96({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +9,7 @@ class day96 extends StatelessWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
-            padding: EdgeInsets.only(top: 30, left: 15, right: 15),
+            padding: const EdgeInsets.only(top: 30, left: 15, right: 15),
             child: Column(
               children: [
                 Row(
@@ -44,7 +44,7 @@ class day96 extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Container(
+                        SizedBox(
                           height: 20,
                           width: 20,
                           child: Image.asset(
@@ -172,7 +172,7 @@ class day96 extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: Colors.green.withOpacity(0.2),
                             borderRadius:
-                                BorderRadius.all(Radius.circular(10.0)),
+                                const BorderRadius.all(Radius.circular(10.0)),
                           ),
                           child: Image.asset(
                             "images/assets96/img3.png",
@@ -187,7 +187,7 @@ class day96 extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: Colors.orange.withOpacity(0.2),
                             borderRadius:
-                                BorderRadius.all(Radius.circular(10.0)),
+                                const BorderRadius.all(Radius.circular(10.0)),
                           ),
                           child: Image.asset(
                             "images/assets96/img4.png",
@@ -202,7 +202,7 @@ class day96 extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: Colors.blue.withOpacity(0.2),
                             borderRadius:
-                                BorderRadius.all(Radius.circular(10.0)),
+                                const BorderRadius.all(Radius.circular(10.0)),
                           ),
                           child: Image.asset(
                             "images/assets96/img5.png",
@@ -218,7 +218,7 @@ class day96 extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: Colors.red.withOpacity(0.2),
                             borderRadius:
-                                BorderRadius.all(Radius.circular(10.0)),
+                                const BorderRadius.all(Radius.circular(10.0)),
                           ),
                           child: Image.asset(
                             " images/assets96/img6.png",
@@ -245,12 +245,10 @@ class day96 extends StatelessWidget {
                       height: 15,
                     ),
                     ElevatedButton(
-                      onPressed: () {},
-                      child: const Text("ADD TO CART"),
                       style: ButtonStyle(
                           elevation: MaterialStateProperty.all(5),
                           backgroundColor: MaterialStateProperty.all(
-                              Color.fromRGBO(1, 60, 15, 1)),
+                              const Color.fromRGBO(1, 60, 15, 1)),
                           minimumSize: MaterialStateProperty.all(
                             Size(MediaQuery.of(context).size.width, 50),
                           ),
@@ -259,6 +257,8 @@ class day96 extends StatelessWidget {
                                   RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15.0),
                           ))),
+                      onPressed: () {},
+                      child: const Text("ADD TO CART"),
                     ),
                   ],
                 ),

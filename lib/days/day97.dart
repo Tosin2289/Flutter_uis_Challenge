@@ -1,11 +1,21 @@
 import 'package:flutter/material.dart';
 
-class day97 extends StatelessWidget {
-  day97({Key? key}) : super(key: key);
+class Day97 extends StatefulWidget {
+  const Day97({Key? key}) : super(key: key);
+
+  @override
+  State<Day97> createState() => _Day97State();
+}
+
+class _Day97State extends State<Day97> {
   List img = ["bank.jpg", "ball.jpg", "net.jpg"];
+
   List det = ["Line Bank", "Dribble", "Netflix"];
+
   List date = ["Sep 12 - 08:15", "Sep 09 - 15:20", "Sep 01 - 11:00"];
+
   List pr = ["+ \$100.00", "- \$43.50", "- \$29.00"];
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -16,9 +26,9 @@ class day97 extends StatelessWidget {
               borderRadius: BorderRadius.circular(15),
               color: Colors.black,
             ),
-            margin: EdgeInsets.only(left: 15, right: 15),
+            margin: const EdgeInsets.only(left: 15, right: 15),
             height: 60,
-            child: TabBar(
+            child: const TabBar(
               tabs: [
                 Tab(icon: Icon(Icons.home_filled)),
                 Tab(icon: Icon(Icons.account_balance_wallet_outlined)),
@@ -38,12 +48,12 @@ class day97 extends StatelessWidget {
             children: [
               Container(
                 height: MediaQuery.of(context).size.height / 3.3,
-                padding: EdgeInsets.only(top: 10, left: 15),
+                padding: const EdgeInsets.only(top: 10, left: 15),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("WalletKita",
+                    const Text("WalletKita",
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 20)),
                     Row(
@@ -56,10 +66,10 @@ class day97 extends StatelessWidget {
                           child: Container(
                             height: MediaQuery.of(context).size.height / 4.5,
                             width: MediaQuery.of(context).size.width / 1.3,
-                            padding: EdgeInsets.all(15),
+                            padding: const EdgeInsets.all(15),
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(15),
-                                image: DecorationImage(
+                                image: const DecorationImage(
                                     image: AssetImage("images/assets97/bg.jpg"),
                                     fit: BoxFit.cover)),
                             child: Column(
@@ -73,7 +83,7 @@ class day97 extends StatelessWidget {
                                     Column(
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
-                                      children: [
+                                      children: const [
                                         Text("Card Name",
                                             style:
                                                 TextStyle(color: Colors.white)),
@@ -83,14 +93,14 @@ class day97 extends StatelessWidget {
                                                 fontWeight: FontWeight.w600))
                                       ],
                                     ),
-                                    Text("Platinum Debt",
+                                    const Text("Platinum Debt",
                                         style: TextStyle(
                                             color: Colors.white, fontSize: 12))
                                   ],
                                 ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
+                                  children: const [
                                     Text("Total Balance",
                                         style: TextStyle(
                                             color: Colors.white, fontSize: 12)),
@@ -104,7 +114,7 @@ class day97 extends StatelessWidget {
                                 Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
-                                  children: [
+                                  children: const [
                                     Text("9102 1122 6632 8842",
                                         style: TextStyle(color: Colors.white)),
                                     Text("08/25",
@@ -116,10 +126,10 @@ class day97 extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(left: 15),
+                          margin: const EdgeInsets.only(left: 15),
                           height: MediaQuery.of(context).size.height / 4.5,
                           width: 45,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                               color: Colors.black,
                               borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(15),
@@ -128,7 +138,7 @@ class day97 extends StatelessWidget {
                             child: RotatedBox(
                               quarterTurns: 1,
                               child: RichText(
-                                text: TextSpan(
+                                text: const TextSpan(
                                   text: "Add WalletKite",
                                   children: [
                                     WidgetSpan(
@@ -149,7 +159,7 @@ class day97 extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(left: 15, right: 15),
+                padding: const EdgeInsets.only(left: 15, right: 15),
                 height: MediaQuery.of(context).size.height / 1.9,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -159,40 +169,41 @@ class day97 extends StatelessWidget {
                       children: [
                         ElevatedButton.icon(
                           onPressed: () {},
-                          icon: Icon(Icons.qr_code_scanner_rounded, size: 15),
-                          label: Text("Scan"),
+                          icon: const Icon(Icons.qr_code_scanner_rounded,
+                              size: 15),
+                          label: const Text("Scan"),
                           style: ElevatedButton.styleFrom(
-                              minimumSize: Size(158, 45),
+                              minimumSize: const Size(158, 45),
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(15)),
-                              primary: Colors.black,
-                              textStyle: TextStyle(
+                              backgroundColor: Colors.black,
+                              textStyle: const TextStyle(
                                   fontWeight: FontWeight.bold, fontSize: 13)),
                         ),
                         ElevatedButton.icon(
                           onPressed: () {},
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.share,
                             size: 15,
                             color: Colors.black,
                           ),
-                          label: Text("Transfer",
+                          label: const Text("Transfer",
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 13,
                                   color: Colors.black)),
                           style: ElevatedButton.styleFrom(
-                            minimumSize: Size(157, 45),
+                            minimumSize: const Size(157, 45),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15)),
-                            primary: Colors.white,
+                            backgroundColor: Colors.white,
                           ),
                         )
                       ],
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
+                      children: const [
                         Text("Recent Transaction",
                             style: TextStyle(
                                 fontWeight: FontWeight.w600, fontSize: 18)),
@@ -207,7 +218,7 @@ class day97 extends StatelessWidget {
                             itemBuilder: (BuildContext, index) {
                               return Card(
                                 child: Container(
-                                  padding: EdgeInsets.all(10),
+                                  padding: const EdgeInsets.all(10),
                                   child: Row(
                                     children: [
                                       CircleAvatar(
@@ -219,23 +230,23 @@ class day97 extends StatelessWidget {
                                               "images/assets97/${img[index]}"),
                                         ),
                                       ),
-                                      SizedBox(width: 10),
+                                      const SizedBox(width: 10),
                                       Column(
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text("${det[index]}",
-                                              style: TextStyle(
+                                              style: const TextStyle(
                                                   fontWeight: FontWeight.bold)),
                                           Text("${date[index]}",
-                                              style: TextStyle(
+                                              style: const TextStyle(
                                                   color: Colors.grey,
                                                   fontSize: 12))
                                         ],
                                       ),
-                                      SizedBox(width: 100),
+                                      const SizedBox(width: 100),
                                       Text("${pr[index]}",
-                                          style: TextStyle(
+                                          style: const TextStyle(
                                               fontWeight: FontWeight.bold)),
                                     ],
                                   ),
