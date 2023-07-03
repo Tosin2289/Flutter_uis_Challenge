@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day91 extends StatelessWidget {
-  const day91({Key? key}) : super(key: key);
+class Day91 extends StatelessWidget {
+  const Day91({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -99,7 +99,7 @@ class day91 extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(top: 20),
-                    child: Container(
+                    child: SizedBox(
                       child: Card(
                         shape: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(25),
@@ -347,29 +347,29 @@ class day91 extends StatelessWidget {
                                 ],
                               ),
                               Row(
-                                children: [
-                                  const Padding(
+                                children: const [
+                                  Padding(
                                       padding:
                                           EdgeInsets.only(left: 40, top: 5),
                                       child: Text(
                                         "UI/UX",
                                         style: TextStyle(fontSize: 12),
                                       )),
-                                  const Padding(
+                                  Padding(
                                       padding:
                                           EdgeInsets.only(left: 35, top: 5),
                                       child: Text(
                                         "VISUAL",
                                         style: TextStyle(fontSize: 12),
                                       )),
-                                  const Padding(
+                                   Padding(
                                       padding:
                                           EdgeInsets.only(left: 12, top: 5),
                                       child: Text(
                                         "ILLUSTRATION",
                                         style: TextStyle(fontSize: 12),
                                       )),
-                                  const Padding(
+                                  Padding(
                                       padding:
                                           EdgeInsets.only(left: 15, top: 5),
                                       child: Text(

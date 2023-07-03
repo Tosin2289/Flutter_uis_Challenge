@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import "package:flutter/services.dart";
 
-class day94 extends StatelessWidget {
-  const day94({Key? key}) : super(key: key);
+class Day94 extends StatelessWidget {
+  const Day94({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,9 +11,7 @@ class day94 extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-            onPressed: () {
-              print("Ok Done Back");
-            },
+            onPressed: () {},
             icon: Icon(
               Icons.arrow_back_ios_rounded,
               color: Colors.white,
@@ -29,9 +26,7 @@ class day94 extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-              onPressed: () {
-                print("Ok Done Search");
-              },
+              onPressed: () {},
               icon: Icon(
                 Icons.search_rounded,
                 color: Colors.white,
@@ -46,7 +41,7 @@ class day94 extends StatelessWidget {
 }
 
 class BottomBar extends StatefulWidget {
-  BottomBar({Key? key}) : super(key: key);
+  const BottomBar({Key? key}) : super(key: key);
   @override
   State<BottomBar> createState() => _BottomBarState();
 }
@@ -353,9 +348,7 @@ class _BodyState extends State<Body> {
                     ),
                   ],
                 ),
-                onPressed: () {
-                  print("Ok Done Play");
-                },
+                onPressed: () {},
               ),
               OutlinedButton(
                 style: ButtonStyle(
@@ -388,9 +381,7 @@ class _BodyState extends State<Body> {
                     ),
                   ],
                 ),
-                onPressed: () {
-                  print("Ok Done Shuffle");
-                },
+                onPressed: () {},
               ),
             ],
           ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day95 extends StatelessWidget {
-  day95({Key? key}) : super(key: key);
+class Day95 extends StatelessWidget {
+  Day95({Key? key}) : super(key: key);
   List image = [
     "images/assets95/img1.webp",
     "images/assets95/img2.jpg",
@@ -12,16 +12,22 @@ class day95 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      body: SizedBox(
         child: Stack(
           children: [
             Container(
-              padding: EdgeInsets.only(top: 90),
+              decoration: BoxDecoration(
+                color: Colors.pink.shade100.withOpacity(0.8),
+                borderRadius: const BorderRadius.only(
+                  bottomLeft: Radius.circular(70),
+                ),
+              ),
+              padding: const EdgeInsets.only(top: 90),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   Container(
-                    padding: EdgeInsets.only(left: 20, right: 20),
+                    padding: const EdgeInsets.only(left: 20, right: 20),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: const [
@@ -34,9 +40,9 @@ class day95 extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(height: 20.0),
+                  const SizedBox(height: 20.0),
                   Container(
-                    padding: EdgeInsets.only(left: 20),
+                    padding: const EdgeInsets.only(left: 20),
                     child: const Text(
                       "Discover",
                       textAlign: TextAlign.start,
@@ -50,8 +56,8 @@ class day95 extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: <Widget>[
-                        Container(
-                          child: const TabBar(
+                        const SizedBox(
+                          child: TabBar(
                             labelColor: Color.fromARGB(77, 38, 0, 1),
                             unselectedLabelColor: Colors.grey,
                             indicatorSize: TabBarIndicatorSize.label,
@@ -65,17 +71,27 @@ class day95 extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          padding: EdgeInsets.all(20),
+                          padding: const EdgeInsets.all(20),
                           height: 320,
                           child: TabBarView(
                             children: <Widget>[
-                              Container(
+                              SizedBox(
                                 width: 20,
                                 child: ListView.separated(
                                   scrollDirection: Axis.horizontal,
                                   itemBuilder: (context, index) {
                                     return Container(
-                                      padding: EdgeInsets.all(10),
+                                      height: 10,
+                                      width: 220,
+                                      decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                          image: AssetImage(image[index]),
+                                          fit: BoxFit.cover,
+                                        ),
+                                        color: Colors.green,
+                                        borderRadius: BorderRadius.circular(25),
+                                      ),
+                                      padding: const EdgeInsets.all(10),
                                       child: Column(
                                         mainAxisAlignment:
                                             MainAxisAlignment.start,
@@ -86,7 +102,7 @@ class day95 extends StatelessWidget {
                                             mainAxisAlignment:
                                                 MainAxisAlignment.spaceBetween,
                                             children: [
-                                              Text(""),
+                                              const Text(""),
                                               CircleAvatar(
                                                 maxRadius: 25,
                                                 backgroundColor: Colors.white
@@ -128,16 +144,6 @@ class day95 extends StatelessWidget {
                                           )
                                         ],
                                       ),
-                                      height: 10,
-                                      width: 220,
-                                      decoration: BoxDecoration(
-                                        image: DecorationImage(
-                                          image: AssetImage(image[index]),
-                                          fit: BoxFit.cover,
-                                        ),
-                                        color: Colors.green,
-                                        borderRadius: BorderRadius.circular(25),
-                                      ),
                                     );
                                   },
                                   separatorBuilder: (context, index) {
@@ -148,8 +154,8 @@ class day95 extends StatelessWidget {
                                   itemCount: image.length,
                                 ),
                               ),
-                              Container(
-                                child: const Center(
+                              const SizedBox(
+                                child: Center(
                                   child: Text(
                                     "Display Tab 2",
                                     style: TextStyle(
@@ -159,8 +165,8 @@ class day95 extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              Container(
-                                child: const Center(
+                              const SizedBox(
+                                child: Center(
                                   child: Text(
                                     "Display Tab 3",
                                     style: TextStyle(
@@ -178,25 +184,19 @@ class day95 extends StatelessWidget {
                   ),
                 ],
               ),
-              decoration: BoxDecoration(
-                color: Colors.pink.shade100.withOpacity(0.8),
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(70),
-                ),
-              ),
             ),
             Positioned(
               bottom: 0,
-              child: Container(
+              child: SizedBox(
                 height: 229,
                 width: MediaQuery.of(context).size.width,
                 child: Card(
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                     borderRadius:
                         BorderRadius.only(topRight: Radius.circular(70)),
                   ),
                   child: Container(
-                    padding: EdgeInsets.only(top: 20, left: 0),
+                    padding: const EdgeInsets.only(top: 20, left: 0),
                     child: Column(
                       children: [
                         Row(
@@ -216,19 +216,19 @@ class day95 extends StatelessWidget {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 35,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: const [
                             CircleAvatar(
+                              backgroundColor: Color.fromRGBO(230, 177, 230, 1),
+                              maxRadius: 35,
                               child: Image(
                                 height: 45,
                                 image: AssetImage("images/assets95/img3.jpg"),
                               ),
-                              backgroundColor: Color.fromRGBO(230, 177, 230, 1),
-                              maxRadius: 35,
                             ),
                             CircleAvatar(
                               backgroundColor: Color.fromRGBO(166, 140, 217, 1),
@@ -256,7 +256,7 @@ class day95 extends StatelessWidget {
                             )
                           ],
                         ),
-                        SizedBox(
+                      const  SizedBox(
                           height: 10,
                         ),
                         Row(

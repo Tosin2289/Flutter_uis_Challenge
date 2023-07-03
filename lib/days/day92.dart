@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class day92 extends StatelessWidget {
-  const day92({Key? key}) : super(key: key);
+class Day92 extends StatelessWidget {
+  const Day92({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -31,15 +31,15 @@ class day92 extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        child: const Icon(
-                          Icons.arrow_back,
-                          size: 20,
-                        ),
                         height: 45,
                         width: 45,
                         decoration: BoxDecoration(
                           color: Colors.white70,
                           borderRadius: BorderRadius.circular(10.0),
+                        ),
+                        child: const Icon(
+                          Icons.arrow_back,
+                          size: 20,
                         ),
                       ),
                     ],
@@ -281,7 +281,7 @@ class day92 extends StatelessWidget {
               const SizedBox(
                 height: 9,
               ),
-              Text(
+              const Text(
                 "Janner lgiby And His Family Have Lived On The Edge Of Theown Of Glipwood,In The Land Of Skree, For As Long As He Can Remember.",
                 style: TextStyle(
                   fontFamily: "Mulish",
