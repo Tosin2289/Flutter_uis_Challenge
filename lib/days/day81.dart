@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import "package:google_fonts/google_fonts.dart";
 
-class day81 extends StatelessWidget {
-  const day81({Key? key}) : super(key: key);
+class Day81 extends StatelessWidget {
+  const Day81({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class day81 extends StatelessWidget {
             child: Container(
               height: screenHeight,
               width: screenWidth,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage(
                       "images/assets81/bg.jpg",
@@ -33,13 +33,13 @@ class day81 extends StatelessWidget {
                 backgroundColor: Colors.transparent,
                 leading: IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.arrow_back_ios,
                     )),
                 actions: [
                   IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.bookmark_border_outlined,
                       )),
                 ],
@@ -50,7 +50,7 @@ class day81 extends StatelessWidget {
               bottom: 1,
               height: screenHeight * 0.42,
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(10),
@@ -90,19 +90,19 @@ class day81 extends StatelessWidget {
                                       fontWeight: FontWeight.bold))),
                         ],
                       ),
-                      Padding(
+                      const Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 10),
                         child: Divider(height: 5, color: Colors.grey),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
                       Row(
                         children: [
-                          SizedBox(width: 24),
+                          const SizedBox(width: 24),
                           Icon(Icons.watch_later_outlined,
                               color: Colors.pinkAccent.shade200),
-                          SizedBox(width: 10),
+                          const SizedBox(width: 10),
                           Text(
                             "8 hours",
                             style: TextStyle(
@@ -112,13 +112,13 @@ class day81 extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       Row(
                         children: [
-                          SizedBox(width: 24),
+                          const SizedBox(width: 24),
                           Icon(Icons.language_outlined,
                               color: Colors.pinkAccent.shade200),
-                          SizedBox(width: 10),
+                          const SizedBox(width: 10),
                           Text(
                             "Offered in: English",
                             style: TextStyle(
@@ -128,7 +128,7 @@ class day81 extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(height: 16),
+                      const SizedBox(height: 16),
                       Padding(
                         padding: const EdgeInsets.only(left: 24),
                         child: Text(
@@ -138,7 +138,7 @@ class day81 extends StatelessWidget {
                               color: Colors.grey),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
                       Row(
@@ -170,13 +170,6 @@ class day81 extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.only(right: 24),
                             child: ElevatedButton(
-                              child: Text(
-                                "Book now",
-                                style: TextStyle(
-                                    fontFamily:
-                                        GoogleFonts.poppins().fontFamily,
-                                    fontWeight: FontWeight.bold),
-                              ),
                               onPressed: () {},
                               style: ButtonStyle(
                                 shadowColor:
@@ -192,6 +185,13 @@ class day81 extends StatelessWidget {
                                     RoundedRectangleBorder(
                                         borderRadius:
                                             BorderRadius.circular(29))),
+                              ),
+                              child: Text(
+                                "Book now",
+                                style: TextStyle(
+                                    fontFamily:
+                                        GoogleFonts.poppins().fontFamily,
+                                    fontWeight: FontWeight.bold),
                               ),
                             ),
                           ),

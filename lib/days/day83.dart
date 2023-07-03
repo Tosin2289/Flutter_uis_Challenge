@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class day83 extends StatefulWidget {
-  const day83({Key? key}) : super(key: key);
+class Day83 extends StatefulWidget {
+  const Day83({Key? key}) : super(key: key);
 
   @override
-  State<day83> createState() => _day83State();
+  State<Day83> createState() => _Day83State();
 }
 
-class _day83State extends State<day83> {
+class _Day83State extends State<Day83> {
   List img = [
     "images/assets83/img1.jpg",
     "images/assets83/img2.jpg",
@@ -44,11 +44,11 @@ class _day83State extends State<day83> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: Icon(
+        leading: const Icon(
           Icons.arrow_back_ios,
           color: Colors.black,
         ),
-        title: Text(
+        title: const Text(
           "Cart",
           style: TextStyle(
             color: Colors.black,
@@ -56,7 +56,7 @@ class _day83State extends State<day83> {
             fontWeight: FontWeight.bold,
           ),
         ),
-        actions: [
+        actions: const [
           Icon(
             Icons.shopping_bag_outlined,
             color: Colors.black,
@@ -74,7 +74,7 @@ class _day83State extends State<day83> {
             itemBuilder: ((context, index) {
               return Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Container(
+                child: SizedBox(
                   child: Row(
                     children: [
                       Checkbox(
@@ -92,7 +92,7 @@ class _day83State extends State<day83> {
                           borderRadius: BorderRadius.circular(20),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 20,
                       ),
                       SizedBox(
@@ -102,27 +102,27 @@ class _day83State extends State<day83> {
                           children: [
                             Text(
                               detail[index],
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontSize: 18, fontWeight: FontWeight.bold),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 3,
                             ),
                             Text(
                               price[index],
-                              style: TextStyle(color: Colors.grey),
+                              style: const TextStyle(color: Colors.grey),
                             ),
                           ],
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 20,
                       ),
                       SizedBox(
                         width: 70,
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
+                          children: const [
                             Icon(
                               Icons.remove,
                               size: 18,

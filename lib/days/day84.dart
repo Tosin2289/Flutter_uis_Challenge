@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class day84 extends StatelessWidget {
-  const day84({Key? key}) : super(key: key);
+class Day84 extends StatelessWidget {
+  const Day84({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: SafeArea(
       child: Padding(
-        padding: EdgeInsets.all(25),
+        padding: const EdgeInsets.all(25),
         child: Column(children: [
           Container(
             color: Colors.white,
@@ -16,14 +16,14 @@ class day84 extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
+              children: const [
+                SizedBox(
                   child: Icon(
                     Icons.keyboard_backspace_rounded,
                     size: 40,
                   ),
                 ),
-                Container(
+                SizedBox(
                     child: CircleAvatar(
                   backgroundColor: Colors.purple,
                   child: Icon(
@@ -34,7 +34,7 @@ class day84 extends StatelessWidget {
               ],
             ),
           ),
-          Container(
+          SizedBox(
             width: MediaQuery.of(context).size.width,
             child: Column(
               children: [
@@ -43,7 +43,7 @@ class day84 extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Colors.deepPurple,
                       borderRadius: BorderRadius.circular(25),
-                      image: DecorationImage(
+                      image: const DecorationImage(
                         image: AssetImage(
                           "images/assets84/img.png",
                         ),
@@ -52,15 +52,15 @@ class day84 extends StatelessWidget {
                   child: Stack(children: [
                     Container(
                       alignment: Alignment.bottomLeft,
-                      padding: EdgeInsets.all(20),
+                      padding: const EdgeInsets.all(20),
                       child: Container(
-                        padding: EdgeInsets.only(left: 25, top: 15),
+                        padding: const EdgeInsets.only(left: 25, top: 15),
                         height: 50,
                         width: 70,
                         decoration: BoxDecoration(
                             color: Colors.white.withOpacity(0.2),
                             borderRadius: BorderRadius.circular(25)),
-                        child: Text(
+                        child: const Text(
                           "Art",
                           style: TextStyle(
                             color: Colors.white,
@@ -72,13 +72,13 @@ class day84 extends StatelessWidget {
                         bottom: 15,
                         left: 100,
                         child: Container(
-                          padding: EdgeInsets.only(left: 25, top: 15),
+                          padding: const EdgeInsets.only(left: 25, top: 15),
                           height: 50,
                           width: 100,
                           decoration: BoxDecoration(
                               color: Colors.white.withOpacity(0.2),
                               borderRadius: BorderRadius.circular(25)),
-                          child: Text(
+                          child: const Text(
                             "Painting",
                             style: TextStyle(
                               color: Colors.white,
@@ -91,20 +91,20 @@ class day84 extends StatelessWidget {
             ),
           ),
           Container(
-              padding: EdgeInsets.only(top: 10),
+              padding: const EdgeInsets.only(top: 10),
               color: Colors.white,
               height: 60,
               width: MediaQuery.of(context).size.width,
               child: Row(
                 children: [
                   Container(
-                    padding: EdgeInsets.only(top: 10, left: 10),
+                    padding: const EdgeInsets.only(top: 10, left: 10),
                     child: Column(
                       children: [
                         Container(
                             width: 40.0,
                             height: 40.0,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                                 shape: BoxShape.circle,
                                 image: DecorationImage(
                                     fit: BoxFit.fill,
@@ -113,20 +113,21 @@ class day84 extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Container(
-                    child: Container(
+                  SizedBox(
+                    child: SizedBox(
                       child: Column(
                         children: [
                           Container(
-                              padding: EdgeInsets.only(right: 30, top: 10),
-                              child: Text(
+                              padding:
+                                  const EdgeInsets.only(right: 30, top: 10),
+                              child: const Text(
                                 "jack robo",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 15),
                               )),
                           Container(
-                            padding: EdgeInsets.only(left: 10),
-                            child: Text(
+                            padding: const EdgeInsets.only(left: 10),
+                            child: const Text(
                               "October 15, 2021",
                               style: TextStyle(color: Colors.black26),
                             ),
@@ -137,25 +138,25 @@ class day84 extends StatelessWidget {
                   ),
                   Container(
                       height: 40,
-                      padding: EdgeInsets.only(left: 20),
+                      padding: const EdgeInsets.only(left: 20),
                       child: ElevatedButton(
                           onPressed: () {},
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.purple,
+                            backgroundColor: Colors.purple,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20)),
                           ),
-                          child: Container(
+                          child: SizedBox(
                             child: Row(
                               children: [
                                 Container(
-                                  padding: EdgeInsets.only(right: 6),
-                                  child: Icon(
+                                  padding: const EdgeInsets.only(right: 6),
+                                  child: const Icon(
                                     Icons.access_time_filled_rounded,
                                     color: Colors.white,
                                   ),
                                 ),
-                                Container(
+                                const SizedBox(
                                   child: Text(
                                     "4 Min Reads",
                                     style: TextStyle(color: Colors.white),
@@ -167,15 +168,15 @@ class day84 extends StatelessWidget {
                 ],
               )),
           Container(
-            padding: EdgeInsets.only(top: 15),
-            child: Text(
+            padding: const EdgeInsets.only(top: 15),
+            child: const Text(
               "Anstract Art Ideas, Techniques And Tips For Every Medium",
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
             ),
           ),
           Container(
-            padding: EdgeInsets.only(top: 14),
-            child: Text(
+            padding: const EdgeInsets.only(top: 14),
+            child: const Text(
                 "painting, one layer is painted over another to get the final image. As a result, most of the time the image will not be clear until it gets to the final stage. There are our basic stages in painting: preparation, divide, layer, and touchup. Preparation: most artists prepare a canvas or other surface.n painting, one layer is painted over another to get the final image. As a result, most of the time the image will not be clear until it gets to the final stage. Only relevant search results, Click here and Find. Discover us now! Easy Acces To Information."),
           )
         ]),

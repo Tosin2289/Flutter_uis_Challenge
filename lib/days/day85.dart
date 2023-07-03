@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day85 extends StatelessWidget {
-  const day85({Key? key}) : super(key: key);
+class Day85 extends StatelessWidget {
+  const Day85({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -102,7 +102,7 @@ class day85 extends StatelessWidget {
                     size: 25,
                   ),
                 ),
-                style: TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.white),
                 autofocus: false,
               ),
               SizedBox(
@@ -126,7 +126,7 @@ class day85 extends StatelessWidget {
               SizedBox(
                 height: hsize,
               ),
-              Container(
+              SizedBox(
                 height: mheight / 6,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
@@ -145,11 +145,11 @@ class day85 extends StatelessWidget {
                           ),
                         ),
                         Container(
+                          margin: const EdgeInsets.all(5),
                           child: Text(
                             "Popular",
                             style: TextStyle(fontSize: hsize),
                           ),
-                          margin: const EdgeInsets.all(5),
                         ),
                       ],
                     ),
@@ -168,11 +168,11 @@ class day85 extends StatelessWidget {
                           ),
                         ),
                         Container(
+                          margin: const EdgeInsets.all(2),
                           child: const Text(
                             "Photography",
                             style: TextStyle(fontSize: 10),
                           ),
-                          margin: const EdgeInsets.all(2),
                         ),
                       ],
                     ),
@@ -191,11 +191,11 @@ class day85 extends StatelessWidget {
                           ),
                         ),
                         Container(
+                          margin: const EdgeInsets.all(5),
                           child: const Text(
                             "Visual Design",
                             style: TextStyle(fontSize: 10),
                           ),
-                          margin: const EdgeInsets.all(5),
                         ),
                       ],
                     ),
@@ -214,11 +214,11 @@ class day85 extends StatelessWidget {
                           ),
                         ),
                         Container(
+                          margin: const EdgeInsets.all(5),
                           child: const Text(
                             "Paint color",
                             style: TextStyle(fontSize: 10),
                           ),
-                          margin: const EdgeInsets.all(5),
                         ),
                       ],
                     ),
@@ -234,7 +234,7 @@ class day85 extends StatelessWidget {
                       color: Colors.black,
                       fontWeight: FontWeight.bold)),
               SizedBox(height: hsize + hsize),
-              Container(
+              SizedBox(
                 height: mheight / 4.5,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
@@ -276,7 +276,15 @@ class day85 extends StatelessWidget {
                           ),
                         ),
                         Positioned(
+                          bottom: 0,
+                          left: 0,
                           child: Container(
+                            height: mheight / 11,
+                            width: mwidth / 1.8,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Colors.white,
+                            ),
                             padding: EdgeInsets.all(hsize),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -299,6 +307,10 @@ class day85 extends StatelessWidget {
                                 Column(
                                   children: [
                                     Container(
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(
+                                              hsize + hsize),
+                                          color: Colors.blue),
                                       height: hsize + hsize,
                                       width: wsize + wsize,
                                       child: Icon(
@@ -306,24 +318,12 @@ class day85 extends StatelessWidget {
                                         color: Colors.white,
                                         size: wsize,
                                       ),
-                                      decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(
-                                              hsize + hsize),
-                                          color: Colors.blue),
                                     )
                                   ],
                                 )
                               ],
                             ),
-                            height: mheight / 11,
-                            width: mwidth / 1.8,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: Colors.white,
-                            ),
                           ),
-                          bottom: 0,
-                          left: 0,
                         ),
                       ],
                     ),
@@ -365,7 +365,15 @@ class day85 extends StatelessWidget {
                           ),
                         ),
                         Positioned(
+                          bottom: 0,
+                          left: 0,
                           child: Container(
+                            height: mheight / 11,
+                            width: mwidth / 1.8,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Colors.white,
+                            ),
                             padding: EdgeInsets.all(hsize),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -390,29 +398,21 @@ class day85 extends StatelessWidget {
                                     Container(
                                       height: hsize + hsize,
                                       width: wsize + wsize,
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(
+                                              hsize + hsize),
+                                          color: Colors.blue),
                                       child: Icon(
                                         Icons.arrow_forward,
                                         color: Colors.white,
                                         size: wsize,
                                       ),
-                                      decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(
-                                              hsize + hsize),
-                                          color: Colors.blue),
                                     )
                                   ],
                                 )
                               ],
                             ),
-                            height: mheight / 11,
-                            width: mwidth / 1.8,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: Colors.white,
-                            ),
                           ),
-                          bottom: 0,
-                          left: 0,
                         ),
                       ],
                     ),
