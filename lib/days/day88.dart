@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day88 extends StatelessWidget {
-  const day88({Key? key}) : super(key: key);
+class Day88 extends StatelessWidget {
+  const Day88({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,6 +11,14 @@ class day88 extends StatelessWidget {
         child: Column(
           children: [
             Container(
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  fit: BoxFit.fill,
+                  image: AssetImage(
+                    "images/assets88/img1.jpg",
+                  ),
+                ),
+              ),
               height: MediaQuery.of(context).size.height / 2.4,
               width: MediaQuery.of(context).size.width,
               child: Stack(
@@ -24,10 +32,10 @@ class day88 extends StatelessWidget {
                           Container(
                             height: MediaQuery.of(context).size.height / 22,
                             width: MediaQuery.of(context).size.width / 10,
-                            child: Icon(Icons.arrow_back_ios_rounded),
                             decoration: BoxDecoration(
                                 color: Colors.grey[400]?.withOpacity(0.1),
                                 borderRadius: BorderRadius.circular(10)),
+                            child: const Icon(Icons.arrow_back_ios_rounded),
                           ),
                           SizedBox(
                             width: MediaQuery.of(context).size.width / 1.34,
@@ -35,23 +43,15 @@ class day88 extends StatelessWidget {
                           Container(
                             height: MediaQuery.of(context).size.height / 22,
                             width: MediaQuery.of(context).size.width / 10,
-                            child: Icon(Icons.book_rounded,
-                                size: MediaQuery.of(context).size.width / 15),
                             decoration: BoxDecoration(
                                 color: Colors.grey[400]?.withOpacity(0.1),
                                 borderRadius: BorderRadius.circular(10)),
+                            child: Icon(Icons.book_rounded,
+                                size: MediaQuery.of(context).size.width / 15),
                           ),
                         ],
                       ))
                 ],
-              ),
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  fit: BoxFit.fill,
-                  image: AssetImage(
-                    "images/assets88/img1.jpg",
-                  ),
-                ),
               ),
             ),
             SizedBox(
@@ -60,7 +60,7 @@ class day88 extends StatelessWidget {
             Column(
               children: [
                 Padding(
-                  padding: EdgeInsets.all(15),
+                  padding: const EdgeInsets.all(15),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -127,7 +127,8 @@ class day88 extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(15),
                                 color: Colors.red[100]),
                             child: Padding(
-                                padding: EdgeInsets.fromLTRB(10, 2, 10, 2),
+                                padding:
+                                    const EdgeInsets.fromLTRB(10, 2, 10, 2),
                                 child: Row(
                                   children: [
                                     Icon(
@@ -161,7 +162,8 @@ class day88 extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(15),
                                 color: Colors.red[100]),
                             child: Padding(
-                                padding: EdgeInsets.fromLTRB(10, 2, 10, 2),
+                                padding:
+                                    const EdgeInsets.fromLTRB(10, 2, 10, 2),
                                 child: Row(
                                   children: [
                                     Icon(
@@ -196,7 +198,8 @@ class day88 extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(15),
                                 color: Colors.red[100]),
                             child: Padding(
-                                padding: EdgeInsets.fromLTRB(10, 2, 10, 2),
+                                padding:
+                                    const EdgeInsets.fromLTRB(10, 2, 10, 2),
                                 child: Row(
                                   children: [
                                     Icon(
@@ -226,7 +229,7 @@ class day88 extends StatelessWidget {
                       SizedBox(
                         height: MediaQuery.of(context).size.height / 50,
                       ),
-                      Text(
+                      const Text(
                         "This is a classy and modurn apartment located in Gwarinpa, Nigeria. It is built in the heart of the city making it easiar for you.",
                         style: TextStyle(
                             height: 1.7,
@@ -253,7 +256,7 @@ class day88 extends StatelessWidget {
                             width: MediaQuery.of(context).size.width / 3.7,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15),
-                              image: new DecorationImage(
+                              image: const DecorationImage(
                                 fit: BoxFit.fill,
                                 image: AssetImage(
                                   "images/assets88/img2.jpg",
@@ -266,7 +269,7 @@ class day88 extends StatelessWidget {
                             width: MediaQuery.of(context).size.width / 3.7,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15),
-                              image: new DecorationImage(
+                              image: const DecorationImage(
                                 fit: BoxFit.fill,
                                 image: AssetImage(
                                   "images/assets88/img3.jpg",
@@ -275,6 +278,15 @@ class day88 extends StatelessWidget {
                             ),
                           ),
                           Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                              image: const DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage(
+                                  "images/assets88/img4.jpg",
+                                ),
+                              ),
+                            ),
                             height: MediaQuery.of(context).size.height / 9.5,
                             width: MediaQuery.of(context).size.width / 3.7,
                             child: Stack(
@@ -300,15 +312,6 @@ class day88 extends StatelessWidget {
                                     )))
                               ],
                             ),
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(15),
-                              image: new DecorationImage(
-                                fit: BoxFit.fill,
-                                image: AssetImage(
-                                  "images/assets88/img4.jpg",
-                                ),
-                              ),
-                            ),
                           ),
                         ],
                       ),
@@ -321,7 +324,7 @@ class day88 extends StatelessWidget {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                              const Text(
                                 "Price",
                                 style: TextStyle(
                                     color: Colors.grey,
@@ -363,7 +366,6 @@ class day88 extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(100)),
                               child: ElevatedButton(
                                 onPressed: () {},
-                                child: Text("Rent"),
                                 style: ButtonStyle(
                                     fixedSize: MaterialStateProperty.all(
                                         Size.fromWidth(
@@ -375,6 +377,7 @@ class day88 extends StatelessWidget {
                                                 BorderRadius.circular(12))),
                                     backgroundColor: MaterialStateProperty.all(
                                         Colors.red[800])),
+                                child: const Text("Rent"),
                               ))
                         ],
                       )

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class day87 extends StatelessWidget {
-  const day87({Key? key}) : super(key: key);
+class Day87 extends StatelessWidget {
+  const Day87({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
           child: Stack(children: [
-        Container(
+        SizedBox(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
           child: Column(
@@ -92,54 +92,54 @@ class day87 extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Container(
+                          width: MediaQuery.of(context).size.width / 7.5,
+                          height: MediaQuery.of(context).size.height / 15.5,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(15),
+                          ),
                           child: Icon(
                             Icons.send_to_mobile_rounded,
                             color: Colors.black54,
                             size: MediaQuery.of(context).size.width / 12,
                           ),
+                        ),
+                        Container(
                           width: MediaQuery.of(context).size.width / 7.5,
                           height: MediaQuery.of(context).size.height / 15.5,
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(15),
                           ),
-                        ),
-                        Container(
                           child: Icon(
                             Icons.featured_play_list,
                             color: Colors.black54,
                             size: MediaQuery.of(context).size.width / 12,
                           ),
+                        ),
+                        Container(
                           width: MediaQuery.of(context).size.width / 7.5,
                           height: MediaQuery.of(context).size.height / 15.5,
                           decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-                        ),
-                        Container(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(15)),
                           child: Icon(
                             Icons.local_atm_rounded,
                             color: Colors.black54,
                             size: MediaQuery.of(context).size.width / 12,
                           ),
+                        ),
+                        Container(
                           width: MediaQuery.of(context).size.width / 7.5,
                           height: MediaQuery.of(context).size.height / 15.5,
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(15)),
-                        ),
-                        Container(
                           child: Icon(
                             Icons.drive_file_move_outlined,
                             color: Colors.black54,
                             size: MediaQuery.of(context).size.width / 12,
                           ),
-                          width: MediaQuery.of(context).size.width / 7.5,
-                          height: MediaQuery.of(context).size.height / 15.5,
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(15)),
                         ),
                       ],
                     ),
@@ -611,6 +611,11 @@ class day87 extends StatelessWidget {
                 ],
               ),
               Container(
+                decoration: BoxDecoration(
+                    color: Colors.blue.shade800,
+                    borderRadius: BorderRadius.circular(13)),
+                height: MediaQuery.of(context).size.height / 18.2,
+                width: MediaQuery.of(context).size.width / 8.8,
                 child: Center(
                     child: Text(
                   "+",
@@ -619,11 +624,6 @@ class day87 extends StatelessWidget {
                       color: Colors.white,
                       fontSize: MediaQuery.of(context).size.width / 11),
                 )),
-                decoration: BoxDecoration(
-                    color: Colors.blue.shade800,
-                    borderRadius: BorderRadius.circular(13)),
-                height: MediaQuery.of(context).size.height / 18.2,
-                width: MediaQuery.of(context).size.width / 8.8,
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day86 extends StatelessWidget {
-  const day86({Key? key}) : super(key: key);
+class Day86 extends StatelessWidget {
+  const Day86({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,14 +11,21 @@ class day86 extends StatelessWidget {
         child: Column(
           children: [
             Container(
+              decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(20),
+                      bottomRight: Radius.circular(20)),
+                  image: DecorationImage(
+                      fit: BoxFit.fill,
+                      image: AssetImage("images/assets86/img.jpg"))),
               height: MediaQuery.of(context).size.height / 2,
               width: MediaQuery.of(context).size.width,
               child: Padding(
-                padding: EdgeInsets.fromLTRB(25, 40, 25, 0),
+                padding: const EdgeInsets.fromLTRB(25, 40, 25, 0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
+                  children: const [
                     Icon(
                       Icons.arrow_back_ios_new_rounded,
                       color: Colors.white,
@@ -30,13 +37,6 @@ class day86 extends StatelessWidget {
                   ],
                 ),
               ),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(20),
-                      bottomRight: Radius.circular(20)),
-                  image: DecorationImage(
-                      fit: BoxFit.fill,
-                      image: AssetImage("images/assets86/img.jpg"))),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -250,7 +250,7 @@ class day86 extends StatelessWidget {
               height: MediaQuery.of(context).size.height / 40,
             ),
             Padding(
-              padding: EdgeInsets.only(left: 25, right: 25),
+              padding: const EdgeInsets.only(left: 25, right: 25),
               child: Text(
                 "Recently launched in 2019 Wood Homme Dylan Rk Gold Versace provides as delicate balance of citrus spicy and for creating an ideal daily scent.",
                 textAlign: TextAlign.justify,
@@ -293,7 +293,7 @@ class day86 extends StatelessWidget {
                           color: Colors.black.withOpacity(0.6)),
                       child: Center(
                         child: Padding(
-                          padding: EdgeInsets.only(left: 35, right: 25),
+                          padding: const EdgeInsets.only(left: 35, right: 25),
                           child: Center(
                             child: Row(
                               children: [

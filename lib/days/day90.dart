@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day90 extends StatelessWidget {
-  const day90({Key? key}) : super(key: key);
+class Day90 extends StatelessWidget {
+  const Day90({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class day90 extends StatelessWidget {
                 height: h / 1.7,
               ),
               Row(
-                children: [],
+                children: const [],
               ),
               SizedBox(
                 height: h / 50,
@@ -195,7 +195,7 @@ class day90 extends StatelessWidget {
                               height: h / 45,
                               color: Colors.white,
                             ),
-                            Text(
+                            const Text(
                               " Add to cart",
                               style: TextStyle(
                                   fontWeight: FontWeight.w600,

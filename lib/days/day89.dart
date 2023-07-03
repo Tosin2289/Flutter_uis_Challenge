@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day89 extends StatelessWidget {
-  const day89({Key? key}) : super(key: key);
+class Day89 extends StatelessWidget {
+  const Day89({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +9,7 @@ class day89 extends StatelessWidget {
       return Row(
         children: [
           Container(
-            padding: EdgeInsets.only(left: 5),
+            padding: const EdgeInsets.only(left: 5),
             height: MediaQuery.of(context).size.height / 17,
             width: MediaQuery.of(context).size.width / 4 + 10,
             decoration: BoxDecoration(
@@ -20,9 +20,9 @@ class day89 extends StatelessWidget {
               children: [
                 CircleAvatar(
                   backgroundColor: Colors.lightBlueAccent.withOpacity(0.7),
-                  child: Icon(Icons.send, color: Colors.white),
+                  child: const Icon(Icons.send, color: Colors.white),
                 ),
-                Text(
+                const Text(
                   " Tokyo",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 )
@@ -33,7 +33,7 @@ class day89 extends StatelessWidget {
             width: MediaQuery.of(context).size.width / 20,
           ),
           Container(
-            padding: EdgeInsets.only(left: 5),
+            padding: const EdgeInsets.only(left: 5),
             height: MediaQuery.of(context).size.height / 17,
             width: MediaQuery.of(context).size.width / 4 + 10,
             decoration: BoxDecoration(
@@ -44,12 +44,12 @@ class day89 extends StatelessWidget {
               children: [
                 CircleAvatar(
                   backgroundColor: Colors.indigoAccent.withOpacity(1),
-                  child: Icon(
+                  child: const Icon(
                     Icons.star_rate_rounded,
                     color: Colors.white,
                   ),
                 ),
-                Text(
+                const Text(
                   " Shibuya",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 )
@@ -60,7 +60,7 @@ class day89 extends StatelessWidget {
             width: MediaQuery.of(context).size.width / 20,
           ),
           Container(
-            padding: EdgeInsets.only(left: 5),
+            padding: const EdgeInsets.only(left: 5),
             height: MediaQuery.of(context).size.height / 17,
             width: MediaQuery.of(context).size.width / 4 + 10,
             decoration: BoxDecoration(
@@ -71,9 +71,9 @@ class day89 extends StatelessWidget {
               children: [
                 CircleAvatar(
                   backgroundColor: Colors.pinkAccent.withOpacity(0.6),
-                  child: Icon(Icons.linked_camera, color: Colors.white),
+                  child: const Icon(Icons.linked_camera, color: Colors.white),
                 ),
-                Text(
+                const Text(
                   " Yok",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 )
@@ -84,7 +84,7 @@ class day89 extends StatelessWidget {
             width: MediaQuery.of(context).size.width / 20,
           ),
           Container(
-            padding: EdgeInsets.only(left: 5),
+            padding: const EdgeInsets.only(left: 5),
             height: MediaQuery.of(context).size.height / 17,
             width: MediaQuery.of(context).size.width / 4 + 10,
             decoration: BoxDecoration(
@@ -95,9 +95,9 @@ class day89 extends StatelessWidget {
               children: [
                 CircleAvatar(
                   backgroundColor: Colors.lightBlueAccent.withOpacity(0.7),
-                  child: Icon(Icons.send, color: Colors.white),
+                  child: const Icon(Icons.send, color: Colors.white),
                 ),
-                Text(
+                const Text(
                   " Tokyo",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 )
@@ -109,7 +109,7 @@ class day89 extends StatelessWidget {
     }
 
     return Padding(
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       child: Scaffold(
         backgroundColor: Colors.grey.shade200,
         body: SafeArea(
@@ -120,14 +120,14 @@ class day89 extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                        padding: EdgeInsets.only(left: 40, top: 30),
-                        child: Text(
+                        padding: const EdgeInsets.only(left: 40, top: 30),
+                        child: const Text(
                           "Explore",
                           style: TextStyle(
                               fontSize: 35, fontWeight: FontWeight.bold),
                         )),
                     Container(
-                        padding: EdgeInsets.only(right: 30, top: 30),
+                        padding: const EdgeInsets.only(right: 30, top: 30),
                         child: Icon(
                           Icons.notifications,
                           size: 26,
@@ -138,7 +138,7 @@ class day89 extends StatelessWidget {
                 SizedBox(
                   height: MediaQuery.of(context).size.height / 100,
                 ),
-                Container(
+                SizedBox(
                   width: MediaQuery.of(context).size.width / 1.2 + 15,
                   child: Padding(
                     padding: const EdgeInsets.all(20.0),
@@ -148,14 +148,14 @@ class day89 extends StatelessWidget {
                         filled: true,
                         suffixIcon: CircleAvatar(
                             backgroundColor: Colors.indigo.shade900,
-                            child: Icon(
+                            child: const Icon(
                               Icons.search,
                               color: Colors.white,
                               size: 20,
                             )),
                         hintText: " Search destination",
                         border: InputBorder.none,
-                        enabledBorder: OutlineInputBorder(
+                        enabledBorder: const OutlineInputBorder(
                           borderRadius: BorderRadius.all(
                             Radius.circular(30),
                           ),
@@ -172,7 +172,7 @@ class day89 extends StatelessWidget {
                     SizedBox(
                       width: MediaQuery.of(context).size.width / 9,
                     ),
-                    Container(
+                    SizedBox(
                       height: MediaQuery.of(context).size.height / 17,
                       width: MediaQuery.of(context).size.width / 1.2,
                       child: ListView.builder(
@@ -187,13 +187,13 @@ class day89 extends StatelessWidget {
                 ),
                 Container(
                     alignment: Alignment.centerLeft,
-                    padding: EdgeInsets.only(left: 35, top: 35),
-                    child: Text(
+                    padding: const EdgeInsets.only(left: 35, top: 35),
+                    child: const Text(
                       "Recommended",
                       style:
                           TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                     )),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Row(
@@ -201,7 +201,7 @@ class day89 extends StatelessWidget {
                     SizedBox(
                       width: MediaQuery.of(context).size.width / 14,
                     ),
-                    Container(
+                    SizedBox(
                       height: MediaQuery.of(context).size.height / 3,
                       width: MediaQuery.of(context).size.width - 50,
                       child: ListView(
@@ -213,17 +213,18 @@ class day89 extends StatelessWidget {
                             decoration: BoxDecoration(
                                 color: Colors.cyan,
                                 borderRadius: BorderRadius.circular(30),
-                                image: DecorationImage(
-                                    image: AssetImage("images/assets89/img1.jpg"),
+                                image: const DecorationImage(
+                                    image:
+                                        AssetImage("images/assets89/img1.jpg"),
                                     fit: BoxFit.cover)),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.end,
                               children: [
                                 Container(
                                     alignment: Alignment.bottomLeft,
-                                    padding:
-                                        EdgeInsets.only(left: 25, bottom: 10),
-                                    child: Text(
+                                    padding: const EdgeInsets.only(
+                                        left: 25, bottom: 10),
+                                    child: const Text(
                                       "Nobunaga Pagoda",
                                       style: TextStyle(
                                           fontSize: 25,
@@ -232,9 +233,9 @@ class day89 extends StatelessWidget {
                                     )),
                                 Container(
                                     alignment: Alignment.bottomLeft,
-                                    padding:
-                                        EdgeInsets.only(left: 25, bottom: 20),
-                                    child: Text(
+                                    padding: const EdgeInsets.only(
+                                        left: 25, bottom: 20),
+                                    child: const Text(
                                       "Osaka,Japan",
                                       style: TextStyle(
                                           fontSize: 15, color: Colors.white70),
@@ -251,17 +252,18 @@ class day89 extends StatelessWidget {
                             decoration: BoxDecoration(
                                 color: Colors.cyan,
                                 borderRadius: BorderRadius.circular(30),
-                                image: DecorationImage(
-                                    image: AssetImage("images/assets89/img2.jpg"),
+                                image: const DecorationImage(
+                                    image:
+                                        AssetImage("images/assets89/img2.jpg"),
                                     fit: BoxFit.cover)),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.end,
                               children: [
                                 Container(
                                     alignment: Alignment.bottomLeft,
-                                    padding:
-                                        EdgeInsets.only(left: 25, bottom: 10),
-                                    child: Text(
+                                    padding: const EdgeInsets.only(
+                                        left: 25, bottom: 10),
+                                    child: const Text(
                                       "Naruto Statue",
                                       style: TextStyle(
                                           fontSize: 25,
@@ -270,9 +272,9 @@ class day89 extends StatelessWidget {
                                     )),
                                 Container(
                                     alignment: Alignment.bottomLeft,
-                                    padding:
-                                        EdgeInsets.only(left: 25, bottom: 20),
-                                    child: Text(
+                                    padding: const EdgeInsets.only(
+                                        left: 25, bottom: 20),
+                                    child: const Text(
                                       "Osaka,Japan",
                                       style: TextStyle(
                                           fontSize: 15, color: Colors.white70),
@@ -289,17 +291,18 @@ class day89 extends StatelessWidget {
                             decoration: BoxDecoration(
                                 color: Colors.cyan,
                                 borderRadius: BorderRadius.circular(30),
-                                image: DecorationImage(
-                                    image: AssetImage("images/assets89/img3.jpg"),
+                                image: const DecorationImage(
+                                    image:
+                                        AssetImage("images/assets89/img3.jpg"),
                                     fit: BoxFit.cover)),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.end,
                               children: [
                                 Container(
                                     alignment: Alignment.bottomLeft,
-                                    padding:
-                                        EdgeInsets.only(left: 25, bottom: 10),
-                                    child: Text(
+                                    padding: const EdgeInsets.only(
+                                        left: 25, bottom: 10),
+                                    child: const Text(
                                       "Nobunaga Pagoda",
                                       style: TextStyle(
                                           fontSize: 25,
@@ -308,9 +311,9 @@ class day89 extends StatelessWidget {
                                     )),
                                 Container(
                                     alignment: Alignment.bottomLeft,
-                                    padding:
-                                        EdgeInsets.only(left: 25, bottom: 20),
-                                    child: Text(
+                                    padding: const EdgeInsets.only(
+                                        left: 25, bottom: 20),
+                                    child: const Text(
                                       "Osaka,Japan",
                                       style: TextStyle(
                                           fontSize: 15, color: Colors.white70),
@@ -328,13 +331,13 @@ class day89 extends StatelessWidget {
                 ),
                 Container(
                     alignment: Alignment.centerLeft,
-                    padding: EdgeInsets.only(left: 35),
-                    child: Text(
+                    padding: const EdgeInsets.only(left: 35),
+                    child: const Text(
                       "Local Reviews",
                       style:
                           TextStyle(fontSize: 27, fontWeight: FontWeight.bold),
                     )),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Row(
@@ -342,16 +345,17 @@ class day89 extends StatelessWidget {
                     SizedBox(
                       width: MediaQuery.of(context).size.width / 12,
                     ),
-                    Container(
+                    SizedBox(
                       height: MediaQuery.of(context).size.height / 15,
                       width: MediaQuery.of(context).size.width / 7,
-                      child: CircleAvatar(
-                          backgroundImage: AssetImage("images/assets89/img4.jpg")),
+                      child: const CircleAvatar(
+                          backgroundImage:
+                              AssetImage("images/assets89/img4.jpg")),
                     ),
                     SizedBox(
                       width: MediaQuery.of(context).size.width / 15,
                     ),
-                    Container(
+                    SizedBox(
                       height: MediaQuery.of(context).size.height / 15,
                       width: MediaQuery.of(context).size.width / 2 + 50,
                       child: Column(
@@ -359,8 +363,8 @@ class day89 extends StatelessWidget {
                           Row(
                             children: [
                               Container(
-                                  padding: EdgeInsets.only(top: 10),
-                                  child: Text(
+                                  padding: const EdgeInsets.only(top: 10),
+                                  child: const Text(
                                     "Dara Adhelia",
                                     style: TextStyle(
                                         fontSize: 15,
@@ -370,11 +374,11 @@ class day89 extends StatelessWidget {
                                 width: MediaQuery.of(context).size.width / 12,
                               ),
                               Container(
-                                padding: EdgeInsets.only(top: 10),
+                                padding: const EdgeInsets.only(top: 10),
                                 child: Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceAround,
-                                  children: [
+                                  children: const [
                                     Icon(
                                       Icons.star_rate_rounded,
                                       color: Colors.yellow,
@@ -404,8 +408,9 @@ class day89 extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                  padding: EdgeInsets.only(top: 10, left: 5),
-                                  child: Text(
+                                  padding:
+                                      const EdgeInsets.only(top: 10, left: 5),
+                                  child: const Text(
                                     "(4.5)",
                                     style: TextStyle(
                                         fontSize: 15, color: Colors.black54),
@@ -414,8 +419,8 @@ class day89 extends StatelessWidget {
                           ),
                           Container(
                               alignment: Alignment.centerLeft,
-                              padding: EdgeInsets.only(top: 10),
-                              child: Text(
+                              padding: const EdgeInsets.only(top: 10),
+                              child: const Text(
                                 "Lorem ipsum dolor sit amet,consectet.",
                                 style: TextStyle(
                                     fontSize: 12, color: Colors.black54),
@@ -429,7 +434,7 @@ class day89 extends StatelessWidget {
                   height: MediaQuery.of(context).size.height / 50,
                 ),
                 Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(40),
@@ -440,18 +445,19 @@ class day89 extends StatelessWidget {
                   height: MediaQuery.of(context).size.height / 13,
                   width: MediaQuery.of(context).size.width / 1.2,
                   child: ClipRRect(
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                           topLeft: Radius.circular(40),
                           topRight: Radius.circular(40),
                           bottomLeft: Radius.circular(40),
                           bottomRight: Radius.circular(40)),
-                      child: Container(
+                      child: SizedBox(
                         child: BottomNavigationBar(
-                          backgroundColor: Color.fromRGBO(255, 255, 255, 50),
+                          backgroundColor:
+                              const Color.fromRGBO(255, 255, 255, 50),
                           showSelectedLabels: false,
                           showUnselectedLabels: false,
                           items: [
-                            BottomNavigationBarItem(
+                            const BottomNavigationBarItem(
                               icon: Icon(
                                 Icons.home_rounded,
                                 color: Colors.indigo,
