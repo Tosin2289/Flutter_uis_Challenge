@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
-class day103 extends StatelessWidget {
-  const day103({Key? key}) : super(key: key);
+class Day103 extends StatelessWidget {
+  const Day103({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-      bottomNavigationBar: BottomBar(),
+      bottomNavigationBar: const BottomBar(),
       body: Body(),
     ));
   }
 }
 
 class BottomBar extends StatefulWidget {
-  BottomBar({Key? key}) : super(key: key);
+  const BottomBar({Key? key}) : super(key: key);
   @override
   State<BottomBar> createState() => _BottomBarState();
 }
@@ -67,7 +67,7 @@ class _BottomBarState extends State<BottomBar> {
 
 //Body
 class Body extends StatefulWidget {
-  Body({Key? key}) : super(key: key);
+  const Body({Key? key}) : super(key: key);
   @override
   BodyState createState() => BodyState();
 }
@@ -164,13 +164,13 @@ class BodyState extends State<Body> {
 
 //Top destinations
 class TopDestinations extends StatefulWidget {
-  TopDestinations({Key? key}) : super(key: key);
+  const TopDestinations({Key? key}) : super(key: key);
   @override
   State<TopDestinations> createState() => _TopDestinationsState();
 }
 
 class _TopDestinationsState extends State<TopDestinations> {
-  PageController _controller =
+  PageController controller =
       PageController(viewportFraction: 0.6, keepPage: true, initialPage: 1);
   List cityn = ["Italy", "Cananda", "Madrid", "Rome", "Chicago"];
   List citiyi = [
@@ -184,11 +184,16 @@ class _TopDestinationsState extends State<TopDestinations> {
   Widget build(BuildContext context) {
     return PageView.builder(
       padEnds: false,
-      controller: _controller,
+      controller: controller,
       itemCount: cityn.length,
       itemBuilder: (context, index) {
         return Center(
           child: Container(
+            decoration: BoxDecoration(
+                color: Colors.yellow,
+                borderRadius: BorderRadius.circular(20),
+                image: DecorationImage(
+                    image: AssetImage(citiyi[index]), fit: BoxFit.fill)),
             margin: EdgeInsets.symmetric(
                 horizontal: MediaQuery.of(context).size.width / 30),
             width: MediaQuery.of(context).size.width / 1.9,
@@ -236,11 +241,6 @@ class _TopDestinationsState extends State<TopDestinations> {
                     ))
               ],
             ),
-            decoration: BoxDecoration(
-                color: Colors.yellow,
-                borderRadius: BorderRadius.circular(20),
-                image: DecorationImage(
-                    image: AssetImage(citiyi[index]), fit: BoxFit.fill)),
           ),
         );
       },
@@ -249,13 +249,13 @@ class _TopDestinationsState extends State<TopDestinations> {
 }
 
 class BeautfulCities extends StatefulWidget {
-  BeautfulCities({Key? key}) : super(key: key);
+  const BeautfulCities({Key? key}) : super(key: key);
   @override
   State<BeautfulCities> createState() => _BeautfulCitiesState();
 }
 
 class _BeautfulCitiesState extends State<BeautfulCities> {
-  PageController _controller =
+  PageController controller =
       PageController(viewportFraction: 0.8, keepPage: true, initialPage: 1);
   List cityn = ["Paris", "Landon", "Canada", "Moscow", "Rome", "India"];
   List cityi = [
@@ -269,7 +269,7 @@ class _BeautfulCitiesState extends State<BeautfulCities> {
   @override
   Widget build(BuildContext context) {
     return PageView(
-      controller: _controller,
+      controller: controller,
       children: [
         Container(
           margin: EdgeInsets.symmetric(
@@ -279,6 +279,10 @@ class _BeautfulCitiesState extends State<BeautfulCities> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.blueGrey[50],
+                ),
                 height: MediaQuery.of(context).size.height / 4.5,
                 width: MediaQuery.of(context).size.width / 2.8,
                 child: Column(
@@ -297,12 +301,12 @@ class _BeautfulCitiesState extends State<BeautfulCities> {
                     )
                   ],
                 ),
+              ),
+              Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   color: Colors.blueGrey[50],
                 ),
-              ),
-              Container(
                 height: MediaQuery.of(context).size.height / 4.5,
                 width: MediaQuery.of(context).size.width / 2.8,
                 child: Column(
@@ -321,10 +325,6 @@ class _BeautfulCitiesState extends State<BeautfulCities> {
                     )
                   ],
                 ),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Colors.blueGrey[50],
-                ),
               ),
             ],
           ),
@@ -337,6 +337,10 @@ class _BeautfulCitiesState extends State<BeautfulCities> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.blueGrey[50],
+                ),
                 height: MediaQuery.of(context).size.height / 4.5,
                 width: MediaQuery.of(context).size.width / 2.8,
                 child: Column(
@@ -355,12 +359,12 @@ class _BeautfulCitiesState extends State<BeautfulCities> {
                     )
                   ],
                 ),
+              ),
+              Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   color: Colors.blueGrey[50],
                 ),
-              ),
-              Container(
                 height: MediaQuery.of(context).size.height / 4.5,
                 width: MediaQuery.of(context).size.width / 2.8,
                 child: Column(
@@ -379,10 +383,6 @@ class _BeautfulCitiesState extends State<BeautfulCities> {
                     )
                   ],
                 ),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Colors.blueGrey[50],
-                ),
               ),
             ],
           ),
@@ -395,6 +395,10 @@ class _BeautfulCitiesState extends State<BeautfulCities> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.blueGrey[50],
+                ),
                 height: MediaQuery.of(context).size.height / 4.5,
                 width: MediaQuery.of(context).size.width / 2.8,
                 child: Column(
@@ -413,12 +417,12 @@ class _BeautfulCitiesState extends State<BeautfulCities> {
                     )
                   ],
                 ),
+              ),
+              Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   color: Colors.blueGrey[50],
                 ),
-              ),
-              Container(
                 height: MediaQuery.of(context).size.height / 4.5,
                 width: MediaQuery.of(context).size.width / 2.8,
                 child: Column(
@@ -436,10 +440,6 @@ class _BeautfulCitiesState extends State<BeautfulCities> {
                           fontSize: MediaQuery.of(context).size.height / 25),
                     )
                   ],
-                ),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Colors.blueGrey[50],
                 ),
               ),
             ],

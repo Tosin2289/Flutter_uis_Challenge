@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day104 extends StatelessWidget {
-  const day104({Key? key}) : super(key: key);
+class Day104 extends StatelessWidget {
+  const Day104({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,13 +28,13 @@ class day104 extends StatelessWidget {
     getContainer(String s1, String s2, String s3, String s4) {
       return Container(
         height: con3Ht * 0.17,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(15)),
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Container(
+            SizedBox(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -50,7 +50,7 @@ class day104 extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
+            SizedBox(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.end,
@@ -82,13 +82,13 @@ class day104 extends StatelessWidget {
                 SizedBox(height: con1Ht),
                 Container(
                     height: con1Ht,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(15)),
                     ),
                     child: Row(children: [
                       Container(
                         width: con1Ht,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage(
                               "images/assets104/img1.jpg",
@@ -118,13 +118,13 @@ class day104 extends StatelessWidget {
                                             fontSize: h1Font * 0.9,
                                             fontWeight: FontWeight.bold),
                                       ),
-                                      Text("Edit ",
+                                      const Text("Edit ",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
                                           ))
                                     ],
                                   ),
-                                  Container(
+                                  SizedBox(
                                     child: Text(
                                       "New- York",
                                       style: TextStyle(
@@ -145,7 +145,7 @@ class day104 extends StatelessWidget {
                                       ),
                                       child: Row(
                                         children: [
-                                          CircleAvatar(
+                                          const CircleAvatar(
                                               radius: 8,
                                               backgroundColor: Colors.red,
                                               child: Icon(
@@ -165,10 +165,10 @@ class day104 extends StatelessWidget {
                                 ])),
                       )
                     ])),
-                Divider(),
+                const Divider(),
                 Container(
                   height: con2Ht,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(20)),
                     image: DecorationImage(
                       image: AssetImage(
@@ -183,7 +183,7 @@ class day104 extends StatelessWidget {
                       CircleAvatar(
                           radius: con2Ht / 3.5,
                           backgroundColor: Colors.white,
-                          child: Icon(
+                          child: const Icon(
                             Icons.blur_circular_outlined,
                             size: 30,
                             color: Colors.pink,
@@ -246,13 +246,13 @@ class day104 extends StatelessWidget {
                     children: [
                       Container(
                         height: con3Ht * 0.23,
-                        decoration: BoxDecoration(),
+                        decoration: const BoxDecoration(),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             Row(
                               children: [
-                                SizedBox(width: 70),
+                                const SizedBox(width: 70),
 
                                 Text(
                                   "192802",
@@ -261,13 +261,13 @@ class day104 extends StatelessWidget {
                                       letterSpacing: 5,
                                       fontWeight: FontWeight.bold),
                                 ),
-                                SizedBox(height: 60)
+                                const SizedBox(height: 60)
                                 // image
                               ],
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
+                              children: const [
                                 Text("Miles accured"),
                                 Text("23 May 2021"),
                               ],
@@ -275,7 +275,7 @@ class day104 extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Divider(),
+                      const Divider(),
                       getContainer(
                           "23 042", "Miles", "Airline CO", "Received From"),
                       DashedDivider(),
@@ -285,7 +285,7 @@ class day104 extends StatelessWidget {
                       Expanded(
                           child: Container(
                         alignment: Alignment.center,
-                        child: Text(
+                        child: const Text(
                           "How to get more miles?",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,

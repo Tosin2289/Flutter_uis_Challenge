@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 
-class day105 extends StatelessWidget {
-  day105({Key? key}) : super(key: key);
+class Day105 extends StatefulWidget {
+  const Day105({Key? key}) : super(key: key);
+
+  @override
+  State<Day105> createState() => _Day105State();
+}
+
+class _Day105State extends State<Day105> {
   List img = ["img5.jpg", "img6.jpg", "img7.jpg", "img8.jpg", "img7.jpg"];
+
   List cname = [
     "Espresso",
     "Ice coffee",
@@ -10,12 +17,13 @@ class day105 extends StatelessWidget {
     "Late",
     "Hot chocolate"
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Container(
-          padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
+          padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -26,11 +34,11 @@ class day105 extends StatelessWidget {
                     height: MediaQuery.of(context).size.height / 2,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        image: DecorationImage(
+                        image: const DecorationImage(
                             image: AssetImage("images/assets105/img1.jpg"),
                             fit: BoxFit.cover)),
                   ),
-                  Positioned(
+                  const Positioned(
                     top: 7,
                     left: 285,
                     child: CircleAvatar(
@@ -47,7 +55,7 @@ class day105 extends StatelessWidget {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Salerno",
+                              const Text("Salerno",
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 25,
@@ -66,42 +74,43 @@ class day105 extends StatelessWidget {
                           ),
                         ],
                       )),
-                  Positioned(
+                  const Positioned(
                       left: 190,
                       top: 305,
                       child: CircleAvatar(
                           backgroundImage:
                               AssetImage("images/assets105/img2.jpg"),
                           radius: 20)),
-                  Positioned(
+                  const Positioned(
                       left: 220,
                       top: 305,
                       child: CircleAvatar(
                           backgroundImage:
                               AssetImage("images/assets105/img3.jpeg"),
                           radius: 20)),
-                  Positioned(
+                  const Positioned(
                       left: 250,
                       top: 305,
                       child: CircleAvatar(
                           backgroundImage:
                               AssetImage("images/assets105/img4.jpg"),
                           radius: 20)),
-                  Positioned(
+                  const Positioned(
                       left: 280,
                       top: 305,
                       child: CircleAvatar(
-                        child: Text("+10"),
                         radius: 20,
                         backgroundColor: Colors.black,
+                        child: Text("+10"),
                       ))
                 ],
               ),
-              Text("About", style: TextStyle(fontWeight: FontWeight.w800)),
-              Text(
+              const Text("About",
+                  style: TextStyle(fontWeight: FontWeight.w800)),
+              const Text(
                   "Salerno is an cafe providers all types of drinks and some snacks",
                   style: TextStyle(color: Colors.grey)),
-              Text("Best of Salerno",
+              const Text("Best of Salerno",
                   style: TextStyle(fontWeight: FontWeight.w800)),
               SizedBox(
                 height: 102,
@@ -109,9 +118,9 @@ class day105 extends StatelessWidget {
                   child: ListView.builder(
                       itemCount: img.length,
                       scrollDirection: Axis.horizontal,
-                      itemBuilder: (BuildContext, index) {
+                      itemBuilder: (context, index) {
                         return Card(
-                          margin: EdgeInsets.only(right: 10),
+                          margin: const EdgeInsets.only(right: 10),
                           child: SizedBox(
                             height: 103,
                             width: MediaQuery.of(context).size.width / 3,
@@ -119,7 +128,7 @@ class day105 extends StatelessWidget {
                               children: [
                                 Container(
                                   height: 80,
-                                  margin: EdgeInsets.only(bottom: 3),
+                                  margin: const EdgeInsets.only(bottom: 3),
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(15),
                                       image: DecorationImage(
@@ -129,7 +138,7 @@ class day105 extends StatelessWidget {
                                 ),
                                 Text(
                                   "${cname[index]}",
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       fontWeight: FontWeight.w700,
                                       fontSize: 12),
                                 )
@@ -140,20 +149,22 @@ class day105 extends StatelessWidget {
                       }),
                 ),
               ),
-              Text("Hours", style: TextStyle(fontWeight: FontWeight.w800)),
-              Text("Open: 9:00 AM Close: 10:00 PM",
+              const Text("Hours",
+                  style: TextStyle(fontWeight: FontWeight.w800)),
+              const Text("Open: 9:00 AM Close: 10:00 PM",
                   style: TextStyle(color: Colors.grey)),
               ElevatedButton.icon(
                 onPressed: () {},
-                label: Text("Location", style: TextStyle(color: Colors.white)),
-                icon: Icon(Icons.location_on_rounded, size: 15),
+                label: const Text("Location",
+                    style: TextStyle(color: Colors.white)),
+                icon: const Icon(Icons.location_on_rounded, size: 15),
                 style: ElevatedButton.styleFrom(
-                    minimumSize: Size(550, 50),
+                    minimumSize: const Size(550, 50),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
-                    primary: Colors.black,
-                    textStyle:
-                        TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+                    backgroundColor: Colors.black,
+                    textStyle: const TextStyle(
+                        fontWeight: FontWeight.bold, fontSize: 15)),
               )
             ],
           ),
