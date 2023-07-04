@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day101 extends StatelessWidget {
-  const day101({Key? key}) : super(key: key);
+class Day101 extends StatelessWidget {
+  const Day101({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -108,29 +108,29 @@ class day101 extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
+                            const Text(
                               "\$117.99",
                               style: TextStyle(
                                   color: Colors.black,
                                   fontWeight: FontWeight.bold),
                             ),
                             OutlinedButton(
-                              child: Text(
-                                "Procedure",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: size),
-                              ),
                               onPressed: null,
                               style: ButtonStyle(
                                 backgroundColor:
                                     MaterialStateProperty.all<Color>(
                                         Colors.deepOrange),
                                 minimumSize: MaterialStateProperty.all(
-                                    Size(140.0, 40.0)),
+                                    const Size(140.0, 40.0)),
                                 shape: MaterialStateProperty.all(
                                     RoundedRectangleBorder(
                                         borderRadius:
                                             BorderRadius.circular(10))),
+                              ),
+                              child: Text(
+                                "Procedure",
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: size),
                               ),
                             ),
                           ],
