@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class day117 extends StatelessWidget {
-  day117({Key? key}) : super(key: key);
+class Day117 extends StatelessWidget {
+  const Day117({Key? key}) : super(key: key);
 
   final String image = "images/assets117/bg.jpeg";
   @override

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class day116 extends StatelessWidget {
-  const day116({Key? key}) : super(key: key);
+class Day116 extends StatelessWidget {
+  const Day116({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -225,7 +225,7 @@ class day116 extends StatelessWidget {
     return Row(
       children: <Widget>[
         const SizedBox(width: 20.0),
-        SizedBox(
+        const SizedBox(
           width: 80.0,
           height: 80.0,
           child: CircleAvatar(
@@ -239,7 +239,7 @@ class day116 extends StatelessWidget {
         const SizedBox(width: 20.0),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children:[
+          children: [
             const Text(
               "Damodar Lohani",
               style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),

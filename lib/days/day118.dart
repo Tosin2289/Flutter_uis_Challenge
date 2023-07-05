@@ -4,8 +4,8 @@ import 'package:url_launcher/url_launcher.dart';
 
 import 'package:flutter/material.dart';
 
-class day118 extends StatelessWidget {
-  const day118({
+class Day118 extends StatelessWidget {
+  const Day118({
     Key? key,
   }) : super(key: key);
 

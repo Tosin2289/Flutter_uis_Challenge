@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day120 extends StatelessWidget {
-  const day120({Key? key}) : super(key: key);
+class Day120 extends StatelessWidget {
+  const Day120({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,8 +17,8 @@ class day120 extends StatelessWidget {
           child: Column(
             children: <Widget>[
               ProfileHeader(
-                avatar: AssetImage("images/assets120/luka.png"),
-                coverImage: AssetImage("images/assets120/omg.webp"),
+                avatar: const AssetImage("images/assets120/luka.png"),
+                coverImage: const AssetImage("images/assets120/omg.webp"),
                 title: "Ramesh Mana",
                 subtitle: "Manager",
                 actions: <Widget>[
