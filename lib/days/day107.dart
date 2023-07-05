@@ -1,9 +1,16 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
-class day107 extends StatelessWidget {
-  day107({Key? key}) : super(key: key);
+class Day107 extends StatefulWidget {
+  const Day107({Key? key}) : super(key: key);
+
+  @override
+  State<Day107> createState() => _Day107State();
+}
+
+class _Day107State extends State<Day107> {
   int index = 2;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -327,7 +334,7 @@ class day107 extends StatelessWidget {
                                                     .width /
                                                 2.2,
                                             child: const Image(
-                                              image: const AssetImage(
+                                              image: AssetImage(
                                                   "images/assets107/img3.jpg"),
                                               fit: BoxFit.cover,
                                             ),
@@ -394,13 +401,13 @@ class day107 extends StatelessWidget {
                                               children: [
                                                 const Text(
                                                   "\$850",
-                                                  style: const TextStyle(
+                                                  style: TextStyle(
                                                       fontWeight:
                                                           FontWeight.bold),
                                                 ),
                                                 const Text(
                                                   "/month",
-                                                  style: const TextStyle(
+                                                  style: TextStyle(
                                                       fontSize: 10,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -647,6 +654,7 @@ class day107 extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(top: 10),
                 child: Card(
+                  color: Colors.white,
                   shape: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15),
                       borderSide: const BorderSide(color: Colors.transparent)),
@@ -679,7 +687,7 @@ class day107 extends StatelessWidget {
                           children: [
                             const Padding(
                               padding: EdgeInsets.only(top: 8, right: 95),
-                              child: const Text(
+                              child: Text(
                                 "Homes",
                                 style: TextStyle(color: Colors.black54),
                               ),
@@ -712,7 +720,7 @@ class day107 extends StatelessWidget {
                               ),
                             ),
                             Row(
-                              children: [
+                              children: const [
                                 const Padding(
                                   padding: EdgeInsets.only(top: 8, right: 0),
                                   child: Text(
@@ -738,12 +746,12 @@ class day107 extends StatelessWidget {
                       ],
                     ),
                   ),
-                  color: Colors.white,
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 10),
                 child: Card(
+                  color: Colors.white,
                   shape: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15),
                       borderSide: const BorderSide(color: Colors.transparent)),
@@ -776,7 +784,7 @@ class day107 extends StatelessWidget {
                           children: [
                             const Padding(
                               padding: EdgeInsets.only(top: 8, right: 95),
-                              child: const Text(
+                              child: Text(
                                 "Homes",
                                 style: TextStyle(color: Colors.black54),
                               ),
@@ -807,8 +815,8 @@ class day107 extends StatelessWidget {
                               ),
                             ),
                             Row(
-                              children: [
-                                const Padding(
+                              children: const [
+                                Padding(
                                   padding: EdgeInsets.only(top: 8, right: 0),
                                   child: Text(
                                     "\$900",
@@ -818,7 +826,7 @@ class day107 extends StatelessWidget {
                                         color: Colors.black),
                                   ),
                                 ),
-                                const Padding(
+                                Padding(
                                   padding: EdgeInsets.only(top: 20, right: 50),
                                   child: Text(
                                     "/month",
@@ -833,7 +841,6 @@ class day107 extends StatelessWidget {
                       ],
                     ),
                   ),
-                  color: Colors.white,
                 ),
               ),
             ]),
@@ -842,7 +849,7 @@ class day107 extends StatelessWidget {
       ),
       bottomNavigationBar: Theme(
         data: Theme.of(context).copyWith(
-          iconTheme: IconThemeData(color: Colors.red),
+          iconTheme: const IconThemeData(color: Colors.red),
         ),
         child: CurvedNavigationBar(
           index: index,
@@ -850,7 +857,7 @@ class day107 extends StatelessWidget {
           color: Colors.black,
           buttonBackgroundColor: Colors.black,
           backgroundColor: Colors.transparent,
-          items: <Widget>[
+          items: const <Widget>[
             Icon(Icons.home_filled, color: Colors.white, size: 30),
             Icon(Icons.favorite_border, color: Colors.white, size: 30),
             Icon(Icons.message, color: Colors.white, size: 30),

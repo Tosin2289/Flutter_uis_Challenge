@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class day110 extends StatefulWidget {
-  day110({Key? key}) : super(key: key);
+class Day110 extends StatefulWidget {
+  const Day110({Key? key}) : super(key: key);
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static final List<Widget> screen = <Widget>[
-    const ukit5(),
+    const Ukit5(),
     const Text(
       "Index 1: School",
       style: optionStyle,
@@ -17,10 +17,10 @@ class day110 extends StatefulWidget {
   ];
 
   @override
-  State<day110> createState() => _day110State();
+  State<Day110> createState() => _Day110State();
 }
 
-class _day110State extends State<day110> {
+class _Day110State extends State<Day110> {
   int _selectedIndex = 0;
 
   void _onItemTapped(int index) {
@@ -34,7 +34,7 @@ class _day110State extends State<day110> {
     return Scaffold(
       body: SafeArea(
         child: Container(
-          child: day110.screen.elementAt(_selectedIndex),
+          child: Day110.screen.elementAt(_selectedIndex),
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -71,13 +71,13 @@ class _day110State extends State<day110> {
   }
 }
 
-class ukit5 extends StatefulWidget {
-  const ukit5({Key? key}) : super(key: key);
+class Ukit5 extends StatefulWidget {
+  const Ukit5({Key? key}) : super(key: key);
   @override
-  _ukit5State createState() => _ukit5State();
+  _Ukit5State createState() => _Ukit5State();
 }
 
-class _ukit5State extends State<ukit5> {
+class _Ukit5State extends State<Ukit5> {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
@@ -144,66 +144,66 @@ class _ukit5State extends State<ukit5> {
                 child: Row(
                   children: [
                     TextButton(
+                      style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              Colors.grey.withOpacity(0.1))),
                       onPressed: () {},
                       child: Text(
                         "Stocks",
                         style: TextStyle(color: Colors.grey[500]),
                       ),
-                      style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
-                              Colors.grey.withOpacity(0.1))),
                     ),
                     SizedBox(
                       width: size.width / 25,
                     ),
                     TextButton(
+                      style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              Colors.grey.withOpacity(0.1))),
                       onPressed: () {},
                       child: Text(
                         "Funds",
                         style: TextStyle(color: Colors.grey[500]),
                       ),
-                      style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
-                              Colors.grey.withOpacity(0.1))),
                     ),
                     SizedBox(
                       width: size.width / 25,
                     ),
                     TextButton(
+                      style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              Colors.grey.withOpacity(0.1))),
                       onPressed: () {},
                       child: Text(
                         "Bonds",
                         style: TextStyle(color: Colors.grey[500]),
                       ),
-                      style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
-                              Colors.grey.withOpacity(0.1))),
                     ),
                     SizedBox(
                       width: size.width / 25,
                     ),
                     TextButton(
+                      style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              Colors.grey.withOpacity(0.1))),
                       onPressed: () {},
                       child: Text(
                         "Currencies",
                         style: TextStyle(color: Colors.grey[500]),
                       ),
-                      style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
-                              Colors.grey.withOpacity(0.1))),
                     ),
                     SizedBox(
                       width: size.width / 25,
                     ),
                     TextButton(
+                      style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              Colors.grey.withOpacity(0.1))),
                       onPressed: () {},
                       child: Text(
                         "Future",
                         style: TextStyle(color: Colors.grey[500]),
                       ),
-                      style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
-                              Colors.grey.withOpacity(0.1))),
                     ),
                   ],
                 ),
@@ -250,7 +250,7 @@ class _ukit5State extends State<ukit5> {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Container(
+                                SizedBox(
                                   height: size.width / 9.5,
                                   child: Column(
                                     children: [
@@ -268,7 +268,7 @@ class _ukit5State extends State<ukit5> {
                                     ],
                                   ),
                                 ),
-                                Container(
+                                SizedBox(
                                   height: size.width / 9.5,
                                   width: size.width / 2,
                                   child: Stack(
@@ -372,7 +372,7 @@ class _ukit5State extends State<ukit5> {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Container(
+                                SizedBox(
                                   height: size.width / 9.5,
                                   child: Column(
                                     children: [
@@ -390,7 +390,7 @@ class _ukit5State extends State<ukit5> {
                                     ],
                                   ),
                                 ),
-                                Container(
+                                SizedBox(
                                   height: size.width / 9.5,
                                   width: size.width / 2,
                                   child: Stack(

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class day106 extends StatelessWidget {
-  const day106({Key? key}) : super(key: key);
+class Day106 extends StatelessWidget {
+  const Day106({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             image: DecorationImage(
                 fit: BoxFit.fitHeight,
                 image: AssetImage(
@@ -16,7 +16,7 @@ class day106 extends StatelessWidget {
         child: Positioned(
           bottom: 100,
           child: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 gradient: LinearGradient(
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,

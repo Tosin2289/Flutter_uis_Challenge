@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day108 extends StatelessWidget {
-  const day108({Key? key}) : super(key: key);
+class Day108 extends StatelessWidget {
+  const Day108({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -119,7 +119,7 @@ class day108 extends StatelessWidget {
                               child: OutlinedButton(
                                 onPressed: () {},
                                 style: OutlinedButton.styleFrom(
-                                  primary: Colors.orange,
+                                  backgroundColor: Colors.orange,
                                 ),
                                 child: Text(
                                   "Join GYM",
@@ -201,7 +201,7 @@ class day108 extends StatelessWidget {
                                           MediaQuery.of(context).size.width /
                                               20),
                                 ),
-                                Container(
+                                SizedBox(
                                     width:
                                         MediaQuery.of(context).size.width / 2,
                                     child: Text(
@@ -325,7 +325,7 @@ class day108 extends StatelessWidget {
                                                   .width /
                                               30),
                                     )),
-                                Container(
+                                SizedBox(
                                   width:
                                       MediaQuery.of(context).size.width / 1.9,
                                   child: Row(
@@ -433,7 +433,7 @@ class day108 extends StatelessWidget {
                                           MediaQuery.of(context).size.width /
                                               20),
                                 ),
-                                Container(
+                                SizedBox(
                                     width:
                                         MediaQuery.of(context).size.width / 2,
                                     child: Text(
@@ -446,7 +446,7 @@ class day108 extends StatelessWidget {
                                                   .width /
                                               30),
                                     )),
-                                Container(
+                                SizedBox(
                                   width:
                                       MediaQuery.of(context).size.width / 1.8,
                                   child: Row(
@@ -554,7 +554,7 @@ class day108 extends StatelessWidget {
                                           MediaQuery.of(context).size.width /
                                               20),
                                 ),
-                                Container(
+                                SizedBox(
                                     width:
                                         MediaQuery.of(context).size.width / 2,
                                     child: Text(
@@ -567,7 +567,7 @@ class day108 extends StatelessWidget {
                                                   .width /
                                               30),
                                     )),
-                                Container(
+                                SizedBox(
                                   width:
                                       MediaQuery.of(context).size.width / 1.8,
                                   child: Row(

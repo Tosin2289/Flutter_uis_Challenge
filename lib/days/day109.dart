@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class day109 extends StatelessWidget {
-  const day109({Key? key}) : super(key: key);
+class Day109 extends StatelessWidget {
+  const Day109({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Container(
+      body: SizedBox(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         child: Column(
@@ -52,14 +52,14 @@ class day109 extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(children: [
               SizedBox(
                 width: MediaQuery.of(context).size.width / 2.5,
               ),
-              Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              Row(mainAxisAlignment: MainAxisAlignment.center, children: const [
                 Icon(
                   Icons.more_horiz,
                   size: 38,
