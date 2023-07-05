@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day111 extends StatelessWidget {
-  const day111({Key? key}) : super(key: key);
+class Day111 extends StatelessWidget {
+  const Day111({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class day111 extends StatelessWidget {
           children: [
             Column(
               children: [
-                Container(
+                SizedBox(
                   height: size.height,
                   width: size.width,
                   child: Stack(
@@ -38,18 +38,18 @@ class day111 extends StatelessWidget {
                             ),
                             const Spacer(),
                             Row(
-                              children: [
-                                const Icon(
+                              children: const [
+                                Icon(
                                   Icons.signal_cellular_alt_outlined,
                                   size: 15,
                                   color: Colors.white,
                                 ),
-                                const Icon(
+                                Icon(
                                   Icons.wifi_outlined,
                                   size: 15,
                                   color: Colors.white,
                                 ),
-                                Container(
+                                SizedBox(
                                     child: Icon(Icons.battery_6_bar,
                                         color: Colors.green))
                               ],
@@ -102,10 +102,6 @@ class day111 extends StatelessWidget {
                                   ),
                                   OutlinedButton(
                                     onPressed: () {},
-                                    child: const Text(
-                                      "Subscribe",
-                                      style: TextStyle(color: Colors.white),
-                                    ),
                                     style: ButtonStyle(
                                       elevation:
                                           MaterialStateProperty.all(10.5),
@@ -121,6 +117,10 @@ class day111 extends StatelessWidget {
                                       backgroundColor:
                                           MaterialStateProperty.all<Color>(
                                               Colors.orange),
+                                    ),
+                                    child: const Text(
+                                      "Subscribe",
+                                      style: TextStyle(color: Colors.white),
                                     ),
                                   )
                                 ],

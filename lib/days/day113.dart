@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day113 extends StatelessWidget {
-  const day113({Key? key}) : super(key: key);
+class Day113 extends StatelessWidget {
+  const Day113({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +39,7 @@ class day113 extends StatelessWidget {
                     CircleAvatar(
                       minRadius: 60,
                       backgroundColor: Colors.deepOrange.shade300,
-                      child: CircleAvatar(
+                      child: const CircleAvatar(
                         backgroundImage:
                             AssetImage('images/assets113/profile.jpeg'),
                         minRadius: 50,

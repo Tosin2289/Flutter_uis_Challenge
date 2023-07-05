@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 
-class day112 extends StatefulWidget {
-  static const String path = "lib/src/pages/profile/profile12.dart";
-
-  const day112({super.key});
+class Day112 extends StatefulWidget {
+  const Day112({super.key});
 
   @override
-  _day112State createState() => _day112State();
+  _Day112State createState() => _Day112State();
 }
 
-class _day112State extends State<day112> {
+class _Day112State extends State<Day112> {
   final bool _isOpen = false;
   var imageList = [
     'images/assets112/img1.jpg',
@@ -139,7 +137,7 @@ class _day112State extends State<day112> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30)),
                 ),
-                onPressed: () => print('Message tapped'),
+                onPressed: null,
                 child: const Text(
                   'MESSAGE',
                   style: TextStyle(

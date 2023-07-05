@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day114 extends StatelessWidget {
-  day114({Key? key}) : super(key: key);
+class Day114 extends StatelessWidget {
+  Day114({Key? key}) : super(key: key);
   final List<Map> collections = [
     {"title": "Food joint", "image": 'images/assets114/fishtail.jpg'},
     {"title": "Photos", "image": 'images/assets114/img.jpeg'},
@@ -195,10 +195,10 @@ class day114 extends StatelessWidget {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
+            children: const <Widget>[
               Material(
                 elevation: 5.0,
-                shape: const CircleBorder(),
+                shape: CircleBorder(),
                 child: CircleAvatar(
                   radius: 40.0,
                   backgroundImage: AssetImage('images/assets114/avater.jpg'),

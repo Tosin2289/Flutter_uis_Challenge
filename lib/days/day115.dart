@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day115 extends StatelessWidget {
-  day115({Key? key}) : super(key: key);
+class Day115 extends StatelessWidget {
+  const Day115({Key? key}) : super(key: key);
   final image = "images/assets115/image.jpg";
   @override
   Widget build(BuildContext context) {
