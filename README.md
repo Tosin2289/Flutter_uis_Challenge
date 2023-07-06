@@ -587,3 +587,5 @@
 #  Day  187
 ![Screenshot_1688585702](https://github.com/Tosin2289/Flutter_uis_Challenge/assets/66890167/1bc7b6e8-1099-4618-8175-1ca3938cac7e)
 
+#  Day  188
+![Screenshot_1688672488](https://github.com/Tosin2289/Flutter_uis_Challenge/assets/66890167/a80fff9f-93e8-46e2-a546-ae21860e741a)
