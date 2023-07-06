@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day121 extends StatelessWidget {
-  const day121({Key? key}) : super(key: key);
+class Day121 extends StatelessWidget {
+  const Day121({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -236,7 +236,7 @@ class day121 extends StatelessWidget {
             width: double.infinity,
             margin: const EdgeInsets.only(bottom: 16),
             decoration: BoxDecoration(
-                image: DecorationImage(
+                image: const DecorationImage(
                     image: AssetImage("images/assets121/img2.jpeg"),
                     fit: BoxFit.cover),
                 borderRadius: BorderRadius.circular(10.0)),

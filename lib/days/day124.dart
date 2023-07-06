@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day124 extends StatelessWidget {
-  const day124({Key? key}) : super(key: key);
+class Day124 extends StatelessWidget {
+  const Day124({Key? key}) : super(key: key);
   Widget _buildPageContent() {
     return Container(
       padding: const EdgeInsets.all(20.0),

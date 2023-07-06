@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 
-class day125 extends StatelessWidget {
-  const day125({Key? key}) : super(key: key);
+class Day125 extends StatelessWidget {
+  const Day125({Key? key}) : super(key: key);
 
   Widget _buildPageContent(BuildContext context) {
     return Container(
