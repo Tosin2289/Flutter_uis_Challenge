@@ -128,7 +128,7 @@ class _Day188State extends State<Day188> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             CircleAvatar(
-              backgroundImage: NetworkImage(imgUrl),
+              backgroundImage: AssetImage(imgUrl),
               radius: 28.0,
             ),
             const SizedBox(
