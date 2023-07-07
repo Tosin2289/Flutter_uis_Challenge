@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:animator/animator.dart';
 
-class day132 extends StatelessWidget {
-  const day132({Key? key}) : super(key: key);
+class Day132 extends StatelessWidget {
+  const Day132({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class day132 extends StatelessWidget {
               fit: StackFit.expand,
               children: [
                 Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage("images/assets132/img.jpeg"),
                       fit: BoxFit.cover,

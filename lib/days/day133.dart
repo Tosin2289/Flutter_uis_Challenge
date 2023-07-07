@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:ui' as ui;
 
-class day133 extends StatelessWidget {
-  const day133({Key? key}) : super(key: key);
+class Day133 extends StatelessWidget {
+  const Day133({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
