@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day136 extends StatelessWidget {
-  const day136({Key? key}) : super(key: key);
+class Day136 extends StatelessWidget {
+  const Day136({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

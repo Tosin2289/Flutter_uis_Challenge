@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class day140 extends StatefulWidget {
-  day140({Key? key}) : super(key: key);
+class Day140 extends StatefulWidget {
+  const Day140({Key? key}) : super(key: key);
 
   @override
-  State<day140> createState() => _day140State();
+  State<Day140> createState() => _Day140State();
 }
 
-class _day140State extends State<day140> {
+class _Day140State extends State<Day140> {
   late bool formVisible;
   int? _formsIndex;
 

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'dart:ui';
 
-class day139 extends StatelessWidget {
-  const day139({Key? key}) : super(key: key);
+class Day139 extends StatelessWidget {
+  const Day139({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         height: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage("images/assets139/food.jpg"),
                 fit: BoxFit.cover)),
@@ -68,9 +68,7 @@ class day139 extends StatelessWidget {
                         const TextSpan(text: "Already have account? "),
                         WidgetSpan(
                             child: InkWell(
-                          onTap: () {
-                            print("Login tapped");
-                          },
+                          onTap: () {},
                           child: const Text("Log in",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
