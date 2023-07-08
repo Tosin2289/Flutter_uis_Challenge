@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class day145 extends StatelessWidget {
+class Day145 extends StatelessWidget {
   final TextStyle whiteBoldText = const TextStyle(
     color: Colors.white,
   );
   final TextStyle greyTExt = TextStyle(
     color: Colors.grey.shade400,
   );
-  day145({Key? key}) : super(key: key);
+  Day145({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

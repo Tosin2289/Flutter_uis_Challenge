@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 Color orangeColors = const Color(0xffF5591F);
 Color orangeLightColors = const Color(0xffF2861E);
 
-class day143 extends StatelessWidget {
-  const day143({super.key});
+class Day143 extends StatelessWidget {
+  const Day143({super.key});
 
   @override
   Widget build(BuildContext context) {

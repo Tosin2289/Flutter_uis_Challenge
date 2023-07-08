@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class day144 extends StatefulWidget {
-  const day144({Key? key}) : super(key: key);
+class Day144 extends StatefulWidget {
+  const Day144({Key? key}) : super(key: key);
 
   @override
-  State<day144> createState() => _day144State();
+  State<Day144> createState() => _Day144State();
 }
 
-class _day144State extends State<day144> {
+class _Day144State extends State<Day144> {
   late bool _dark;
 
   @override
@@ -75,7 +75,7 @@ class _day144State extends State<day144> {
                           fontWeight: FontWeight.w500,
                         ),
                       ),
-                      leading: CircleAvatar(
+                      leading: const CircleAvatar(
                         backgroundImage:
                             AssetImage('images/assets144/img.jpeg'),
                       ),
