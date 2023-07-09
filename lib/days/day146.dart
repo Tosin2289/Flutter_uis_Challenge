@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day146 extends StatelessWidget {
-  day146({Key? key}) : super(key: key);
+class Day146 extends StatelessWidget {
+  Day146({Key? key}) : super(key: key);
   final TextStyle headerStyle = TextStyle(
     color: Colors.grey.shade800,
     fontWeight: FontWeight.bold,

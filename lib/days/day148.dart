@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class day148 extends StatelessWidget {
-  const day148({Key? key}) : super(key: key);
+class Day148 extends StatelessWidget {
+  const Day148({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
 import 'day151.dart';
 
-class day150 extends StatelessWidget {
-  const day150({Key? key}) : super(key: key);
+class Day150 extends StatelessWidget {
+  const Day150({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class day147 extends StatefulWidget {
-  day147({Key? key}) : super(key: key);
+class Day147 extends StatefulWidget {
+  const Day147({Key? key}) : super(key: key);
 
   @override
-  State<day147> createState() => _day147State();
+  State<Day147> createState() => _Day147State();
 }
 
-class _day147State extends State<day147> {
+class _Day147State extends State<Day147> {
   bool showPassword = false;
 
   @override
