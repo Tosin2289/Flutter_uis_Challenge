@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'day151.dart';
 
 class Day150 extends StatelessWidget {
   const Day150({Key? key}) : super(key: key);
@@ -104,28 +103,28 @@ class Day150 extends StatelessWidget {
                     onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (_) => const day151(),
+                          builder: (_) => const Day150(),
                         )),
                   ),
                   BikeListItem(
                     onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (_) => const day151(),
+                          builder: (_) => const Day150(),
                         )),
                   ),
                   BikeListItem(
                     onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (_) => const day151(),
+                          builder: (_) => const Day150(),
                         )),
                   ),
                   BikeListItem(
                     onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (_) => const day151(),
+                          builder: (_) => const Day150(),
                         )),
                   ),
                 ],

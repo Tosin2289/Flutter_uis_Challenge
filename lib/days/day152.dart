@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class day152 extends StatefulWidget {
-  const day152({Key? key}) : super(key: key);
+class Day152 extends StatefulWidget {
+  const Day152({Key? key}) : super(key: key);
 
   @override
-  State<day152> createState() => _day152State();
+  State<Day152> createState() => _Day152State();
 }
 
-class _day152State extends State<day152> {
+class _Day152State extends State<Day152> {
   String selectedButton = "All";
   @override
   Widget build(BuildContext context) {

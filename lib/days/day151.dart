@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day151 extends StatelessWidget {
-  const day151({Key? key}) : super(key: key);
+class Day151 extends StatelessWidget {
+  const Day151({Key? key}) : super(key: key);
   final TextStyle bold = const TextStyle(fontWeight: FontWeight.bold);
   @override
   Widget build(BuildContext context) {
