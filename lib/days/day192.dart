@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Day192 extends StatelessWidget {
-  final String image = "images/assets192/chicken.png";
+  final String image = "images/assets192/bug.jpg";
   const Day192({Key? key}) : super(key: key);
 
   @override
@@ -42,7 +42,7 @@ class Day192 extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   const Text(
-                    "Avocado",
+                    "Burger",
                     style:
                         TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
                   ),
@@ -68,6 +68,8 @@ class Day192 extends StatelessWidget {
                   ),
                   const SizedBox(height: 20.0),
                   Slider(
+                    activeColor: Colors.pink,
+                    inactiveColor: Colors.pink[200],
                     onChanged: (value) {},
                     min: 1,
                     max: 5,
