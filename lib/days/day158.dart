@@ -3,8 +3,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'day156.dart';
 
-class day158 extends StatelessWidget {
-  day158({Key? key}) : super(key: key);
+class Day158 extends StatelessWidget {
+  Day158({Key? key}) : super(key: key);
   final Color primary = const Color(0xffE20056);
   final Color border = const Color(0xffE1DDDE);
   final Color bg = const Color(0xfffefefe);
@@ -53,7 +53,7 @@ class day158 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             ListTile(
-              leading: CircleAvatar(
+              leading: const CircleAvatar(
                 backgroundImage: AssetImage('images/assets158/Avatar6.jpg'),
               ),
               title: Text(
@@ -252,7 +252,7 @@ Widget _buildButton(String title, bool active) {
       padding: const EdgeInsets.all(16.0),
       decoration: BoxDecoration(
         border: active
-            ? Border(
+            ? const Border(
                 top: BorderSide(
                   color: primary,
                   width: 2.0,

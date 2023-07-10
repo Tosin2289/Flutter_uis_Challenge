@@ -5,14 +5,14 @@ const TextStyle boldText = TextStyle(
   fontWeight: FontWeight.bold,
 );
 
-class day157 extends StatefulWidget {
-  day157({Key? key}) : super(key: key);
+class Day157 extends StatefulWidget {
+  const Day157({Key? key}) : super(key: key);
 
   @override
-  State<day157> createState() => _day157State();
+  State<Day157> createState() => _Day157State();
 }
 
-class _day157State extends State<day157> {
+class _Day157State extends State<Day157> {
   bool signupForm = true;
 
   @override

@@ -12,8 +12,8 @@ const TextStyle primaryText = TextStyle(
   color: primary,
 );
 
-class day156 extends StatelessWidget {
-  const day156({Key? key}) : super(key: key);
+class Day156 extends StatelessWidget {
+  const Day156({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

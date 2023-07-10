@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day155 extends StatelessWidget {
-  day155({Key? key}) : super(key: key);
+class Day155 extends StatelessWidget {
+  Day155({Key? key}) : super(key: key);
   final List<String> _listItem = [
     "images/assets155/img1.jpg",
     "images/assets155/img2.jpg",

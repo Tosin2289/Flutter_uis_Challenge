@@ -205,7 +205,7 @@ Widget _buildArticleItem(int index) {
                     Text(
                       article["title"],
                       textAlign: TextAlign.justify,
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: secondaryColor,
                         fontWeight: FontWeight.bold,
                         fontSize: 18.0,
@@ -214,7 +214,7 @@ Widget _buildArticleItem(int index) {
                     Text.rich(
                       TextSpan(
                         children: [
-                          WidgetSpan(
+                          const WidgetSpan(
                             child: CircleAvatar(
                               radius: 15.0,
                               backgroundColor: primaryColor,
