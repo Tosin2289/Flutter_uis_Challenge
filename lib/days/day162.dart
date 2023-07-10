@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-final String avatar = 'images/assets162/img.jpg';
-final TextStyle whiteText = const TextStyle(color: Colors.white);
+const String avatar = 'images/assets162/img.jpg';
+const TextStyle whiteText = TextStyle(color: Colors.white);
 
 class day162 extends StatelessWidget {
   day162({Key? key}) : super(key: key);

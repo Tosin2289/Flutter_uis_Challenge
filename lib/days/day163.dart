@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class day163 extends StatefulWidget {
-  const day163({Key? key}) : super(key: key);
+class Day163 extends StatefulWidget {
+  const Day163({Key? key}) : super(key: key);
 
   @override
-  State<day163> createState() => _day163State();
+  State<Day163> createState() => _Day163State();
 }
 
-class _day163State extends State<day163> with SingleTickerProviderStateMixin {
+class _Day163State extends State<Day163> with SingleTickerProviderStateMixin {
   bool isCollapsed = true;
   double? screenWidth, screenHeight;
   final Duration duration = const Duration(milliseconds: 300);

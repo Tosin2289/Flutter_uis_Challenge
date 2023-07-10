@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class day165 extends StatefulWidget {
-  day165({Key? key}) : super(key: key);
+class Day165 extends StatefulWidget {
+ const Day165({Key? key}) : super(key: key);
 
   @override
-  State<day165> createState() => _day165State();
+  State<Day165> createState() => _Day165State();
 }
 
-class _day165State extends State<day165> with TickerProviderStateMixin {
+class _Day165State extends State<Day165> with TickerProviderStateMixin {
   bool menuShown = false;
   double appbarHeight = 80.0;
   double menuHeight = 0.0;

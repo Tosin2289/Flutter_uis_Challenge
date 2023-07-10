@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-final TextStyle whiteText = const TextStyle(color: Colors.white);
+const TextStyle whiteText = TextStyle(color: Colors.white);
 
-class day161 extends StatelessWidget {
-  const day161({Key? key}) : super(key: key);
+class Day161 extends StatelessWidget {
+  const Day161({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -55,8 +55,8 @@ Widget _buildBody(BuildContext context) {
                             color: Colors.white,
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 16.0),
+                        const Padding(
+                          padding: EdgeInsets.only(left: 16.0),
                           child: Text(
                             'Steps',
                             style: whiteText,
@@ -88,8 +88,8 @@ Widget _buildBody(BuildContext context) {
                             color: Colors.white,
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 16.0),
+                        const Padding(
+                          padding: EdgeInsets.only(left: 16.0),
                           child: Text(
                             'Avg. Heart Rate',
                             style: whiteText,
@@ -127,8 +127,8 @@ Widget _buildBody(BuildContext context) {
                             color: Colors.white,
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 16.0),
+                        const Padding(
+                          padding: EdgeInsets.only(left: 16.0),
                           child: Text(
                             'Calories Burned',
                             style: whiteText,

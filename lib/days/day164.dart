@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class day164 extends StatelessWidget {
-  const day164({Key? key}) : super(key: key);
+class Day164 extends StatelessWidget {
+  const Day164({Key? key}) : super(key: key);
   final Color primary = const Color(0xff4BBEC0);
   final TextStyle style = const TextStyle(
     color: Colors.black,
