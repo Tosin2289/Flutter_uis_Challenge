@@ -611,4 +611,6 @@
 #  Day  195
 ![Screenshot_1689280427](https://github.com/Tosin2289/Flutter_uis_Challenge/assets/66890167/1785ef7e-358b-4279-83cc-c19e49752a66)
 
+#  Day  196
+![Screenshot_1689369274](https://github.com/Tosin2289/Flutter_uis_Challenge/assets/66890167/fda991bd-ac53-4e6a-baa0-1f74932c2f5e)
 
