@@ -41,10 +41,9 @@ class Day198 extends StatelessWidget {
             ],
           ),
         ),
-        actions: <Widget>[
+        actions: const <Widget>[
           Padding(
-            padding:
-                const EdgeInsets.symmetric(vertical: 12.0, horizontal: 16.0),
+            padding: EdgeInsets.symmetric(vertical: 12.0, horizontal: 16.0),
             child: CircleAvatar(
               maxRadius: 15.0,
               backgroundImage: AssetImage("images/assets199/Avatar 2.jpg"),
