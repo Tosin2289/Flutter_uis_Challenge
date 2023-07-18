@@ -49,6 +49,7 @@ class Day200 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         bottomNavigationBar: BottomNavigationBar(
+          selectedItemColor: Colors.orange,
           currentIndex: 1,
           items: const [
             BottomNavigationBarItem(
